@@ -1,0 +1,17 @@
+{
+  "name": "kol2",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~2.1.4",
+    "awesome-bootstrap-checkbox": "~0.3.4",
+    "font-awesome": "~4.3.0",
+    "bootstrap-select": "~1.7.2",
+    "bootstrap-tagsinput": "~0.5.0",
+    "bootstrap-validator": "~0.8.1",
+    "bootstrap-form-helpers": "~2.3.0",
+    "animate.css": "~3.3.0"
+  },
+  "devDependencies": {}
+}
