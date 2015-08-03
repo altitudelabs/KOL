@@ -1,6 +1,10 @@
 # KOL
 
-TODO:
-	Sign up now
-	- Switch on 'disable' class
-	- Radio: blue outline
+
+## Installation
+
+``` js
+bower install
+npm install
+grunt serve
+```
