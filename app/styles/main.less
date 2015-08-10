@@ -5,9 +5,9 @@
 button {
   display: block;
   border-radius: 0px;
-  &:hover, 
-  &:focus, 
-  &:active, 
+  &:hover,
+  &:focus,
+  &:active,
   &:visited {
     outline: none!important;
     border: none!important;
@@ -592,11 +592,11 @@ body {
     }
     a {
       .social {
-        margin: 10px;
+        //margin: 10px;
         display: inline-block;
         width: 35px;
         height: 35px;
-        // background-image: url("../images/split-social-media.png");
+        
         .social-position-x(@base) {
           background: url("../images/split-social-media.png") no-repeat @base 0px ;
         }
@@ -1104,6 +1104,12 @@ body.tutorial {
         max-width: 500px;
         width: 50%;
       }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
       .image-speaker {
         height: 400px;
         padding: 45px 0;
@@ -1263,7 +1269,7 @@ body.sign-up-now {
 
           a {
             padding: 0px;
-            
+
             .ball {
               margin-top: 15px;
               .center-block();
@@ -1328,7 +1334,7 @@ body.sign-up-now {
             // Assign margin-left for [ nor-first-element ]
             .input-wrapper {
               font-size: 18px;
-              
+
               > *:not(:first-child) {
 
                 padding-left: 25px;
@@ -1337,7 +1343,7 @@ body.sign-up-now {
                   .responsive-mobile({
                     padding-left: 0px;
                     width: auto;
-                  }); 
+                  });
                 }
                 .responsive-mobile({
                   padding-left: 0px;
@@ -1349,7 +1355,7 @@ body.sign-up-now {
                 .responsive-mobile ({
                   width: 100%;
                   &:not(:first-child) {
-                    margin-top: 20px; 
+                    margin-top: 20px;
                   }
                 });
                 display: inline-block;
@@ -1464,7 +1470,7 @@ body.sign-up-now {
   margin: auto;
   max-width: 450px;
   padding-bottom: 50px;
-  
+
   span {
     font-size: 14px;
   }

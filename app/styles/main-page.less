@@ -1,58 +1,4 @@
-@import "bootstrap.less";
-@import url("http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic");
-@icon-font-path: "../fonts/glyphicons/";
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family : "baskerville";
-}
-
-@libre: "Libre Baskerville", serif;
-
-@font-face {
-  font-family: "didot";
-  src:  url(../fonts/didot/didot.ttf)   format("truetype"),
-        url(../fonts/didot/didot.eot)   format("eot"),
-        url(../fonts/didot/didot.woff)  format("woff");
-  font-weight: 100;
-}
-@font-face {
-  font-family: "caslon";
-  src:  url(../fonts/caslon/Caslon224ITCbyBT-BoldItalic.ttf) format("truetype");
-  font-weight: 400;
-}
-
-.responsive-mobile (@rules)       { @media (max-width: 760px) { @rules(); } }
-.responsive-mobile-form (@rules)  { @media (max-width: 1024px){ @rules(); } }
-.responsive-desktop (@rules)      { @media (min-width: 950px) { @rules(); } }
-.mobile-only                      { @media (min-width: 761px) { display: none; } }
-.desktop-only                     { @media (max-width: 760px) { display: none; } }
-
-
-@white  :     #FCF9F5;
-@orange :     #D3A849;
-@gray   :     #CCCCCC;
-@gray-darker: #58595B;
-@gray-dark:   #878787;
-@gray-light:  #EFEFEF;
-@red:         #EB393A; // warning
-
-@black: #171717;
-@black-hover: #3A3A3A;
-@black-click: #171717;
-@gold: #D7B166;
-@gold-hover: #997b39;
-@gold-click: #7C612A;
-@brown: #B8984B;
-
-body {
-  background: @black;
-  padding: 12px;
-  .bg-container {
-    background: #FDF9F6 url("../images/bg-home.jpg");
-    background-position: center -53px;
-  }
-}
-
+@import "./common.less";
 .body-container {
   max-width: 1240px;
   position: relative;
@@ -238,7 +184,7 @@ body {
       .responsive-mobile({
         width: 100%;
         height: auto;
-      }); 
+      });
     }
     .section-content {
       position: relative;
@@ -292,8 +238,8 @@ body {
           });
           .gold {
             color: @gold;
-            font-family: "didot";  
-            font-style: normal;     
+            font-family: "didot";
+            font-style: normal;
           }
         }
         ul.list {
@@ -589,50 +535,4 @@ body {
   }
   /* End section.advertisers */
 
-  footer {
-    font-family: "baskerville";
-    padding-bottom: 88px;
-    .responsive-mobile({
-      padding-bottom: 0px;
-    });
-    .section-bar.footer {
-      border-bottom: 1px solid @orange;
-    }
-    .content {
-      color: @black;
-      font-size: 17px;
-      font-style: italic;
-      line-height: 23px;
-      margin-top: 50px;
-      padding: 0px 60px;
-      .responsive-mobile({
-        margin-top: 29px;
-      });
-      &.protection-of-privacy {
-        .responsive-mobile({
-          display: none;
-        });
-      }
-    }
-    a {
-      .social {
-        margin: 10px;
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-        .responsive-mobile({
-          margin: 11px 4px;
-        });
-        .social-position-x(@base) {
-          background: url(../images/split-social-media.png) no-repeat @base 0px ;
-        }
-        &.facebook  { .social-position-x(0px);    }
-        &.instagram { .social-position-x(-53px);  }
-        &.youtube   { .social-position-x(-120px); }
-        &.pintest   { .social-position-x(-185px); }
-        &.twitter   { .social-position-x(-250px); }
-        &.blogger   {  background-position-x: 32px; .social-position-x(-317px);}
-      }
-    }
-  }
 }

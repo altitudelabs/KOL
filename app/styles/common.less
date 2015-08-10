@@ -1,0 +1,213 @@
+@import "bootstrap.less";
+@import url("http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic");
+@icon-font-path: "../fonts/glyphicons/";
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family : "baskerville";
+}
+
+@libre: "Libre Baskerville", serif;
+
+@font-face {
+  font-family: "didot";
+  src:  url(../fonts/didot/didot.ttf) format("truetype"),
+        url(../fonts/didot/didot.eot) format("eot"),
+        url(../fonts/didot/didot.woff) format("woff");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "caslon";
+  src:  url(../fonts/caslon/Caslon224ITCbyBT-BoldItalic.ttf) format("truetype");
+  font-weight: 400;
+}
+
+.responsive-mobile (@rules)       { @media (max-width: 760px) { @rules(); } }
+.responsive-mobile-form (@rules)  { @media (max-width: 1024px){ @rules(); } }
+.responsive-desktop (@rules)      { @media (min-width: 761px) { @rules(); } }
+.mobile-only                      { @media (min-width: 761px) { display: none; } }
+.desktop-only                     { @media (max-width: 760px) { display: none; } }
+
+
+@white  : #FCF9F5;
+@orange : #D3A849;
+@gray   : #CCCCCC;
+@gray-darker: #58595B;
+@gray-dark: #878787;
+@gray-light: #EFEFEF;
+@red: #EB393A; // warning
+
+@black: #171717;
+  @black-hover: #3A3A3A;
+  @black-click: #171717;
+@gold: #D7B166;
+  @gold-hover: #997b39;
+  @gold-click: #7C612A;
+@brown: #B8984B;
+
+body {
+  background: @black;
+
+  .responsive-mobile({
+    padding: 12px;
+  });
+  footer {
+    font-family: "baskerville";
+    padding-bottom: 88px;
+    .responsive-mobile({
+      padding-bottom: 0px;
+    });
+    .section-bar.footer {
+      border-bottom: 1px solid @orange;
+    }
+    .content {
+      color: @black;
+      font-size: 17px;
+      font-style: italic;
+      line-height: 23px;
+      margin-top: 50px;
+      padding: 0px 60px;
+      .responsive-mobile({
+        margin-top: 29px;
+      });
+      &.protection-of-privacy {
+        .responsive-mobile({
+          display: none;
+        });
+      }
+    }
+    a {
+      .social {
+        margin: 6px;
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        .responsive-mobile({
+          margin: 11px 4px;
+        });
+        .social-position-x(@base) {
+          background: url(../images/split-social-media.png) no-repeat @base 0px ;
+        }
+        &.facebook  { .social-position-x(0px);    }
+        &.instagram { .social-position-x(-53px);  }
+        &.youtube   { .social-position-x(-120px); }
+        &.pintest   { .social-position-x(-185px); }
+        &.twitter   { .social-position-x(-250px); }
+        &.blogger   {  background-position-x: 32px; .social-position-x(-317px);}
+      }
+    }
+  }
+}
+
+header.home {
+  position:relative;
+  border-bottom: 1px @gray solid;
+  padding: 45px 0 27px 0;
+  .responsive-mobile({
+    padding: 7px 0 0 0;
+    margin-bottom: 9px;
+  });
+  .btn-mobile-top-nav {
+    display: none;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-image: url("../images/icons/menu.png");
+    background-size: cover;
+    cursor: pointer;
+    &.active {
+      background-image: url("../images/icons/menu-close.png");
+    }
+    .responsive-mobile({
+      display: block;
+    });
+  }
+  .company-name {
+    color: @black;
+    width: 100%;
+    text-align: center;
+    font-size: 70px;
+    line-height: 70px;
+    margin: 12px 0;
+    font-family: "didot";
+    letter-spacing: -0.02em;
+    .responsive-mobile({
+      margin: 20px 0 5px 0;
+    });
+  }
+  .company-description {
+    color: @black;
+    width: 100%;
+    text-align: center;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "baskerville";
+    .responsive-mobile({
+      margin-bottom: 22px;
+    });
+  }
+  .company-meaning {
+    color: @black;
+    width: 100%;
+    text-align: center;
+    line-height: 10px;
+    font-family: "baskerville";
+    font-style: italic;
+    font-size: 15px;
+    .responsive-mobile({
+      display: none;
+    });
+  }
+}
+.top-nav {
+  ul{
+    width: 401px;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 85px;
+    padding: 0;
+    margin-bottom: 20px;
+    li {
+      float: left;
+      list-style-type: none;
+      text-align: center;
+      padding: 10px 30px;
+      .responsive-mobile({
+        width: 100%;
+        padding: 0;
+      });
+      a {
+        color: @black;
+        font-family: "Baskerville";
+        text-decoration: none;
+        line-height: 58px;
+        font-size: 16px;
+        padding-bottom: 3px;
+        &:hover {
+          border-bottom: 2px @black solid;
+        }
+        .responsive-mobile({
+          line-height: 53px;
+        });
+      }
+      &.active a {
+        border-bottom: 2px @black solid;
+      }
+    }
+    .responsive-mobile({
+      width: 100%;
+    });
+  }
+  .responsive-mobile({
+    width: 100%;
+    display: none;
+    border-bottom: 1px @gray solid;
+    padding-bottom: 8px;
+    &.in {
+      display: inline-block;
+    }
+  });
+}

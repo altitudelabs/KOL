@@ -47,7 +47,7 @@ module.exports = function (grunt) {
     },
     connect: {
       options: {
-        port: 9000,
+        port: 9001,
         // change this to '0.0.0.0' to access the server from outside
         hostname: 'localhost',
         livereload: 35729
@@ -126,7 +126,8 @@ module.exports = function (grunt) {
         files: {
           '<%= yeoman.app %>/styles/main.css': ['<%= yeoman.app %>/styles/main.less'],
           '<%= yeoman.app %>/styles/main-page.css': ['<%= yeoman.app %>/styles/main-page.less'],
-          '<%= yeoman.app %>/styles/sign-up-now.css': ['<%= yeoman.app %>/styles/sign-up-now.less']
+          '<%= yeoman.app %>/styles/sign-up-now.css': ['<%= yeoman.app %>/styles/sign-up-now.less'],
+          '<%= yeoman.app %>/styles/kol.css': ['<%= yeoman.app %>/styles/kol.less']
         },
         options: {
           sourceMap: true,

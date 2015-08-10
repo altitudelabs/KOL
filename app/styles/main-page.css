@@ -5884,11 +5884,200 @@ h6,
 }
 body {
   background: #171717;
-  padding: 12px;
 }
-body .bg-container {
-  background: #fdf9f6 url("../images/bg-home.jpg");
-  background-position: center -53px;
+@media (max-width: 760px) {
+  body {
+    padding: 12px;
+  }
+}
+body footer {
+  font-family: "baskerville";
+  padding-bottom: 88px;
+}
+@media (max-width: 760px) {
+  body footer {
+    padding-bottom: 0px;
+  }
+}
+body footer .section-bar.footer {
+  border-bottom: 1px solid #d3a849;
+}
+body footer .content {
+  color: #171717;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 23px;
+  margin-top: 50px;
+  padding: 0px 60px;
+}
+@media (max-width: 760px) {
+  body footer .content {
+    margin-top: 29px;
+  }
+}
+@media (max-width: 760px) {
+  body footer .content.protection-of-privacy {
+    display: none;
+  }
+}
+body footer a .social {
+  margin: 6px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+@media (max-width: 760px) {
+  body footer a .social {
+    margin: 11px 4px;
+  }
+}
+body footer a .social.facebook {
+  background: url(../images/split-social-media.png) no-repeat 0px 0px;
+}
+body footer a .social.instagram {
+  background: url(../images/split-social-media.png) no-repeat -53px 0px;
+}
+body footer a .social.youtube {
+  background: url(../images/split-social-media.png) no-repeat -120px 0px;
+}
+body footer a .social.pintest {
+  background: url(../images/split-social-media.png) no-repeat -185px 0px;
+}
+body footer a .social.twitter {
+  background: url(../images/split-social-media.png) no-repeat -250px 0px;
+}
+body footer a .social.blogger {
+  background-position-x: 32px;
+  background: url(../images/split-social-media.png) no-repeat -317px 0px;
+}
+header.home {
+  position: relative;
+  border-bottom: 1px #cccccc solid;
+  padding: 45px 0 27px 0;
+}
+@media (max-width: 760px) {
+  header.home {
+    padding: 7px 0 0 0;
+    margin-bottom: 9px;
+  }
+}
+header.home .btn-mobile-top-nav {
+  display: none;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url("../images/icons/menu.png");
+  background-size: cover;
+  cursor: pointer;
+}
+header.home .btn-mobile-top-nav.active {
+  background-image: url("../images/icons/menu-close.png");
+}
+@media (max-width: 760px) {
+  header.home .btn-mobile-top-nav {
+    display: block;
+  }
+}
+header.home .company-name {
+  color: #171717;
+  width: 100%;
+  text-align: center;
+  font-size: 70px;
+  line-height: 70px;
+  margin: 12px 0;
+  font-family: "didot";
+  letter-spacing: -0.02em;
+}
+@media (max-width: 760px) {
+  header.home .company-name {
+    margin: 20px 0 5px 0;
+  }
+}
+header.home .company-description {
+  color: #171717;
+  width: 100%;
+  text-align: center;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "baskerville";
+}
+@media (max-width: 760px) {
+  header.home .company-description {
+    margin-bottom: 22px;
+  }
+}
+header.home .company-meaning {
+  color: #171717;
+  width: 100%;
+  text-align: center;
+  line-height: 10px;
+  font-family: "baskerville";
+  font-style: italic;
+  font-size: 15px;
+}
+@media (max-width: 760px) {
+  header.home .company-meaning {
+    display: none;
+  }
+}
+.top-nav ul {
+  width: 401px;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 85px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.top-nav ul li {
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  padding: 10px 30px;
+}
+@media (max-width: 760px) {
+  .top-nav ul li {
+    width: 100%;
+    padding: 0;
+  }
+}
+.top-nav ul li a {
+  color: #171717;
+  font-family: "Baskerville";
+  text-decoration: none;
+  line-height: 58px;
+  font-size: 16px;
+  padding-bottom: 3px;
+}
+.top-nav ul li a:hover {
+  border-bottom: 2px #171717 solid;
+}
+@media (max-width: 760px) {
+  .top-nav ul li a {
+    line-height: 53px;
+  }
+}
+.top-nav ul li.active a {
+  border-bottom: 2px #171717 solid;
+}
+@media (max-width: 760px) {
+  .top-nav ul {
+    width: 100%;
+  }
+}
+@media (max-width: 760px) {
+  .top-nav {
+    width: 100%;
+    display: none;
+    border-bottom: 1px #cccccc solid;
+    padding-bottom: 8px;
+  }
+  .top-nav.in {
+    display: inline-block;
+  }
 }
 .body-container {
   max-width: 1240px;
@@ -5909,7 +6098,7 @@ body .bg-container {
   /* Start section.advertisers */
   /* End section.advertisers */
 }
-@media (min-width: 950px) {
+@media (min-width: 761px) {
   .body-container {
     padding: 0 95px;
   }
@@ -6462,65 +6651,5 @@ body .bg-container {
 .body-container section.advertisers .section-content button.advertise-now {
   right: auto;
   left: 0;
-}
-.body-container footer {
-  font-family: "baskerville";
-  padding-bottom: 88px;
-}
-@media (max-width: 760px) {
-  .body-container footer {
-    padding-bottom: 0px;
-  }
-}
-.body-container footer .section-bar.footer {
-  border-bottom: 1px solid #d3a849;
-}
-.body-container footer .content {
-  color: #171717;
-  font-size: 17px;
-  font-style: italic;
-  line-height: 23px;
-  margin-top: 50px;
-  padding: 0px 60px;
-}
-@media (max-width: 760px) {
-  .body-container footer .content {
-    margin-top: 29px;
-  }
-}
-@media (max-width: 760px) {
-  .body-container footer .content.protection-of-privacy {
-    display: none;
-  }
-}
-.body-container footer a .social {
-  margin: 10px;
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-}
-@media (max-width: 760px) {
-  .body-container footer a .social {
-    margin: 11px 4px;
-  }
-}
-.body-container footer a .social.facebook {
-  background: url(../images/split-social-media.png) no-repeat 0px 0px;
-}
-.body-container footer a .social.instagram {
-  background: url(../images/split-social-media.png) no-repeat -53px 0px;
-}
-.body-container footer a .social.youtube {
-  background: url(../images/split-social-media.png) no-repeat -120px 0px;
-}
-.body-container footer a .social.pintest {
-  background: url(../images/split-social-media.png) no-repeat -185px 0px;
-}
-.body-container footer a .social.twitter {
-  background: url(../images/split-social-media.png) no-repeat -250px 0px;
-}
-.body-container footer a .social.blogger {
-  background-position-x: 32px;
-  background: url(../images/split-social-media.png) no-repeat -317px 0px;
 }
 /*# sourceMappingURL=/styles/main.css.map */
