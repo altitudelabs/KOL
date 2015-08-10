@@ -125,7 +125,8 @@ module.exports = function (grunt) {
       dist: {
         files: {
           '<%= yeoman.app %>/styles/main.css': ['<%= yeoman.app %>/styles/main.less'],
-          '<%= yeoman.app %>/styles/main-page.css': ['<%= yeoman.app %>/styles/main-page.less']
+          '<%= yeoman.app %>/styles/main-page.css': ['<%= yeoman.app %>/styles/main-page.less'],
+          '<%= yeoman.app %>/styles/sign-up-now.css': ['<%= yeoman.app %>/styles/sign-up-now.less']
         },
         options: {
           sourceMap: true,

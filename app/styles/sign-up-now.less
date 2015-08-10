@@ -1,0 +1,190 @@
+@import "bootstrap.less";
+@import "main-page.less";
+
+body {
+   padding-top: 58px;
+}
+.body-container {
+  position: inherit;
+  max-width: 1240px;
+  header {
+    border-bottom: none;
+    .company-name {
+      position: absolute;
+      color: #fff;
+      margin: 0 20px;
+      width: 50px;
+      font-size: 27px;
+      line-height: 58px;
+      top: 0;
+      left: 0;
+    }
+    .company-description {
+      display: none;
+    }
+    .company-meaning {
+      display: none;
+    }
+    .page-title {
+      color: #171717;
+      width: 100%;
+      text-align: center;
+      font-size: 109px;
+      line-height: 114px;
+      margin: 57px 0 10px 0;
+      font-family: "didot";
+    }
+    .page-description {
+      color: @black;
+      width: 100%;
+      text-align: center;
+      line-height: 10px;
+      font-family: "baskerville";
+      font-style: italic;
+      font-size: 21px;
+      word-spacing: 0.055em;
+    }
+    hr {
+      margin-top: 43px;
+      margin-bottom: 10px;
+      border: 0;
+      border-top: 1px solid #ccc;
+      width: 90px;
+    }
+  }
+  .top-nav {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    ul {
+      li {
+        a {
+          color: #fff;
+        }
+        &.active a{
+          border-bottom: 2px #fff solid;
+        }
+      }
+    }
+  }
+  section {
+    min-height: 0;
+  }
+  section.step-count {
+    width: 100%;
+    margin-bottom: 23px;
+    ul {
+      text-align: center;
+      padding: 0;
+      li {
+        width: 176px;
+          text-align: center;
+          display: inline-block;
+          list-style-type: none;
+          margin: 0 10px;
+        a{
+          text-decoration: none;
+          text-align: center;
+          .ball{
+            position: relative;
+            text-align: center;
+            width: 52px;
+            height: 52px;
+            line-height: 52px;
+            color: @gold;
+            font-size: 30px;
+            border: 1px #d7b166 solid;
+            border-radius: 50px;
+            font-family: 'baskerville';
+            display: inline-block;
+            &:after {
+              position: absolute;
+              content: '';
+              width: 1px;
+              border-right: 150px @gold solid;
+              height: 1px;
+              top: 50%;
+              left: 100%;
+            }
+          } 
+          .title {
+            color: #d7b166;
+            font-family: 'baskerville';
+            margin: 11px 0px;
+            font-size: 22px;
+            font-style: italic;
+          }
+          &.active {
+            .ball {
+              background: #d7b166;
+              color: #fff;
+            }
+          }
+          &:hover, &:active, &:visited {
+            text-decoration: none;
+          }
+        }
+        &:last-of-type{
+          a .ball:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .sign-up-form {
+    font-style: italic;
+    font-family: 'baskerville';
+    font-size: 22px;
+    color: @black;
+    padding: 0 11px;
+    .number {
+      color: @gold;
+      font-style: normal;
+      font-size: 44px;
+      font-weight: 600;
+      &:after {
+        content: '/';
+        font-weight: normal;
+        font-size: 30px;
+        margin-left: 6px;
+        margin-right: 8px;
+      }
+    }
+    .question {
+      vertical-align: middle;
+      padding-bottom: 20px;
+      display: inline-block;
+    }
+    button, input, textarea, .bfh-selectbox-toggle {
+      border-radius: 0;
+      background-image: none;
+      height: 70px;
+      width: 100%;
+      padding: 0 32px;
+      font-style: italic;
+      background: transparent;
+      box-shadow: none;
+      color: @black; 
+      border: 1px @gray solid; 
+      .bfh-selectbox-option{
+        font-style: italic;
+        font-family: 'baskerville';
+        font-size: 22px;
+        line-height: 70px;
+        color: @black;
+        height: 70px;
+      }
+      &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder {
+        color: @gray;
+      }
+      &:active, &:focus {
+        outline: none;
+        box-shadow: none;
+        border: 1px @gold solid; 
+      }
+    }
+  }
+
+}

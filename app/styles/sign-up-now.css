@@ -6523,4 +6523,208 @@ body .bg-container {
   background-position-x: 32px;
   background: url(../images/split-social-media.png) no-repeat -317px 0px;
 }
+body {
+  padding-top: 58px;
+}
+.body-container {
+  position: inherit;
+  max-width: 1240px;
+}
+.body-container header {
+  border-bottom: none;
+}
+.body-container header .company-name {
+  position: absolute;
+  color: #fff;
+  margin: 0 20px;
+  width: 50px;
+  font-size: 27px;
+  line-height: 58px;
+  top: 0;
+  left: 0;
+}
+.body-container header .company-description {
+  display: none;
+}
+.body-container header .company-meaning {
+  display: none;
+}
+.body-container header .page-title {
+  color: #171717;
+  width: 100%;
+  text-align: center;
+  font-size: 109px;
+  line-height: 114px;
+  margin: 57px 0 10px 0;
+  font-family: "didot";
+}
+.body-container header .page-description {
+  color: #171717;
+  width: 100%;
+  text-align: center;
+  line-height: 10px;
+  font-family: "baskerville";
+  font-style: italic;
+  font-size: 21px;
+  word-spacing: 0.055em;
+}
+.body-container header hr {
+  margin-top: 43px;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  width: 90px;
+}
+.body-container .top-nav {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.body-container .top-nav ul li a {
+  color: #fff;
+}
+.body-container .top-nav ul li.active a {
+  border-bottom: 2px #fff solid;
+}
+.body-container section {
+  min-height: 0;
+}
+.body-container section.step-count {
+  width: 100%;
+  margin-bottom: 23px;
+}
+.body-container section.step-count ul {
+  text-align: center;
+  padding: 0;
+}
+.body-container section.step-count ul li {
+  width: 176px;
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 10px;
+}
+.body-container section.step-count ul li a {
+  text-decoration: none;
+  text-align: center;
+}
+.body-container section.step-count ul li a .ball {
+  position: relative;
+  text-align: center;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  color: #d7b166;
+  font-size: 30px;
+  border: 1px #d7b166 solid;
+  border-radius: 50px;
+  font-family: 'baskerville';
+  display: inline-block;
+}
+.body-container section.step-count ul li a .ball:after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  border-right: 150px #d7b166 solid;
+  height: 1px;
+  top: 50%;
+  left: 100%;
+}
+.body-container section.step-count ul li a .title {
+  color: #d7b166;
+  font-family: 'baskerville';
+  margin: 11px 0px;
+  font-size: 22px;
+  font-style: italic;
+}
+.body-container section.step-count ul li a.active .ball {
+  background: #d7b166;
+  color: #fff;
+}
+.body-container section.step-count ul li a:hover,
+.body-container section.step-count ul li a:active,
+.body-container section.step-count ul li a:visited {
+  text-decoration: none;
+}
+.body-container section.step-count ul li:last-of-type a .ball:after {
+  display: none;
+}
+.body-container .sign-up-form {
+  font-style: italic;
+  font-family: 'baskerville';
+  font-size: 22px;
+  color: #171717;
+  padding: 0 11px;
+}
+.body-container .sign-up-form .number {
+  color: #d7b166;
+  font-style: normal;
+  font-size: 44px;
+  font-weight: 600;
+}
+.body-container .sign-up-form .number:after {
+  content: '/';
+  font-weight: normal;
+  font-size: 30px;
+  margin-left: 6px;
+  margin-right: 8px;
+}
+.body-container .sign-up-form .question {
+  vertical-align: middle;
+  padding-bottom: 20px;
+  display: inline-block;
+}
+.body-container .sign-up-form button,
+.body-container .sign-up-form input,
+.body-container .sign-up-form textarea,
+.body-container .sign-up-form .bfh-selectbox-toggle {
+  border-radius: 0;
+  background-image: none;
+  height: 70px;
+  width: 100%;
+  padding: 0 32px;
+  font-style: italic;
+  background: transparent;
+  box-shadow: none;
+  color: #171717;
+  border: 1px #cccccc solid;
+}
+.body-container .sign-up-form button .bfh-selectbox-option,
+.body-container .sign-up-form input .bfh-selectbox-option,
+.body-container .sign-up-form textarea .bfh-selectbox-option,
+.body-container .sign-up-form .bfh-selectbox-toggle .bfh-selectbox-option {
+  font-style: italic;
+  font-family: 'baskerville';
+  font-size: 22px;
+  line-height: 70px;
+  color: #171717;
+  height: 70px;
+}
+.body-container .sign-up-form button::-webkit-input-placeholder,
+.body-container .sign-up-form input::-webkit-input-placeholder,
+.body-container .sign-up-form textarea::-webkit-input-placeholder,
+.body-container .sign-up-form .bfh-selectbox-toggle::-webkit-input-placeholder,
+.body-container .sign-up-form button::-moz-placeholder,
+.body-container .sign-up-form input::-moz-placeholder,
+.body-container .sign-up-form textarea::-moz-placeholder,
+.body-container .sign-up-form .bfh-selectbox-toggle::-moz-placeholder,
+.body-container .sign-up-form button::-ms-input-placeholder,
+.body-container .sign-up-form input::-ms-input-placeholder,
+.body-container .sign-up-form textarea::-ms-input-placeholder,
+.body-container .sign-up-form .bfh-selectbox-toggle::-ms-input-placeholder {
+  color: #cccccc;
+}
+.body-container .sign-up-form button:active,
+.body-container .sign-up-form input:active,
+.body-container .sign-up-form textarea:active,
+.body-container .sign-up-form .bfh-selectbox-toggle:active,
+.body-container .sign-up-form button:focus,
+.body-container .sign-up-form input:focus,
+.body-container .sign-up-form textarea:focus,
+.body-container .sign-up-form .bfh-selectbox-toggle:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px #d7b166 solid;
+}
 /*# sourceMappingURL=/styles/main.css.map */

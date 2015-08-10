@@ -16,16 +16,15 @@
     <link rel="stylesheet" href="bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css"/>
     <link rel="stylesheet" href="bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"/>
     <link rel="stylesheet" href="bower_components/bootstrap-form-helpers/dist/css/bootstrap-formhelpers.min.css"/>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/main-page.css">
+    <link rel="stylesheet" href="styles/sign-up-now.css">
 
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body class="sign-up-now form">
-  <div class="bg-container"><div class="body-container">
-    <header class="home">
+  <div class="bg-container" .mob-nav-toggle-button><div class="body-container">
+    <header class="sign-up">
       <div class="btn-mobile-top-nav mob-nav-toggle-button mobile-only collapsed" data-toggle="collapse" data-target=".top-nav" aria-expanded="false"></div>
       <div class="company-name">
         KOL.
@@ -36,59 +35,48 @@
       <p class="company-meaning">
         /’keɪ oʊ ‘ɛl/ noun [C] abbr: trendsetters whose actions, attitudes, and pronouncements exert influence on those of others.
       </p>
+      <p class="page-title">
+        KOL PROFILE
+      </p>
+      <p class="page-description">
+        Take this quiz to create your KOL listing.
+      </p>
+      <hr>
     </header>
     <div class="top-nav">
       <ul>
-        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="kol.html">How It Works</a></li>
-        <li><a href="sign-up-now.html">Sign Up Now</a></li>
+        <li class="active"><a href="sign-up-now.html">Sign Up Now</a></li>
       </ul>
     </div>
 
     <div class="container-fluid">
       <div class="container my-container">
+        <section class="step-count">
+          <ul>
+            <li>
+              <a href="#step-1" aria-controls="home" role="tab" data-toggle="tab" class="js-step-1-nav active">
+                <div class="ball">1</div>
+                <div class="title">General Information</div>
+              </a>
+            </li>
 
-        <section class="header text-center">
-          <h1 class="font-didot">KOL PROFILE</h1>
-          <div class="sub-title"><em>Take this quiz to create your KOL listing.</em></div>
-          <hr class="header-bar">
+            <li class="x-active">
+              <a href="#step-2" aria-controls="step-2" role="tab" data-toggle="tab" class="disable js-step-2-nav">
+                <div class="ball">2</div>
+                <div class="title">Behavioral Information</div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#step-3" aria-controls="step-3" role="tab" data-toggle="tab" class="disable js-step-3-nav">
+                <div class="ball">3</div>
+                <div class="title">Contact Details</div>
+              </a>
+            </li>
+          </ul>
         </section>
-
-        <section class="tab-container">
-          <div role="tabpanel" >
-
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs text-center" role="tablist">
-              <li role="presentation center-block">
-                <a href="#step-1" aria-controls="home" role="tab" data-toggle="tab" class="js-step-1-nav active">
-                  <div class="ball">
-                    <span>1</span>
-                  </div>
-                  <div class="title font-brown"><em>General Information</em></div>
-                </a>
-              </li>
-
-              <li role="presentation center-block" class="x-active">
-                <a href="#step-2" aria-controls="step-2" role="tab" data-toggle="tab" class="disable js-step-2-nav">
-                  <div class="ball ">
-                    <span>2</span>
-                    <!-- <hr class="step-2-bar step-bar absolute"> -->
-                  </div>
-                  <div class="title font-brown"><em>Behavioral Information</em></div>
-                </a>
-              </li>
-
-              <li role="presentation center-block">
-                <a href="#step-3" aria-controls="step-3" role="tab" data-toggle="tab" class="disable js-step-3-nav">
-                  <div class="ball">
-                    <span>3</span>
-                    <!-- <hr class="step-3-bar step-bar absolute"> -->
-                  </div>
-                  <div class="title font-brown"><em>Contact Details</em></div>
-                </a>
-              </li>
-            </ul>
-
             <!-- Tab panes -->
             <form method="post" action="/profile" role="form" data-toggle="validator" class="sign-up-form">
               <div class="tab-content js-tab-content">
@@ -96,9 +84,8 @@
                   <article>
                     <div class="row">
                       <div class="col-lg-12">
-                        <span class="number font-brown"><strong>1 </strong></span>
-                        <span class="img img-question-stick"></span>
-                        <span class="question"><em>What is your name? (We will only show your first name on your profile page)</em></span>
+                        <span class="number">1</span>
+                        <span class="question">What is your name? (We will only show your first name on your profile page)</span>
                       </div>
                     </div>
                     <div class="row">
@@ -154,9 +141,9 @@
                   <article>
                     <div class="row">
                       <div class="col-lg-12">
-                        <span class="number font-brown"><strong>4 </strong></span>
+                        <span class="number font-brown">4</span>
                         <span class="img img-question-stick"></span>
-                        <span class="question"><em>Where do you live?</em></span>
+                        <span class="question">Where do you live?<</span>
                       </div>
                     </div>
                     <div class="row">
@@ -723,10 +710,40 @@
       </div> <!-- .container -->
     </div><!-- .container-fluid -->
 
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
+
+
+
+    <footer class="scrollflow -opacity">
+      <div class="section-bar footer center-block"></div>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="content text-center protection-of-privacy"><em>As consumers ourselves who are fanatical about protection of privacy, KOL will never share your personal data, unless you yourself choose to do so with our brand partners.</em></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+          <div class="content text-center"><em>Stay up to date with us at</em></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <div class="text-center">
+            <a href="#"><div class="social facebook"></div></a>
+            <a href="#"><div class="social instagram"></div></a>
+            <a href="#"><div class="social youtube"></div></a>
+            <a href="#"><div class="social pintest"></div></a>
+            <a href="#"><div class="social twitter"></div></a>
+            <a href="#"><div class="social blogger"></div></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div></div>
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
         <!-- build:js scripts/main.js -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
