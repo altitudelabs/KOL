@@ -45,8 +45,9 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 @brown: #B8984B;
 
 body {
-  background: @black;
-
+  border: 12px solid @black; 
+  background-image: url("../images/background-kol.jpg");
+  background-position: center -60px;
   .responsive-mobile({
     padding: 12px;
   });
@@ -98,7 +99,7 @@ body {
   }
 }
 
-header.home {
+header {
   position:relative;
   border-bottom: 1px @gray solid;
   padding: 45px 0 27px 0;

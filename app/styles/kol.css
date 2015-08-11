@@ -5883,7 +5883,9 @@ h6,
   }
 }
 body {
-  background: #171717;
+  border: 12px solid #171717;
+  background-image: url("../images/background-kol.jpg");
+  background-position: center -60px;
 }
 @media (max-width: 760px) {
   body {
@@ -5950,18 +5952,18 @@ body footer a .social.blogger {
   background-position-x: 32px;
   background: url(../images/split-social-media.png) no-repeat -317px 0px;
 }
-header.home {
+header {
   position: relative;
   border-bottom: 1px #cccccc solid;
   padding: 45px 0 27px 0;
 }
 @media (max-width: 760px) {
-  header.home {
+  header {
     padding: 7px 0 0 0;
     margin-bottom: 9px;
   }
 }
-header.home .btn-mobile-top-nav {
+header .btn-mobile-top-nav {
   display: none;
   top: 0;
   left: 0;
@@ -5971,15 +5973,15 @@ header.home .btn-mobile-top-nav {
   background-size: cover;
   cursor: pointer;
 }
-header.home .btn-mobile-top-nav.active {
+header .btn-mobile-top-nav.active {
   background-image: url("../images/icons/menu-close.png");
 }
 @media (max-width: 760px) {
-  header.home .btn-mobile-top-nav {
+  header .btn-mobile-top-nav {
     display: block;
   }
 }
-header.home .company-name {
+header .company-name {
   color: #171717;
   width: 100%;
   text-align: center;
@@ -5990,11 +5992,11 @@ header.home .company-name {
   letter-spacing: -0.02em;
 }
 @media (max-width: 760px) {
-  header.home .company-name {
+  header .company-name {
     margin: 20px 0 5px 0;
   }
 }
-header.home .company-description {
+header .company-description {
   color: #171717;
   width: 100%;
   text-align: center;
@@ -6004,11 +6006,11 @@ header.home .company-description {
   font-family: "baskerville";
 }
 @media (max-width: 760px) {
-  header.home .company-description {
+  header .company-description {
     margin-bottom: 22px;
   }
 }
-header.home .company-meaning {
+header .company-meaning {
   color: #171717;
   width: 100%;
   text-align: center;
@@ -6018,7 +6020,7 @@ header.home .company-meaning {
   font-size: 15px;
 }
 @media (max-width: 760px) {
-  header.home .company-meaning {
+  header .company-meaning {
     display: none;
   }
 }
