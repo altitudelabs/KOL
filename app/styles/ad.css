@@ -6245,4 +6245,114 @@ body footer .content em {
   line-height: 23px;
   margin-top: 50px;
 }
+@media (max-width: 760px) {
+  body.advertisers.tutorial {
+    border-top: 12px solid #171717;
+  }
+}
+@media (max-width: 760px) {
+  body.advertisers.tutorial section .content-wrapper ul {
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: 0;
+  }
+  body.advertisers.tutorial section .content-wrapper ul li {
+    font-size: 19px;
+    margin-left: 0;
+  }
+  body.advertisers.tutorial section .content-wrapper ul li:before {
+    left: auto;
+    top: auto;
+    margin-left: -27px;
+    margin-top: 2px;
+  }
+}
+body.advertisers.tutorial section.main-content.advertisers button {
+  padding: 0 105px;
+}
+@media (max-width: 760px) {
+  body.advertisers.tutorial section.main-content.advertisers button {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 760px) {
+  body.advertisers.tutorial section.main-content.advertisers {
+    margin-top: 0;
+    padding: 0;
+  }
+  body.advertisers.tutorial section.main-content.advertisers .left.float-left {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  body.advertisers.tutorial section.main-content.advertisers h2 {
+    font-size: 42px;
+    letter-spacing: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 27px;
+  }
+  body.advertisers.tutorial section.main-content.advertisers .text-bar {
+    margin-top: 15px;
+  }
+  body.advertisers.tutorial section.main-content.advertisers .content {
+    margin-top: 15px;
+  }
+  body.advertisers.tutorial section.main-content.advertisers .image-pannel {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  body.advertisers.tutorial section.how-it-works {
+    padding: 0;
+  }
+  body.advertisers.tutorial section.how-it-works .section-bar {
+    display: none;
+  }
+  body.advertisers.tutorial section.how-it-works h2 {
+    font-size: 66px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+    line-height: 61px;
+  }
+  body.advertisers.tutorial section.how-it-works .float-right,
+  body.advertisers.tutorial section.how-it-works .float-left {
+    float: none;
+  }
+  body.advertisers.tutorial section.how-it-works section.step {
+    padding: 0;
+  }
+  body.advertisers.tutorial section.how-it-works section.step .img-wrapper {
+    width: 100%;
+    margin-top: 0;
+    width: 90%;
+    height: 213px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  body.advertisers.tutorial section.how-it-works section.step .img-wrapper .background-contain-image {
+    width: 100%;
+  }
+  body.advertisers.tutorial section.how-it-works section.step .content-wrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body.advertisers.tutorial section.how-it-works section.step .content-wrapper .text-bar {
+    margin-top: -10px;
+  }
+  body.advertisers.tutorial section.how-it-works section.step .content-wrapper .text-bar span {
+    margin: 0;
+  }
+  body.advertisers.tutorial section.how-it-works section.step .content-wrapper .content {
+    font-size: 20px;
+  }
+}
 /*# sourceMappingURL=/styles/main.css.map */

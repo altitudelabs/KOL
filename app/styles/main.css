@@ -2,7 +2,7 @@
 .one-third {
   width: 33%;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   .one-third {
     width: 100%;
   }
@@ -10,7 +10,7 @@
 .half {
   width: 50%;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   .half {
     width: 100%;
   }
@@ -29,12 +29,12 @@ button:visited {
   outline: none!important;
   border: none!important;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
     width: 100%;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   .bootstrap-select.big button {
     width: 100% !important;
   }
@@ -47,13 +47,13 @@ button:visited {
   margin-right: 0px;
   margin-top: 10px;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   .bfh-selectbox .bfh-selectbox-toggle .selectbox-caret,
   .bootstrap-select.btn-group .dropdown-toggle .caret {
     margin-top: 0px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   .bfh-selectbox .bfh-selectbox-toggle .selectbox-caret {
     position: absolute;
     top: 10px;
@@ -5998,17 +5998,17 @@ body {
   overflow-x: hidden;
   min-height: 100%;
 }
-@media (min-width: 851px) {
+@media (min-width: 761px) {
   .mobile-only {
     display: none;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   .desktop-only {
     display: none;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   .form-group {
     width: 100%;
   }
@@ -6113,7 +6113,7 @@ body {
   margin-top: 10px;
   width: 100%;
 }
-@media (min-width: 851px) {
+@media (min-width: 761px) {
   .bootstrap-select {
     width: auto!important;
   }
@@ -6167,7 +6167,7 @@ body {
 .bootstrap-select.big li > a {
   width: 400px;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   .bootstrap-select.big li > a {
     width: 100%;
   }
@@ -6195,7 +6195,7 @@ body {
   height: 70px;
   border-radius: 0px;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   .bfh-selectbox > a {
     width: 100%;
   }
@@ -6288,7 +6288,7 @@ body {
   font-style: italic;
   font-size: 18px;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   .with-errors {
     margin-top: 1px;
   }
@@ -6653,7 +6653,7 @@ body.home .container-fluid section.select-my-role .text-bar {
   max-width: 90px;
   position: relative;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.home .container-fluid section.select-my-role .text-bar {
     margin: 10px auto 0 auto;
   }
@@ -6675,7 +6675,7 @@ body.home .container-fluid section.select-my-role .tip.link a {
 body.home .container-fluid section.select-my-role .tip.link a:hover {
   text-decoration: none;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.home .container-fluid section.select-my-role .description {
     margin: 20px 0;
   }
@@ -6693,12 +6693,12 @@ body.home .container-fluid section.select-my-role .description.right {
 body.home .container-fluid section.select-my-role .description.right .text-bar {
   left: 100px;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.home .container-fluid section.select-my-role .description.right .text-bar {
     left: 0px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.home .container-fluid section.select-my-role .description.left,
   body.home .container-fluid section.select-my-role .description.right {
     position: relative;
@@ -6716,7 +6716,7 @@ body.home .container-fluid section.content div.title-bar {
   position: relative;
   top: 40px;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.home .container-fluid section.content div.title-bar {
     position: absolute;
     top: 60px;
@@ -6727,7 +6727,7 @@ body.home .container-fluid section.content h2 {
   margin-left: 10px;
   position: relative;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.home .container-fluid section.content h2 {
     margin-left: 0px;
     float: none !important;
@@ -6742,7 +6742,7 @@ body.home .container-fluid section.content div.content-wrapper {
   position: absolute;
   max-width: 440px;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.home .container-fluid section.content div.content-wrapper {
     position: relative;
   }
@@ -6752,7 +6752,7 @@ body.home .container-fluid section.content div.content-wrapper.right {
   left: 430px;
   margin-right: 80px;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.home .container-fluid section.content div.content-wrapper.right {
     top: 0;
     left: 0;
@@ -6788,7 +6788,7 @@ body.home .container-fluid section.content div.content-wrapper button {
   min-height: 60px;
   position: relative;
 }
-@media (min-width: 851px) {
+@media (min-width: 761px) {
   body.home .container-fluid section.content div.content-wrapper button {
     min-width: 220px;
   }
@@ -6798,12 +6798,12 @@ body.home .container-fluid section.content div.content-wrapper button.right {
   margin-right: 25px;
   right: -82px;
 }
-@media (min-width: 851px) {
+@media (min-width: 761px) {
   body.home .container-fluid section.content div.content-wrapper button.right {
     float: right !important;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.home .container-fluid section.content div.content-wrapper button.right {
     right: 0px;
   }
@@ -6818,7 +6818,7 @@ body.home .container-fluid section.content.advertisers div.content-wrapper.left 
   top: 170px;
   left: 70px;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.home .container-fluid section.content.advertisers div.content-wrapper.left {
     top: 0px;
     left: 0px;
@@ -6829,12 +6829,12 @@ body.home .container-fluid section.content.advertisers button.left {
   left: -45px;
   position: relative;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.home .container-fluid section.content.advertisers button.left {
     left: 0px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.home .select-my-role,
   body.home .key-opinion-leaders,
   body.home section.content.advertisers {
@@ -6870,7 +6870,7 @@ body.tutorial section.main-content .text-bar {
   margin-top: 30px;
 }
 body.tutorial section.main-content .content {
-  max-width: 400px;
+  max-width: 410px;
   margin: auto;
   font-size: 15px;
   line-height: 25px;
@@ -6968,11 +6968,17 @@ body.tutorial.advertisers section ul {
   padding-left: 0px;
 }
 body.tutorial.advertisers section ul li {
+  position: relative;
   margin-top: 10px;
   font-size: 17px;
-  padding-left: 40px;
-  background: url("../images/img-bullet.png") no-repeat 10px 5px;
   line-height: 30px;
+  margin-left: 40px;
+}
+body.tutorial.advertisers section ul li:before {
+  content: url("../images/img-bullet.png");
+  position: absolute;
+  left: -34px;
+  top: 3px;
 }
 body.tutorial.advertisers section.advertisers .left,
 body.tutorial.advertisers section.advertisers .right {
@@ -7049,7 +7055,7 @@ body.sign-up-now .my-container section.header h1 {
   font-size: 110px;
   margin-top: 80px;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.sign-up-now .my-container section.header h1 {
     font-size: 60px;
   }
@@ -7117,7 +7123,7 @@ body.sign-up-now .my-container section.tab-container ul.nav-tabs li a .ball .ste
   width: 145px;
   z-index: -1;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.sign-up-now .my-container section.tab-container ul.nav-tabs li a .ball .step-bar {
     display: none;
   }
@@ -7160,13 +7166,13 @@ body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane a
 body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane article .input-wrapper > *:not(:first-child).radio {
   margin-left: 30px;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane article .input-wrapper > *:not(:first-child).radio {
     padding-left: 0px;
     width: auto;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane article .input-wrapper > *:not(:first-child) {
     padding-left: 0px;
     width: 100%;
@@ -7175,7 +7181,7 @@ body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane a
 body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane article .input-wrapper .input-wrapper-inner {
   display: inline-block;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane article .input-wrapper .input-wrapper-inner {
     width: 100%;
   }
@@ -7221,7 +7227,7 @@ body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane a
   background-color: #b8984b;
   border: none;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane article .bootstrap-tagsinput ~ button.apply {
     right: 15px;
   }
@@ -7262,12 +7268,12 @@ body.sign-up-now .my-container button.continue.back-to-home {
   margin-top: 35px;
   margin-bottom: 260px;
 }
-@media (max-width: 850px) {
+@media (max-width: 760px) {
   #step-2.tab-pane article .input-wrapper > *:not(:first-child) {
     width: auto !important;
   }
 }
-@media (min-width: 851px) {
+@media (min-width: 761px) {
   #step-2.tab-pane article .input-wrapper > *:first-child {
     margin-left: 25px;
   }

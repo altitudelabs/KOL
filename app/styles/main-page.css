@@ -5886,6 +5886,7 @@ body {
   border: 12px solid #171717;
   background-image: url("../images/background-kol.jpg");
   background-position: center -60px;
+  background-size: cover;
 }
 @media (max-width: 760px) {
   body {
@@ -6087,7 +6088,7 @@ header .company-meaning {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 95px;
   margin: 0 auto;
   /* Start header.home */
   /* End header.home */
@@ -6100,9 +6101,9 @@ header .company-meaning {
   /* Start section.advertisers */
   /* End section.advertisers */
 }
-@media (min-width: 761px) {
+@media (max-width: 1024px) {
   .body-container {
-    padding: 0 95px;
+    padding: 0 15px;
   }
 }
 @media (max-width: 760px) {

@@ -127,7 +127,9 @@ module.exports = function (grunt) {
           '<%= yeoman.app %>/styles/main.css': ['<%= yeoman.app %>/styles/main.less'],
           '<%= yeoman.app %>/styles/main-page.css': ['<%= yeoman.app %>/styles/main-page.less'],
           '<%= yeoman.app %>/styles/sign-up-now.css': ['<%= yeoman.app %>/styles/sign-up-now.less'],
-          '<%= yeoman.app %>/styles/kol.css': ['<%= yeoman.app %>/styles/kol.less']
+          '<%= yeoman.app %>/styles/kol.css': ['<%= yeoman.app %>/styles/kol.less'],
+          '<%= yeoman.app %>/styles/ad.css': ['<%= yeoman.app %>/styles/ad.less']
+
         },
         options: {
           sourceMap: true,
