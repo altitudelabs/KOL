@@ -1,28 +1,64 @@
 @import "main.less";
 @import "common.less";
 
-section.header.text-center {
-  .responsive-mobile({
-    display: none;
-  });
+.navbar {
+  margin-top: -12px;
 }
 body.sign-up-now {
   .my-container {
+    a button.continue.back-to-home {
+      .responsive-mobile({
+        margin: 35px auto 82px auto;
+      });
+    }
+    section.header.text-center {
+      .responsive-mobile({
+        margin-top: 15px;
+        h1 {
+          margin-top: 0;
+        }
+        hr.header-bar {
+          margin: 25px auto 0 auto; 
+        }
+      });
+    }
     section.tab-container {
       .responsive-mobile({
-        margin-top: 0;
+        margin: 0;
       });
       article {
         .col-lg-12, .col-lg-6 {
+          display: inline-block;
+          position: relative;
+          width: 100%;
           .responsive-mobile({
             padding-left: 9px;
             padding-right: 9px;
+            width: 100%;
           });
         }
-        .radio {
+        .responsive-mobile({
+          .radio {
+              width: 50%;
+          }
+        });
+        .two-in-one-row {
+          display: block;
+          float: left;
+          width: 47%;
+          margin-left: 15px;
           .responsive-mobile({
-            width: 50%;
+            margin-left: 0;
+            padding-left: 9px;
+            padding-right: 9px;
+            width: 100%;
           });
+          &:not(:first-of-type) {
+            padding-left:10px;
+          }
+          .dropdown-toggle {
+            padding-left: 0;
+          }
         }
       }
       ul.nav-tabs {
@@ -78,6 +114,7 @@ body.sign-up-now {
           });
           .help-block {
             margin-top: 0;
+            padding-left: 20px;
             .responsive-mobile({
               position: relative;
               margin-bottom: 0;
@@ -95,6 +132,13 @@ body.sign-up-now {
           }
         }
         article {
+          input {
+            padding: 0;
+            text-indent: 18px;
+            &:not(:first-child) {
+              margin-left: 0;
+            }
+          }
           .sub-question {
             margin-top: 0!important;
           }
@@ -108,6 +152,58 @@ body.sign-up-now {
               display: none;
             });
           } 
+          .input-wrapper.tag-form-group {
+            padding-left: 130px;
+            margin-left: -130px;
+            float: left;
+            width: 100%;
+            .responsive-mobile({
+              margin-left: 0;
+              padding-left: 0;
+            });
+          }
+          .input-wrapper.textarea {
+            padding-right: 9px;
+            .responsive-mobile({
+              padding-right: 0;
+            });
+          }
+          .first-name {
+            padding-right: 12.5px;
+            .responsive-mobile({
+              padding: 0;
+            });
+          }
+          .input-wrapper > .last-name{
+            padding-left: 12.5px;
+            padding-right: 8.5px;
+            .responsive-mobile({
+              padding: 0;
+            });
+          }
+          .tag-input-btn-container {
+            display: inline-block;
+            position: absolute;
+            height: 100%;
+            padding-bottom: 25px;
+            .responsive-mobile({
+              padding-bottom: 0;
+              position: relative;
+              margin-top: -15px;
+              height: auto;
+            });
+          }
+          .tag-apply {
+            float: left;
+            width: 130px;
+            margin-top: 10px;
+            min-height: 70px;
+            height: 100%;
+            background: @gold;
+            .responsive-mobile({
+              margin-top: 0;
+            });
+          }
           .input-wrapper > *:not(:first-child).radio, .input-wrapper > *:first-child.radio{
             .responsive-mobile({
               width: 49%;
@@ -115,7 +211,13 @@ body.sign-up-now {
             });  
           }
           .input-wrapper > *:not(:first-child).radio{
-            margin-left: 0;
+            margin-left: 18px;
+            .responsive-mobile({
+              margin-left: 0;
+            });
+          }
+          .radio label, .checkbox label {
+            padding-left: 0px;
           }
           span.number strong{
             .responsive-mobile({
@@ -150,6 +252,7 @@ body.sign-up-now {
   }
   .bfh-selectbox-toggle {
     background: transparent;
+    padding-left: 19px;
   }
   .bootstrap-select {
     .responsive-mobile({
@@ -157,14 +260,17 @@ body.sign-up-now {
     });
   }
   .bfh-selectbox.open>.bfh-selectbox-options {
+    width: 100%;
     .responsive-mobile({
       display: block;
       width: 100%;
+      li {
+        height: 60px;  
+      }
     });
-    li {
-      .responsive-mobile({
-        height: 60px;
-      });
+    ul li > a{
+      line-height: 64px;
+      min-height: 70px;
     }
   }
   #step-2.tab-pane article .input-wrapper > *:not(:first-child) {      
@@ -200,11 +306,20 @@ body.sign-up-now {
       top: 3px;
     });
   }
+  input[type="checkbox"]:focus + label::before {
+    outline: none;
+    box-shadow: none;
+  }
   .checkbox input[type="checkbox"]:checked + label::after,.radio-info input[type="radio"]:checked + label::after {  
     top: 0;  
     .responsive-mobile({
       top: 3px;
     });
+  }
+  .form-group .bootstrap-select.btn-group.open {
+    button.btn.dropdown-toggle.btn-default {
+      border-color: @gold!important;
+    }
   }
   .bootstrap-tagsinput, textarea {
     border-radius: 0;
@@ -213,13 +328,20 @@ body.sign-up-now {
     font-size: 22.2px;
     font-style: italic;
     font-weight: normal;
-    &:focus, &:active {
-      box-shadow: none;
-
-    }
+    padding-left: 18px;
+    padding-right: 18px;
   }
   textarea {
-    padding: 10px;
+    padding: 10px 20px;
+    outline: none;
+    &:focus {
+      border: 1px @gold solid;
+    }
   }
-
+  .bootstrap-select.big button {
+      width: 100%;
+  }
+  .bootstrap-select {
+    width: 100%!important;
+  }
 }

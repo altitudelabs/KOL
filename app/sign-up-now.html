@@ -67,7 +67,7 @@
     <div class="container-fluid">
       <div class="container my-container">
 
-        <section class="header text-center">
+        <section class="header text-center desktop-only">
           <h1 class="font-didot">KOL PROFILE</h1>
           <div class="sub-title"><em>Take this quiz to create your KOL listing.</em></div>
           <hr class="header-bar">
@@ -78,7 +78,7 @@
 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs text-center" role="tablist">
-              <li role="presentation center-block">
+              <li role="presentation center-block" class="active">
                 <a href="#step-1" aria-controls="home" role="tab" data-toggle="tab" class="js-step-1-nav active">
                   <div class="ball">
                     <span>1</span>
@@ -110,6 +110,7 @@
             <!-- Tab panes -->
             <form method="post" action="/profile" role="form" data-toggle="validator" class="sign-up-form">
               <div class="tab-content js-tab-content">
+
                 <div role="tabpanel" class="tab-pane js-step-1 active" id="step-1">
                   <article>
                     <div class="row">
@@ -122,11 +123,11 @@
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="input-wrapper">
-                          <div class="form-group inline-block pull-left half">
+                          <div class="form-group inline-block pull-left half first-name">
                             <input name="first-name" type="text" class="full" placeholder="First name" autocomplete="off" data-error="First name is required" required>
                             <div class="help-block with-errors"></div>
                           </div>
-                          <div class="form-group inline-block pull-left half">
+                          <div class="form-group inline-block pull-left half last-name">
                             <input name="last-name" type="text" class="full" placeholder="Last name"  autocomplete="off"  data-error="Last name is required" required>
                             <div class="help-block with-errors"></div>
                           </div>
@@ -137,7 +138,7 @@
 
                   <article>
                     <div class="row">
-                      <div class="col-lg-6">
+                      <div class="two-in-one-row">
                         <div>
                           <span class="number font-brown"><strong>2 </strong></span>
                           <span class="img img-question-stick"></span>
@@ -150,7 +151,7 @@
                         </div>
                       </div>
 
-                      <div class="col-lg-6">
+                      <div class="two-in-one-row">
                         <div>
                           <span class="number font-brown"><strong>3 </strong></span>
                           <span class="img img-question-stick"></span>
@@ -225,15 +226,15 @@
 
                   <article>
                     <div class="row">
-                      <div class="col-lg-12">
+                      <div class="col-lg-6 ">
                         <span class="number font-brown"><strong>5 </strong></span>
                         <span class="img img-question-stick"></span>
                         <span class="question"><em>What is your profession?</em></span>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-lg-12">
-                        <div class="input-wrapper form-group">
+                      <div class="col-lg-6">
+                        <div class="input-wrapper form-group textarea">
                           <input name="profession" type="text" class="full js-validate"  autocomplete="off" placeholder="Profession" data-error="Please input your profession" required>
                           <div class="help-block with-errors"></div>
                         </div>
@@ -639,13 +640,15 @@
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
-                        <div class="input-wrapper form-group">
+                        <div class="input-wrapper form-group tag-form-group">
                           <input name="brands" type="text" data-role="tagsinput" class="hashtag"  autocomplete="off" data-error="Please input your favorite brands" required >
 
                           <div class="help-block with-errors"></div>
                           <!-- <button type="button" class="apply absolute">Apply</button> -->
                         </div>
-                      </div>
+                        <div class="tag-input-btn-container">
+                          <button class="tag-apply">Apply</button>
+                        </div>                      </div>
                     </div>
                   </article>
 
@@ -659,10 +662,13 @@
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
-                        <div class="input-wrapper form-group">
-                          <input type="text" name="venues" data-role="tagsinput" class="hashtag" autocomplete="off" data-error="Please input brands name" required>
-                          <div class="help-block with-errors"></div>
-                          <!-- <button type="button" class="apply absolute">Apply</button> -->
+                        <div class="input-wrapper form-group tag-form-group">
+                            <input type="text" name="venues" data-role="tagsinput" class="hashtag" autocomplete="off" data-error="Please input brands name" required>
+                            <div class="help-block with-errors"></div>
+                            <!-- <button type="button" class="apply absolute">Apply</button> -->
+                          </div>
+                        <div class="tag-input-btn-container">
+                          <button class="tag-apply">Apply</button>
                         </div>
                       </div>
                     </div>
@@ -678,10 +684,13 @@
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
-                        <div class="input-wrapper form-group">
-                         <input type="text" name="activities" data-role="tagsinput" class="hashtag"  autocomplete="off" data-error="Please input activities or hobbies." required>
-                         <div class="help-block with-errors"></div>
-                         <!-- <button type="button" class="apply absolute">Apply</button> -->
+                          <div class="input-wrapper form-group tag-form-group">
+                           <input type="text" name="activities" data-role="tagsinput" class="hashtag"  autocomplete="off" data-error="Please input activities or hobbies." required>
+                           <div class="help-block with-errors"></div>
+                           <!-- <button type="button" class="apply absolute">Apply</button> -->
+                          </div>
+                        <div class="tag-input-btn-container">
+                          <button class="tag-apply">Apply</button>
                         </div>
                       </div>
                     </div>
@@ -741,6 +750,7 @@
                     <span>Submit</span>
                   </button>
                 </div>
+
               </div>
             </form>
 
