@@ -25,6 +25,7 @@
     <!-- endbuild -->
   </head>
   <body class="sign-up-now form">
+    <header class="home mobile-only">
       <div class="btn-mobile-top-nav mob-nav-toggle-button mobile-only collapsed" data-toggle="collapse" data-target=".top-nav" aria-expanded="false"></div>
       <div class="company-name">
         KOL.
@@ -43,6 +44,7 @@
         <li><a href="sign-up-now.html">Sign Up Now</a></li>
       </ul>
     </div>
+
     <nav class="navbar stick navbar-default desktop-only">
       <div class="container-fluid">
         <div class="container">
@@ -67,7 +69,7 @@
     <div class="container-fluid">
       <div class="container my-container">
 
-        <section class="header text-center desktop-only">
+        <section class="header text-center">
           <h1 class="font-didot">KOL PROFILE</h1>
           <div class="sub-title"><em>Take this quiz to create your KOL listing.</em></div>
           <hr class="header-bar">
@@ -78,7 +80,7 @@
 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs text-center" role="tablist">
-              <li role="presentation center-block" class="active">
+              <li role="presentation center-block">
                 <a href="#step-1" aria-controls="home" role="tab" data-toggle="tab" class="js-step-1-nav active">
                   <div class="ball">
                     <span>1</span>
@@ -110,7 +112,6 @@
             <!-- Tab panes -->
             <form method="post" action="/profile" role="form" data-toggle="validator" class="sign-up-form">
               <div class="tab-content js-tab-content">
-
                 <div role="tabpanel" class="tab-pane js-step-1 active" id="step-1">
                   <article>
                     <div class="row">
@@ -123,11 +124,11 @@
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="input-wrapper">
-                          <div class="form-group inline-block pull-left half first-name">
+                          <div class="form-group inline-block pull-left half">
                             <input name="first-name" type="text" class="full" placeholder="First name" autocomplete="off" data-error="First name is required" required>
                             <div class="help-block with-errors"></div>
                           </div>
-                          <div class="form-group inline-block pull-left half last-name">
+                          <div class="form-group inline-block pull-left half">
                             <input name="last-name" type="text" class="full" placeholder="Last name"  autocomplete="off"  data-error="Last name is required" required>
                             <div class="help-block with-errors"></div>
                           </div>
@@ -138,7 +139,7 @@
 
                   <article>
                     <div class="row">
-                      <div class="two-in-one-row">
+                      <div class="col-lg-6">
                         <div>
                           <span class="number font-brown"><strong>2 </strong></span>
                           <span class="img img-question-stick"></span>
@@ -146,12 +147,12 @@
                         </div>
 
                         <div class="form-group">
-                          <input name="age" type="text" class="full" autocomplete="off" pattern="^[0-9]*[1-9][0-9]*$"  data-error="Age is required (Numbers only)" placeholder="Age" required>
+                          <input name="age" type="text" class="full" autocomplete="off" pattern="^[0-9]*[1-9][0-9]*$"  data-error="Numbers only" placeholder="Age"  required>
                            <span class="help-block with-errors"></span>
                         </div>
                       </div>
 
-                      <div class="two-in-one-row">
+                      <div class="col-lg-6">
                         <div>
                           <span class="number font-brown"><strong>3 </strong></span>
                           <span class="img img-question-stick"></span>
@@ -226,15 +227,15 @@
 
                   <article>
                     <div class="row">
-                      <div class="col-lg-6 ">
+                      <div class="col-lg-12">
                         <span class="number font-brown"><strong>5 </strong></span>
                         <span class="img img-question-stick"></span>
                         <span class="question"><em>What is your profession?</em></span>
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-lg-6">
-                        <div class="input-wrapper form-group textarea">
+                      <div class="col-lg-12">
+                        <div class="input-wrapper form-group">
                           <input name="profession" type="text" class="full js-validate"  autocomplete="off" placeholder="Profession" data-error="Please input your profession" required>
                           <div class="help-block with-errors"></div>
                         </div>
@@ -303,7 +304,7 @@
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
-                        <div class="input-wrapper" id="js-social-checkbox">
+                        <div class="input-wrapper">
                           <div class="checkbox">
                             <input type="checkbox" id="checkbox-facebook" name="facebook-checkbox" data-name="facebook" class="js-social">
                             <label for="checkbox-facebook">
@@ -354,9 +355,8 @@
                           </div>
 
                       </div>
-                      <div class="help-block with-errors"></div>
                   </article>
-                  <article class="sub-question js-sub-question title">
+                  <article class="sub-question js-sub-question">
                     <div class="row">
                       <div class="col-lg-12">
                         <span class="number font-brown"><strong>1.1 </strong></span>
@@ -398,7 +398,6 @@
                             <input type="radio" id="facebook-radio-5" value="3000 +" name="facebook">
                             <label for="facebook-radio-5"><em>3000 +</em></label>
                           </div>
-                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -437,7 +436,6 @@
                             <input type="radio" id="twitter-radio-5" value="3000 +" name="twitter">
                             <label for="twitter-radio-5"><em>3000 +</em></label>
                           </div>
-                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -476,7 +474,6 @@
                             <input type="radio" id="pinterest-radio-5" value="3000 +" name="pinterest">
                             <label for="pinterest-radio-5"><em>3000 +</em></label>
                           </div>
-                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -515,7 +512,6 @@
                             <input type="radio" id="instagram-radio-5" value="3000 +" name="instagram">
                             <label for="instagram-radio-5"><em>3000 +</em></label>
                           </div>
-                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -554,7 +550,6 @@
                             <input type="radio" id="youtube-radio-5" value="3000 +" name="youtube">
                             <label for="youtube-radio-5"><em>3000 +</em></label>
                           </div>
-                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -593,7 +588,6 @@
                             <input type="radio" id="wechat-radio-5" value="3000 +" name="wechat">
                             <label for="wechat-radio-5"><em>3000 +</em></label>
                           </div>
-                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -632,7 +626,6 @@
                             <input type="radio" id="weibo-radio-5" value="3000 +" name="weibo">
                             <label for="weibo-radio-5"><em>3000 +</em></label>
                           </div>
-                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -648,14 +641,12 @@
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
-                        <div class="input-wrapper form-group tag-form-group">
+                        <div class="input-wrapper form-group">
                           <input name="brands" type="text" data-role="tagsinput" class="hashtag"  autocomplete="off" data-error="Please input your favorite brands" required >
+
+                          <div class="help-block with-errors"></div>
                           <!-- <button type="button" class="apply absolute">Apply</button> -->
                         </div>
-                        <div class="help-block with-errors tag-errors"></div>
-                        <div class="tag-input-btn-container">
-                          <button class="tag-apply">Apply</button>
-                        </div> 
                       </div>
                     </div>
                   </article>
@@ -670,13 +661,10 @@
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
-                        <div class="input-wrapper form-group tag-form-group">
-                            <input type="text" name="venues" data-role="tagsinput" class="hashtag" autocomplete="off" data-error="Please input brands name" required>                        
-                            <!-- <button type="button" class="apply absolute">Apply</button> -->
-                        </div>
-                        <div class="help-block with-errors tag-errors"></div>
-                        <div class="tag-input-btn-container">
-                          <button class="tag-apply">Apply</button>
+                        <div class="input-wrapper form-group">
+                          <input type="text" name="venues" data-role="tagsinput" class="hashtag" autocomplete="off" data-error="Please input brands name" required>
+                          <div class="help-block with-errors"></div>
+                          <!-- <button type="button" class="apply absolute">Apply</button> -->
                         </div>
                       </div>
                     </div>
@@ -692,13 +680,10 @@
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
-                          <div class="input-wrapper form-group tag-form-group">
-                           <input type="text" name="activities" data-role="tagsinput" class="hashtag"  autocomplete="off" data-error="Please input activities or hobbies." required>
-                           <!-- <button type="button" class="apply absolute">Apply</button> -->
-                          </div>
-                        <div class="help-block with-errors tag-errors"></div>
-                        <div class="tag-input-btn-container">
-                          <button class="tag-apply">Apply</button>
+                        <div class="input-wrapper form-group">
+                         <input type="text" name="activities" data-role="tagsinput" class="hashtag"  autocomplete="off" data-error="Please input activities or hobbies." required>
+                         <div class="help-block with-errors"></div>
+                         <!-- <button type="button" class="apply absolute">Apply</button> -->
                         </div>
                       </div>
                     </div>
@@ -758,7 +743,6 @@
                     <span>Submit</span>
                   </button>
                 </div>
-
               </div>
             </form>
 
