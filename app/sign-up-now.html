@@ -146,7 +146,7 @@
                         </div>
 
                         <div class="form-group">
-                          <input name="age" type="text" class="full" autocomplete="off" pattern="^[0-9]*[1-9][0-9]*$"  data-error="Numbers only" placeholder="Age"  required>
+                          <input name="age" type="text" class="full" autocomplete="off" pattern="^[0-9]*[1-9][0-9]*$"  data-error="Age is required (Numbers only)" placeholder="Age" required>
                            <span class="help-block with-errors"></span>
                         </div>
                       </div>
@@ -303,7 +303,7 @@
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
-                        <div class="input-wrapper">
+                        <div class="input-wrapper" id="js-social-checkbox">
                           <div class="checkbox">
                             <input type="checkbox" id="checkbox-facebook" name="facebook-checkbox" data-name="facebook" class="js-social">
                             <label for="checkbox-facebook">
@@ -354,8 +354,9 @@
                           </div>
 
                       </div>
+                      <div class="help-block with-errors"></div>
                   </article>
-                  <article class="sub-question js-sub-question">
+                  <article class="sub-question js-sub-question title">
                     <div class="row">
                       <div class="col-lg-12">
                         <span class="number font-brown"><strong>1.1 </strong></span>
@@ -397,6 +398,7 @@
                             <input type="radio" id="facebook-radio-5" value="3000 +" name="facebook">
                             <label for="facebook-radio-5"><em>3000 +</em></label>
                           </div>
+                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -435,6 +437,7 @@
                             <input type="radio" id="twitter-radio-5" value="3000 +" name="twitter">
                             <label for="twitter-radio-5"><em>3000 +</em></label>
                           </div>
+                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -473,6 +476,7 @@
                             <input type="radio" id="pinterest-radio-5" value="3000 +" name="pinterest">
                             <label for="pinterest-radio-5"><em>3000 +</em></label>
                           </div>
+                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -511,6 +515,7 @@
                             <input type="radio" id="instagram-radio-5" value="3000 +" name="instagram">
                             <label for="instagram-radio-5"><em>3000 +</em></label>
                           </div>
+                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -549,6 +554,7 @@
                             <input type="radio" id="youtube-radio-5" value="3000 +" name="youtube">
                             <label for="youtube-radio-5"><em>3000 +</em></label>
                           </div>
+                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -587,6 +593,7 @@
                             <input type="radio" id="wechat-radio-5" value="3000 +" name="wechat">
                             <label for="wechat-radio-5"><em>3000 +</em></label>
                           </div>
+                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -625,6 +632,7 @@
                             <input type="radio" id="weibo-radio-5" value="3000 +" name="weibo">
                             <label for="weibo-radio-5"><em>3000 +</em></label>
                           </div>
+                          <div class="help-block with-errors"></div>
                         </div>
                       </div>
                     </div>
@@ -642,13 +650,13 @@
                       <div class="col-lg-12">
                         <div class="input-wrapper form-group tag-form-group">
                           <input name="brands" type="text" data-role="tagsinput" class="hashtag"  autocomplete="off" data-error="Please input your favorite brands" required >
-
-                          <div class="help-block with-errors"></div>
                           <!-- <button type="button" class="apply absolute">Apply</button> -->
                         </div>
+                        <div class="help-block with-errors tag-errors"></div>
                         <div class="tag-input-btn-container">
                           <button class="tag-apply">Apply</button>
-                        </div>                      </div>
+                        </div> 
+                      </div>
                     </div>
                   </article>
 
@@ -663,10 +671,10 @@
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="input-wrapper form-group tag-form-group">
-                            <input type="text" name="venues" data-role="tagsinput" class="hashtag" autocomplete="off" data-error="Please input brands name" required>
-                            <div class="help-block with-errors"></div>
+                            <input type="text" name="venues" data-role="tagsinput" class="hashtag" autocomplete="off" data-error="Please input brands name" required>                        
                             <!-- <button type="button" class="apply absolute">Apply</button> -->
-                          </div>
+                        </div>
+                        <div class="help-block with-errors tag-errors"></div>
                         <div class="tag-input-btn-container">
                           <button class="tag-apply">Apply</button>
                         </div>
@@ -686,9 +694,9 @@
                       <div class="col-lg-12">
                           <div class="input-wrapper form-group tag-form-group">
                            <input type="text" name="activities" data-role="tagsinput" class="hashtag"  autocomplete="off" data-error="Please input activities or hobbies." required>
-                           <div class="help-block with-errors"></div>
                            <!-- <button type="button" class="apply absolute">Apply</button> -->
                           </div>
+                        <div class="help-block with-errors tag-errors"></div>
                         <div class="tag-input-btn-container">
                           <button class="tag-apply">Apply</button>
                         </div>

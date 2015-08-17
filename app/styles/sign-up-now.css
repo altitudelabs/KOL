@@ -7890,6 +7890,45 @@ body.sign-up-now .my-container section.tab-container article .two-in-one-row:not
 body.sign-up-now .my-container section.tab-container article .two-in-one-row .dropdown-toggle {
   padding-left: 0;
 }
+body.sign-up-now .my-container section.tab-container .help-block {
+  margin-top: 0;
+  padding-left: 20px;
+}
+@media (max-width: 760px) {
+  body.sign-up-now .my-container section.tab-container .help-block {
+    position: relative;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 760px) {
+  body.sign-up-now .my-container section.tab-container .help-block {
+    position: relative;
+    margin-bottom: 0;
+  }
+}
+body.sign-up-now .my-container section.tab-container .help-block.tag-errors {
+  top: 81px;
+}
+@media (max-width: 760px) {
+  body.sign-up-now .my-container section.tab-container .help-block.tag-errors {
+    top: 8px;
+  }
+}
+@media (max-width: 760px) {
+  body.sign-up-now .my-container section.tab-container .help-block.tag-errors {
+    top: 8px;
+  }
+}
+@media (max-width: 760px) {
+  body.sign-up-now .my-container section.tab-container .help-block .list-unstyled {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 760px) {
+  body.sign-up-now .my-container section.tab-container .help-block .list-unstyled {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 760px) {
   body.sign-up-now .my-container section.tab-container ul.nav-tabs li {
     width: 100%;
@@ -7965,32 +8004,6 @@ body.sign-up-now .my-container section.tab-container ul.nav-tabs li:first-of-typ
     margin-bottom: 0;
   }
 }
-body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane .form-group .help-block {
-  margin-top: 0;
-  padding-left: 20px;
-}
-@media (max-width: 760px) {
-  body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane .form-group .help-block {
-    position: relative;
-    margin-bottom: 0;
-  }
-}
-@media (max-width: 760px) {
-  body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane .form-group .help-block {
-    position: relative;
-    margin-bottom: 0;
-  }
-}
-@media (max-width: 760px) {
-  body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane .form-group .help-block .list-unstyled {
-    margin-bottom: 0;
-  }
-}
-@media (max-width: 760px) {
-  body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane .form-group .help-block .list-unstyled {
-    margin-bottom: 0;
-  }
-}
 body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane .form-group input,
 body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane .form-group .btn.dropdown-toggle,
 body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane .form-group .bfh-selectbox-toggle {
@@ -8025,6 +8038,19 @@ body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane a
 @media (max-width: 760px) {
   body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane article .img-question-stick {
     display: none;
+  }
+}
+body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane article .input-wrapper > *.help-block:not(:first-child) {
+  display: block!important;
+}
+@media (max-width: 760px) {
+  body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane article .input-wrapper > *.help-block:not(:first-child) {
+    display: inline-block;
+  }
+}
+@media (max-width: 760px) {
+  body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane article .input-wrapper > *.help-block:not(:first-child) {
+    display: inline-block;
   }
 }
 body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane article .input-wrapper.tag-form-group {
@@ -8093,17 +8119,19 @@ body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane a
 }
 @media (max-width: 760px) {
   body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane article .tag-input-btn-container {
+    top: 15px;
     padding-bottom: 0;
     position: relative;
-    margin-top: -15px;
+    margin-top: 0;
     height: auto;
   }
 }
 @media (max-width: 760px) {
   body.sign-up-now .my-container section.tab-container div.tab-content .tab-pane article .tag-input-btn-container {
+    top: 15px;
     padding-bottom: 0;
     position: relative;
-    margin-top: -15px;
+    margin-top: 0;
     height: auto;
   }
 }

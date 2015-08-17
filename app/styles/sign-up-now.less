@@ -61,6 +61,26 @@ body.sign-up-now {
           }
         }
       }
+      .help-block {
+        margin-top: 0;
+        padding-left: 20px;
+        .responsive-mobile({
+          position: relative;
+          margin-bottom: 0;
+        });
+        &.tag-errors {
+          top: 81px;
+          .responsive-mobile({
+            top: 8px;
+          });
+        }
+        .list-unstyled {
+          .responsive-mobile({
+            margin-bottom: 0;
+          });  
+        }
+      }
+
       ul.nav-tabs {
         li {
           .responsive-mobile({
@@ -112,19 +132,6 @@ body.sign-up-now {
           .responsive-mobile({
             margin-bottom: 0;
           });
-          .help-block {
-            margin-top: 0;
-            padding-left: 20px;
-            .responsive-mobile({
-              position: relative;
-              margin-bottom: 0;
-            });
-            .list-unstyled {
-              .responsive-mobile({
-                margin-bottom: 0;
-              });  
-            }
-          }
           input, .btn.dropdown-toggle, .bfh-selectbox-toggle {
             background: transparent;
             font-style: italic;
@@ -152,6 +159,12 @@ body.sign-up-now {
               display: none;
             });
           } 
+          .input-wrapper > *.help-block:not(:first-child) {
+            display: block!important;
+            .responsive-mobile({
+              display: inline-block; 
+            });
+          }
           .input-wrapper.tag-form-group {
             padding-left: 130px;
             margin-left: -130px;
@@ -187,9 +200,10 @@ body.sign-up-now {
             height: 100%;
             padding-bottom: 25px;
             .responsive-mobile({
+              top: 15px;
               padding-bottom: 0;
               position: relative;
-              margin-top: -15px;
+              margin-top: 0;
               height: auto;
             });
           }
