@@ -1,0 +1,109 @@
+@import "./kol.less";
+body.advertisers.tutorial {
+  .responsive-mobile({
+    border-top: 12px solid #171717;
+  });
+  section .content-wrapper ul {
+    .responsive-mobile({
+      padding-left: 35px;
+      padding-right: 35px;
+      margin-left: 0;
+      li {
+        font-size: 19px;
+        margin-left: 0;
+        &:before {
+          left: auto;
+          top: auto;
+          margin-left: -27px;
+          margin-top: 2px;
+        }
+      }
+    });
+  }
+  section.main-content.advertisers {
+    button {
+      padding: 0 105px;
+      .responsive-mobile({
+        padding: 0;
+        width: 100%;
+        text-align: center;
+      });
+    }  
+    .responsive-mobile({
+      margin-top: 0;
+      padding: 0;
+      .left.float-left {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      } 
+      h2 {
+        font-size: 42px;
+        letter-spacing: 0;
+        text-align: center;
+        width: 100%;
+        margin-top: 27px;
+      }
+      .text-bar {
+        margin-top: 15px;
+      }
+      .content {
+        margin-top: 15px;
+      }
+      .image-pannel {
+        display: none;
+      }
+    });
+  }
+  section.how-it-works {
+    .responsive-mobile({
+      padding: 0;
+      .section-bar {
+        display: none;
+      }
+      h2 {
+        font-size: 66px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 10px; 
+        line-height: 61px;
+      }
+      .float-right, .float-left {
+        float: none;
+      }
+      section.step {
+        padding: 0;
+        .img-wrapper {
+          width: 100%;
+          margin-top: 0; 
+          width: 90%;
+          height: 213px; 
+          margin: 0 auto;
+          padding: 0;
+          .background-contain-image {
+            width: 100%;
+          }
+        }
+        .content-wrapper {
+          text-align: center;
+          width: 100%;
+          margin: 0;
+          padding: 0;
+          .text-bar {
+            margin-top: -10px;
+            span {
+              margin: 0;
+            }
+          }
+          .content {
+            font-size: 20px;
+          }
+        }
+      }
+    });
+  }
+
+}

@@ -10,14 +10,36 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">    
+    <link rel="stylesheet" href="styles/ad.css">
     <link rel="stylesheet" href="styles/main.css">
+
+
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body class="advertisers tutorial">
-    <nav class="navbar stick navbar-default">
+    <header class="home mobile-only">
+      <div class="btn-mobile-top-nav mob-nav-toggle-button mobile-only collapsed" data-toggle="collapse" data-target=".top-nav" aria-expanded="false"></div>
+      <div class="company-name">
+        KOL.
+      </div>
+      <p class="company-description">
+        Key Opinion Leaders
+      </p>
+      <p class="company-meaning">
+        /’keɪ oʊ ‘ɛl/ noun [C] abbr: trendsetters whose actions, attitudes, and pronouncements exert influence on those of others.
+      </p>
+    </header>
+    <div class="top-nav mobile-only">
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="kol.html">How It Works</a></li>
+        <li><a href="sign-up-now.html">Sign Up Now</a></li>
+      </ul>
+    </div>
+    <nav class="navbar stick navbar-default desktop-only">
       <div class="container-fluid">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -38,13 +60,15 @@
       </div><!-- /.container-fluid -->
     </nav>
 
+
+
+
     <div class="container-fluid">
       <section class="main-content animated fadeInUp advertisers">
         <div class="float-left left">
           <h2>ADVERTISERS</h2>
           <div class="text-bar center-block"></div>
-          <div class="content first">Are you a  <span class="font-brown"><strong>business growing thoughtfully </strong></span>across select locales?</div>
-
+          <div class="content first">Are you a  <span class="font-brown"><strong>business growing thoughtfully </strong></span>across select locales?<br />Are you a brand looking to <span class="font-brown"><strong>tap into new audiences? </strong></span></div>
           <a href="sign-up-now.html">
             <button><strong>Start now!</strong></button>
           </a>
@@ -68,6 +92,9 @@
           </div>
         </section> -->
         <section class="step-1 step scrollflow -slide-top -opacity">
+          <div class="img-wrapper float-right">
+            <div class="background-contain-image" style="background-image: url('images/advertiser-step-1.png')"></div>
+          </div>        
           <div class="content-wrapper float-left">
             <h3 class="font-didot"><strong>STEP 1</strong></h3>
             <div class="font-big"><strong class="font-brown font-caslon"><em>Access a global directory of civilian influencers</em></strong></div>
@@ -77,9 +104,6 @@
               <li>Define your geographic parameters</li>
               <li>Search our network of diverse on-the-ground referral generators</li>
             </ul>
-          </div>
-          <div class="img-wrapper float-right">
-            <div class="background-contain-image" style="background-image: url('images/advertiser-step-1.png')"></div>
           </div>
         </section>
         <section class="step-2 step scrollflow -slide-top -opacity">
@@ -99,11 +123,15 @@
             </ul>
           </div>
         </section>
-        <section class="step-3 step scrollflow -slide-top -opacity">
+        <section class="step-3 step scrollflow -slide-top -opacity">            
+          <div class="img-wrapper float-right">
+            <div class="background-contain-image" style="background-image: url('images/advertiser-step-3.png')"></div>
+          </div>
           <div class="content-wrapper float-left">
             <h3 class="font-didot"><strong>STEP 3</strong></h3>
             <div class="font-big"><strong class="font-brown font-caslon"><em>Activate consumer-to-consumer advertising</em></strong></div>
-            <div class="text-bar"><span></span></div>
+            <div class="text-bar"><span></span></div>   
+
             <div class="content">Design each mission to specify:</div>
             <ul>
               <li>Acceptable outputs</li>
@@ -115,9 +143,7 @@
             <div class="content">Verify completion</div>
             <div class="content">Approve Paypal reimbursement</div>
           </div>
-          <div class="img-wrapper float-right">
-            <div class="background-contain-image" style="background-image: url('images/advertiser-step-3.png')"></div>
-          </div>
+
         </section>
         <section class="step-4 step scrollflow -slide-top -opacity">
           <div class="img-wrapper float-left">
@@ -135,7 +161,10 @@
             </ul>
           </div>
         </section>
-        <section class="step-5 step last scrollflow -slide-top -opacity">
+        <section class="step-5 step last scrollflow -slide-top -opacity">          
+          <div class="img-wrapper float-right">
+            <div class="background-contain-image" style="background-image: url('images/advertiser-step-5.png')"></div>
+          </div>
           <div class="content-wrapper float-left">
             <h3 class="font-didot"><strong>STEP 5</strong></h3>
 
@@ -149,16 +178,13 @@
               <li>Craft powerful calls-to-action</li>
             </ul>
           </div>
-          <div class="img-wrapper float-right">
-            <div class="background-contain-image" style="background-image: url('images/advertiser-step-5.png')"></div>
-          </div>
         </section>
       </section>
       <footer class="scrollflow -opacity">
         <div class="section-bar footer center-block"></div>
         <div class="row">
           <div class="col-lg-10 col-lg-offset-1">
-            <div class="content text-center"><em>“As consumers ourselves who are fanatical about protection of privacy, KOL will never share your personal data, unless you yourself choose to do so with our brand partners.”</em></div>
+            <div class="content text-center protection-of-privacy"><em>As consumers ourselves who are fanatical about protection of privacy, KOL will never share your personal data, unless you yourself choose to do so with our brand partners.</em></div>
           </div>
         </div>
         <div class="row">

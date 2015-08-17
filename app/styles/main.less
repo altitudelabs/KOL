@@ -5,9 +5,9 @@
 button {
   display: block;
   border-radius: 0px;
-  &:hover, 
-  &:focus, 
-  &:active, 
+  &:hover,
+  &:focus,
+  &:active,
   &:visited {
     outline: none!important;
     border: none!important;
@@ -144,11 +144,11 @@ body {
   overflow-x: hidden;
   min-height: 100%;
 }
-.responsive-mobile (@rules)       { @media (max-width: 850px) { @rules(); } }
-.responsive-mobile-form (@rules)  { @media (max-width: 1050px){ @rules(); } }
-.mobile-only                      { @media (min-width: 851px) { display: none; } }
-.responsive-desktop (@rules)      { @media (min-width: 851px) { @rules(); } }
-.desktop-only                     { @media (max-width: 850px) { display: none; } }
+.responsive-mobile (@rules)       { @media (max-width: 760px) { @rules(); } }
+.responsive-mobile-form (@rules)  { @media (max-width: 1024px){ @rules(); } }
+.responsive-desktop (@rules)      { @media (min-width: 761px) { @rules(); } }
+.mobile-only                      { @media (min-width: 761px) { display: none; } }
+.desktop-only                     { @media (max-width: 760px) { display: none; } }
 
 .form-group {
   .responsive-mobile({
@@ -592,11 +592,11 @@ body {
     }
     a {
       .social {
-        margin: 10px;
+        //margin: 10px;
         display: inline-block;
         width: 35px;
         height: 35px;
-        // background-image: url("../images/split-social-media.png");
+        
         .social-position-x(@base) {
           background: url("../images/split-social-media.png") no-repeat @base 0px ;
         }
@@ -1032,7 +1032,7 @@ body.tutorial {
       margin-top: 30px;
     }
     .content {
-      max-width: 400px;
+      max-width: 410px;
       margin: auto;
       &.first {
         margin-top: 30px;
@@ -1104,6 +1104,12 @@ body.tutorial {
         max-width: 500px;
         width: 50%;
       }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
       .image-speaker {
         height: 400px;
         padding: 45px 0;
@@ -1137,11 +1143,17 @@ body.tutorial {
         list-style:none;
         padding-left: 0px;
         li {
+          position: relative;
           margin-top: 10px;
           font-size: 17px;
-          padding-left: 40px;
-          background: url("../images/img-bullet.png") no-repeat 10px 5px;
           line-height: 30px;
+          margin-left: 40px;
+          &:before {
+            content: url("../images/img-bullet.png");
+            position: absolute;
+            left: -34px;
+            top: 3px;
+          }
         }
       }
     }
@@ -1263,7 +1275,7 @@ body.sign-up-now {
 
           a {
             padding: 0px;
-            
+
             .ball {
               margin-top: 15px;
               .center-block();
@@ -1328,7 +1340,7 @@ body.sign-up-now {
             // Assign margin-left for [ nor-first-element ]
             .input-wrapper {
               font-size: 18px;
-              
+
               > *:not(:first-child) {
 
                 padding-left: 25px;
@@ -1337,7 +1349,7 @@ body.sign-up-now {
                   .responsive-mobile({
                     padding-left: 0px;
                     width: auto;
-                  }); 
+                  });
                 }
                 .responsive-mobile({
                   padding-left: 0px;
@@ -1349,7 +1361,7 @@ body.sign-up-now {
                 .responsive-mobile ({
                   width: 100%;
                   &:not(:first-child) {
-                    margin-top: 20px; 
+                    margin-top: 20px;
                   }
                 });
                 display: inline-block;
@@ -1464,7 +1476,7 @@ body.sign-up-now {
   margin: auto;
   max-width: 450px;
   padding-bottom: 50px;
-  
+
   span {
     font-size: 14px;
   }

@@ -1,57 +1,5 @@
-@import "bootstrap.less";
-@import url("http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic");
-@icon-font-path: "../fonts/glyphicons/";
+@import "./common.less";
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family : "baskerville";
-}
-
-@libre: "Libre Baskerville", serif;
-
-@font-face {
-  font-family: "didot";
-  src:  url(../fonts/didot/didot.ttf) format("truetype"),
-        url(../fonts/didot/didot.eot) format("eot"),
-        url(../fonts/didot/didot.woff) format("woff");
-  font-weight: 100;
-}
-@font-face {
-  font-family: "caslon";
-  src:  url(../fonts/caslon/Caslon224ITCbyBT-BoldItalic.ttf) format("truetype");
-  font-weight: 400;
-}
-
-.responsive-mobile (@rules)       { @media (max-width: 760px) { @rules(); } }
-.responsive-mobile-form (@rules)  { @media (max-width: 1024px){ @rules(); } }
-.responsive-desktop (@rules)      { @media (min-width: 761px) { @rules(); } }
-.mobile-only                      { @media (min-width: 761px) { display: none; } }
-.desktop-only                     { @media (max-width: 760px) { display: none; } }
-
-
-@white  : #FCF9F5;
-@orange : #D3A849;
-@gray   : #CCCCCC;
-@gray-darker: #58595B;
-@gray-dark: #878787;
-@gray-light: #EFEFEF;
-@red: #EB393A; // warning
-
-@black: #171717;
-  @black-hover: #3A3A3A;
-  @black-click: #171717;
-@gold: #D7B166;
-  @gold-hover: #997b39;
-  @gold-click: #7C612A;
-@brown: #B8984B;
-
-body {
-  background: @black;
-  padding: 12px;
-}
-.bg-container {
-  background: #FDF9F6 url("../images/bg-home.jpg");
-  background-position: center -53px;
-}
 .body-container {
   max-width: 1240px;
   position: relative;
@@ -60,19 +8,22 @@ body {
   width: 100%;
   padding: 0 95px;
   margin: 0 auto;
-  .responsive-desktop({    
+  .responsive-mobile-form({    
     padding: 0 15px;
   });
   .responsive-mobile({
     padding: 0 8px;
   });
-  header.home {
+
+  /* Start header.home */
+  header {
     border-bottom: 1px @gray solid;
     padding: 45px 0 27px 0;
     .responsive-mobile({
       padding: 7px 0 0 0;
       margin-bottom: 9px;
     }); 
+
     .btn-mobile-top-nav {
       display: none;
       top: 0;
@@ -82,12 +33,13 @@ body {
       background-image: url("../images/icons/menu.png");
       background-size: cover;
       cursor: pointer;
-      &.active {
-        background-image: url("../images/icons/menu-close.png");
-      }
       .responsive-mobile({
         display: block;
       });
+
+      &.active {
+        background-image: url("../images/icons/menu-close.png");
+      }
     }
     .company-name {
       color: @black;
@@ -126,6 +78,9 @@ body {
       });
     }
   }
+  /* End header.home */
+
+  /* Start .top-nav */
   .top-nav {
     ul{
       width: 401px;
@@ -145,6 +100,7 @@ body {
           width: 100%;
           padding: 0;
         });
+
         a {
           color: @black;
           font-family: "Baskerville";
@@ -152,12 +108,13 @@ body {
           line-height: 58px;
           font-size: 16px;
           padding-bottom: 3px;
-          &:hover {
-            border-bottom: 2px @black solid;
-          }
           .responsive-mobile({
             line-height: 53px;
           });
+
+          &:hover {
+            border-bottom: 2px @black solid;
+          }
         }
         &.active a {
           border-bottom: 2px @black solid;
@@ -172,144 +129,25 @@ body {
       display: none;
       border-bottom: 1px @gray solid;
       padding-bottom: 8px;
+
       &.in {
         display: inline-block;
       }
     });
   }
-  section.select-my-role {
-    position: relative;
-    width: 100%;
-    font-family: "baskerville";
-    min-height: 319px;
-    margin-bottom: 13%;
-    .img-kol-or-advertiser-kol {
-      shape-margin: 20px;
-      shape-image-threshold: 0.5;/* this property is used to set the threshold used for extracting a shape from an image. 0.0 = fully transparent and 1.0 = fully opaque */
-      shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
-      background: black;
-    }
-    img {
-      width: 100%;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-    .both-pic {
-      .responsive-mobile({        
-        display: none;
-        padding: 0;
-      });
-    }
-    .single-pic {
-      display: none;
-      .responsive-mobile({
-        position: relative;
-        display: block;
-        padding: 5px 0 11px 0;
-      });
-    }
-    .kol-section {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      .responsive-mobile({        
-        position: relative;
-      });
-    }
-    .advertiser-section {
-      margin-right: 3px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      .responsive-mobile({        
-        position: relative;
-      });
-    }
-    .description {
-      position: relative;
-      padding-top: 25px;
-      padding-bottom: 112px;
-      .responsive-mobile({
-        padding: 0 0 15px 0;
-      });
-      .iam {
-        color: @black;
-        text-align: left;
-        font-size: 26px;
-        padding-bottom: 11px;
-        .responsive-mobile({
-          text-align: center;
-        });
-        .iam-big {
-          color: @black;
-          font-size: 58px;
-          line-height: 58px;
-        }
-      }
-      hr {
-        width: 90px;
-        border-color: @gold;
-        border-width: 2px;
-        padding: 0;
-        margin: 0 auto;
-      }
-      .tip {
-        color: @black;
-        overflow: visible; 
-        .responsive-mobile({
-          margin-left: auto;
-          margin-right: auto;
-        });
-        em {
-          word-spacing: 0.05em;
-          width: 147px;
-          display: block;
-          padding: 12px 0 4px 1px ;
-          line-height: 18px;         
-          .responsive-mobile({
-            width: 100%;
-            text-align: center;
-            padding-top: 18px;
-            padding-bottom: 9px;
-          });
-        }
-      }
-      .link{
-        .responsive-mobile({
-          text-align: center;
-        });
-        a {
-          color: @black;
-          padding-bottom: 1px;
-          border-bottom: 1px solid @black;
-          text-decoration: none; 
-        }
-      }
-      &.advertiser-description {   
-        text-align: right;      
-        .responsive-mobile({
-          text-align: center;
-        });    
-        .iam {
-          margin-left: -150px;
-          .responsive-mobile({
-            margin-left: 0;
-          });
-        }
-        .tip em {
-          float: right;   
-          .responsive-mobile({
-            float: none;
-          });
-        }
-      }
-    }
-  }
+  /* End .top-nav */
   
+  /* Start section */
   section {
     color: @black;
-    margin-bottom: 149px;
-    min-height: 700px;
+    margin-bottom: 130px;
+    min-height: 600px;
+    .responsive-mobile({
+      margin-bottom: 39px;
+    });
+    &:last-of-type{
+      margin-bottom: 30px;
+    }
     .section-title {
       position: relative;
       font-family: "baskerville";
@@ -347,7 +185,7 @@ body {
       .responsive-mobile({
         width: 100%;
         height: auto;
-      }); 
+      });
     }
     .section-content {
       position: relative;
@@ -359,9 +197,9 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        width: 43.5%;
+        width: 50%;
         height: auto;
-        margin-left: 9.5%;
+        margin-left: 7%;
         &.front-img {
           z-index: 3;
         }
@@ -397,11 +235,12 @@ body {
             display: block;
             font-size: 20px;
             line-height: 28px;
+            padding: 0 12px;
           });
           .gold {
             color: @gold;
-            font-family: "didot";  
-            font-style: normal;     
+            font-family: "didot";
+            font-style: normal;
           }
         }
         ul.list {
@@ -409,15 +248,20 @@ body {
           font-family: "baskerville";
           margin: 0;
           .responsive-mobile({
-            padding: 0;
+            padding: 14px 0 0 0;
           });
           li {
             width: 100%;
             position: relative;
-            font-size: 17px;
+            font-size: 24px;
             list-style-type: none;
             display: table;
             margin-bottom: 7px;
+            .responsive-mobile({
+              font-size: 17px;
+              margin-bottom: 21px;
+              text-align: center;
+            });
             .number {
               color: @gold;
               font-size: 34px;
@@ -429,10 +273,11 @@ body {
                 color: inherit;
                 font-size: inherit;
                 font-weight: inherit;
-                display: block;
+                display: inline;
                 width: auto;
                 min-width: inherit;
-                float: left;
+                margin-right: 6px;
+                vertical-align: middle;
               });
               &:after{
                 content:"|";
@@ -458,11 +303,8 @@ body {
               vertical-align: middle;
               padding-top: 9px;
               .responsive-mobile({
-                width: 100%;
-                padding-right: 24px;
-                margin-right: -24px;
-                display: block;
-                float: left;
+                text-align: left;
+                display: inline;
                 padding: 0;
               });
             }
@@ -481,6 +323,14 @@ body {
           height: 55px;
           width: 220px;
           background: @black;
+          .responsive-mobile({
+            font-size: 19px;
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            bottom: 0;
+          });
+
           &:after {
             content: url(../images/icons/double-arrow-right.png);
             margin-left: 6px;
@@ -489,7 +339,164 @@ body {
       }
     }
   }
+  /* End section */
 
+  /* Start section.select-my-role */
+  section.select-my-role {
+    position: relative;
+    width: 100%;
+    font-family: "baskerville";
+    min-height: 319px;
+    margin-bottom: 13%;
+
+    .img-kol-or-advertiser-kol {
+      shape-margin: 20px;
+      shape-image-threshold: 0.5;/* this property is used to set the threshold used for extracting a shape from an image. 0.0 = fully transparent and 1.0 = fully opaque */
+      shape-outside: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+      background: black;
+    }
+
+    img {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .both-pic {
+      .responsive-mobile({        
+        display: none;
+        padding: 0;
+      });
+    }
+
+    .single-pic {
+      display: none;
+      .responsive-mobile({
+        position: relative;
+        display: block;
+        padding: 5px 0 11px 0;
+      });
+    }
+
+    .kol-section {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      .responsive-mobile({        
+        position: relative;
+      });
+    }
+
+    .advertiser-section {
+      margin-right: 3px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      .responsive-mobile({        
+        position: relative;
+      });
+
+      hr {
+        float: right; 
+        .responsive-mobile({
+          float: none;
+        });   
+      }
+    }
+
+    .description {
+      position: relative;
+      padding-top: 25px;
+      padding-bottom: 112px;
+      .responsive-mobile({
+        padding: 0 0 15px 0;
+      });
+
+      .iam {
+        color: @black;
+        text-align: left;
+        font-size: 26px;
+        padding-bottom: 11px;
+        .responsive-mobile({
+          text-align: center;
+        });
+
+        .iam-big {
+          color: @black;
+          font-size: 58px;
+          line-height: 58px;
+        }
+      }
+      hr {
+        width: 90px;
+        border-color: @gold;
+        border-width: 2px;
+        padding: 0;
+        margin: 0; 
+        .responsive-mobile({
+          margin: 0 auto;          
+        });
+      }
+      .tip {
+        color: @black;
+        overflow: visible; 
+        .responsive-mobile({
+          margin-left: auto;
+          margin-right: auto;
+        });
+
+        em {
+          word-spacing: 0.05em;
+          width: 147px;
+          display: block;
+          padding: 12px 0 4px 1px ;
+          line-height: 18px;  
+
+          .responsive-mobile({
+            width: 100%;
+            text-align: center;
+            padding-top: 18px;
+            padding-bottom: 9px;
+          });
+        }
+      }
+      .link{
+        .responsive-mobile({
+          text-align: center;
+        });
+
+        a {
+          color: @black;
+          padding-bottom: 1px;
+          border-bottom: 1px solid @black;
+          text-decoration: none; 
+        }
+      }
+      &.advertiser-description {   
+        text-align: right;      
+        .responsive-mobile({
+          text-align: center;
+        });  
+
+        .iam {
+          margin-left: -95px;
+          .responsive-mobile({
+            margin-left: 0;
+          });
+        }
+
+        .tip em {
+          float: right;   
+          .responsive-mobile({
+            float: none;
+          });
+        }
+      }
+    }
+  }
+  /* End section.select-my-role */
+  
+  /* Start section.advertisers */
   section.advertisers {
     .section-content {
       img {
@@ -500,68 +507,33 @@ body {
         width: 43.5%;
         height: auto;
         margin-left: 9.5%;
+
         &.front-img {
           z-index: 3;
         }
+
         &.back-img {
           z-index: 1;
         }
       }
+
       .section-content-text {
         margin: 0;
         width: 71%;
         padding: 4% 16% 0 5%;
+        .responsive-mobile({
+          margin: inherit;
+          width: inherit;
+          padding: inherit;
+        });
       }
+
       button.advertise-now {
         right: auto;
         left: 0;
       }
     }
   }
-  footer {
-    font-family: "baskerville";
-    padding-bottom: 88px;
-    .section-bar.footer {
-      border-bottom: 1px solid @orange;
-    }
-    .content {
-      color: @black;
-      font-size: 17px;
-      font-style: italic;
-      line-height: 23px;
-      margin-top: 50px;
-      padding: 0px 60px;
-    }
-    a {
-      .social {
-        margin: 10px;
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-        // background-image: url(../images/split-social-media.png);
-        .social-position-x(@base) {
-          background: url(../images/split-social-media.png) no-repeat @base 0px ;
-        }
-        &.facebook {
-          .social-position-x(0px);
-        }
-        &.instagram {
-          .social-position-x(-53px);
-        }
-        &.youtube {
-          .social-position-x(-120px);
-        }
-        &.pintest {
-          .social-position-x(-185px);
-        }
-        &.twitter {
-          .social-position-x(-250px);
-        }
-        &.blogger {
-          background-position-x: 32px;
-          .social-position-x(-317px);
-        }
-      }
-    }
-  }
+  /* End section.advertisers */
+
 }
