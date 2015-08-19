@@ -34,6 +34,7 @@ var csvWriter = require('csv-write-stream');
 
 
 app.post('/profile', function(req, res) {
+  console.log('hi');
   var body = req.body;
   if (body.city) { body.city = convertCity(body.country, body.city); }
   if (body.country) { body.country = convertCountry(body.country); }
@@ -102,7 +103,7 @@ app.get('/profile', function(req, res) {
 
 });
 var file = __dirname + '/data.csv';
-checkForFile(file, function(){ console.log('created file'); });
+checkForFile(file, function(){});
 
 // Start server
 server.listen(9000, function () {
@@ -134,8 +135,11 @@ function convertCity(country, city) {
 function checkForFile(fileName, callback) {
   fs.exists(fileName, function (exists) {
     if (exists) {
-        callback();
+      console.log('exists!');
+      callback(exists);
+      return;
     } else {
+      console.log('writing file!');
       fs.writeFile(fileName, '', function (err, data){ 
         var writer = csvWriter();
         writer.pipe(fs.createWriteStream('data.csv'));
@@ -171,13 +175,10 @@ function checkForFile(fileName, callback) {
         });
         writer.end();
 
-        callback();
+        callback(exists);
       });
     }
 
   });
 }
-
-var writer = csvWriter();
-    writer.pipe(fs.createWriteStream('data.csv'));
 

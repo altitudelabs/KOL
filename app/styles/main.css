@@ -82,6 +82,10 @@ button:visited {
   =Index
   =KOL & Advertiser
 -------------------------------------------------- */
+a.remove-style:hover {
+  text-decoration: none;
+  font-weight: normal;
+}
 .debug {
   border: 1px solid red;
 }
@@ -6058,6 +6062,9 @@ body {
 }
 .img {
   display: inline-block;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .caret {
   background: url("../images/img-select-arrow.png") no-repeat center;
@@ -6094,7 +6101,7 @@ body {
   background-repeat: no-repeat;
 }
 .img-double-arrow-right {
-  background-image: url("../images/img-double-arrow-right.png");
+  background-image: url("../images/icons/double-arrow-right.png");
   width: 18px;
   height: 18px;
   left: 3px;
@@ -6165,12 +6172,8 @@ body {
   width: 400px;
 }
 .bootstrap-select.big li > a {
-  width: 400px;
-}
-@media (max-width: 760px) {
-  .bootstrap-select.big li > a {
-    width: 100%;
-  }
+  /*width: @width-big;*/
+  width: 100%;
 }
 .bootstrap-select.middle button {
   width: 270px;
