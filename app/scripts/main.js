@@ -81,6 +81,8 @@ $(document).ready(function(){
       	$.post('/profile', formData)
       	.done(function(data) {
       		console.log('done');
+				  $(window).unbind('beforeunload');
+
       		window.location = data.redirect;
       	})
       	.fail(function() {
