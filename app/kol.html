@@ -11,13 +11,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="styles/kol.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body class="kol tutorial">
-    <nav class="navbar stick navbar-default">
+    <header class="home mobile-only">
+      <div class="btn-mobile-top-nav mob-nav-toggle-button mobile-only collapsed" data-toggle="collapse" data-target=".top-nav" aria-expanded="false"></div>
+      <div class="company-name">
+        KOL.
+      </div>
+      <p class="company-description">
+        Key Opinion Leaders
+      </p>
+      <p class="company-meaning">
+        /’keɪ oʊ ‘ɛl/ noun [C] abbr: trendsetters whose actions, attitudes, and pronouncements exert influence on those of others.
+      </p>
+    </header>
+    <div class="top-nav mobile-only">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="kol.html">How It Works</a></li>
+        <li><a href="sign-up-now.html">Sign Up Now</a></li>
+      </ul>
+    </div>
+    <nav class="navbar stick navbar-default desktop-only">
       <div class="container-fluid">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -41,8 +61,8 @@
     <div class="container-fluid">
 
       <section class="main-content animated fadeInUp kol">
-        <div class="float-left left">
-          <h2>KEY OPINION LEDADERS</h2>
+        <div class="left">
+          <h2>KEY OPINION LEADERS</h2>
           <div class="text-bar center-block"></div>
           <div class="content first">Are you passionate about <span class="font-brown"><strong>desirable brands</strong></span>? </div>
           <div class="content">Do you enjoy discovering <span class="font-brown"><strong>new products</strong></span>? </div>
@@ -52,13 +72,13 @@
             <button><strong>Sign up to do what you</strong><span class="img img-love"></span></button>
           </a>
         </div>
-        <div class="float-right right image-speaker">
+        <div class="right image-speaker desktop-only">
           <div class="background-contain-image img-wrapper"></div>
         </div>
       </section>
 
       <section class="how-it-works">
-        <div class="section-bar center-block"></div>
+        <div class="section-bar center-block desktop-only"></div>
         <h2>HOW IT WORKS</h2>
 
         <section class="step step-1 scrollflow -slide-top -opacity">
@@ -74,14 +94,14 @@
         </section>
 
         <section class="step step-2 scrollflow -slide-top -opacity">
+          <div class="float-right img-wrapper">
+            <div class="background-contain-image" style="background-image: url('images/kol-step-2.png')"></div>
+          </div>
           <div class="content-wrapper float-left">
             <h3 class="font-didot"><strong>STEP 2</strong></h3>
             <div class="font-big"><strong class="font-brown font-caslon"><em>Sit back...</em></strong></div>
             <div class="text-bar"><span></span></div>
             <div class="content"><strong class="font-brown">Receive one-off proposals </strong> from the coolest brands or latest products in your inbox.</div>
-          </div>
-          <div class="float-right img-wrapper">
-            <div class="background-contain-image" style="background-image: url('images/kol-step-2.png')"></div>
           </div>
         </section>
 
@@ -92,7 +112,7 @@
           <div class="content-wrapper float-right">
             <h3 class="font-didot"><strong>STEP 3</strong></h3>
 
-            <div class="font-big"><strong class="font-brown font-caslon"><em>Join in under 2 minutes!</em></strong></div>
+            <div class="font-big"><strong class="font-brown font-caslon"><em>...And earn dollars as you go!</em></strong></div>
             <div class="text-bar"><span></span></div>
             <div class="content"><strong class="font-brown">Simply share personal testimonials about your experience</strong>, or post photos or videos of products, online and offline.</div>
           </div>
@@ -108,12 +128,11 @@
           </a>
         </div>
       </section>
-
       <footer class="scrollflow -opacity">
         <div class="section-bar footer center-block"></div>
         <div class="row">
           <div class="col-lg-10 col-lg-offset-1">
-            <div class="content text-center"><em>“As consumers ourselves who are fanatical about protection of privacy, KOL will never share your personal data, unless you yourself choose to do so with our brand partners.”</em></div>
+            <div class="content text-center protection-of-privacy"><em>As consumers ourselves who are fanatical about protection of privacy, KOL will never share your personal data, unless you yourself choose to do so with our brand partners.</em></div>
           </div>
         </div>
         <div class="row">

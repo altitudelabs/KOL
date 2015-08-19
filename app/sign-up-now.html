@@ -16,14 +16,36 @@
     <link rel="stylesheet" href="bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css"/>
     <link rel="stylesheet" href="bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css"/>
     <link rel="stylesheet" href="bower_components/bootstrap-form-helpers/dist/css/bootstrap-formhelpers.min.css"/>
-    <link rel="stylesheet" href="styles/main.css">
+
+    <link rel="stylesheet" href="styles/sign-up-now.css">
+
 
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body class="sign-up-now form">
-    <nav class="navbar stick navbar-default">
+    <header class="home mobile-only">
+      <div class="btn-mobile-top-nav mob-nav-toggle-button mobile-only collapsed" data-toggle="collapse" data-target=".top-nav" aria-expanded="false"></div>
+      <div class="company-name">
+        KOL.
+      </div>
+      <p class="company-description">
+        Key Opinion Leaders
+      </p>
+      <p class="company-meaning">
+        /’keɪ oʊ ‘ɛl/ noun [C] abbr: trendsetters whose actions, attitudes, and pronouncements exert influence on those of others.
+      </p>
+    </header>
+    <div class="top-nav mobile-only">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="kol.html">How It Works</a></li>
+        <li class="active"><a href="sign-up-now.html">Sign Up Now</a></li>
+      </ul>
+    </div>
+
+    <nav class="navbar stick navbar-default desktop-only">
       <div class="container-fluid">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -66,7 +88,6 @@
                   <div class="title font-brown"><em>General Information</em></div>
                 </a>
               </li>
-
               <li role="presentation center-block" class="x-active">
                 <a href="#step-2" aria-controls="step-2" role="tab" data-toggle="tab" class="disable js-step-2-nav">
                   <div class="ball ">
@@ -126,7 +147,7 @@
                         </div>
 
                         <div class="form-group">
-                          <input name="age" type="text" class="full" autocomplete="off" pattern="^[0-9]*[1-9][0-9]*$"  data-error="Numbers only"  required>
+                          <input name="age" type="text" class="full" autocomplete="off" pattern="^[0-9]*[1-9][0-9]*$"  data-error="Numbers only" placeholder="Age"  required>
                            <span class="help-block with-errors"></span>
                         </div>
                       </div>
@@ -140,7 +161,7 @@
 
                         <div class="form-group">
                           <select name="gender" class="selectpicker big js-gender" data-error"Please input gender" required>
-                            <option value=""> </option>
+                            <option value="">Gender</option>
                             <option value="Male">Male</option>
                             <option value="Female">Female</option>
                           </select>
@@ -215,7 +236,7 @@
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="input-wrapper form-group">
-                          <input name="profession" type="text" class="full js-validate"  autocomplete="off" data-error="Please input your profession" required>
+                          <input name="profession" type="text" class="full js-validate"  autocomplete="off" placeholder="Profession" data-error="Please input your profession" required>
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
@@ -335,11 +356,19 @@
 
                       </div>
                   </article>
-
+                  <article class="sub-question js-sub-question">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <span class="number font-brown"><strong>1.1 </strong></span>
+                        <span class="img img-question-stick"></span>
+                        <span class="question"><em>Please share the number of friends on your...</em></span>
+                      </div>
+                    </div>
+                  </article>
                   <article class="sub-question facebook js-facebook js-sub-question">
                     <div class="row">
                       <div class="col-lg-12">
-                        <span class="question"><em>Please share the number of friends on your facebook</em></span>
+                        <span class="question"><em>Facebook</em></span>
                       </div>
                     </div>
                     <div class="row">
@@ -377,7 +406,7 @@
                   <article class="sub-question twitter js-twitter js-sub-question">
                     <div class="row">
                       <div class="col-lg-12">
-                        <span class="question"><em>Please share the number of friends on your twitter</em></span>
+                        <span class="question"><em>Twitter</em></span>
                       </div>
                     </div>
                     <div class="row">
@@ -415,7 +444,7 @@
                   <article class="sub-question pinterest js-pinterest js-sub-question">
                     <div class="row">
                       <div class="col-lg-12">
-                        <span class="question"><em>Please share the number of friends on your pinterest</em></span>
+                        <span class="question"><em>Pinterest</em></span>
                       </div>
                     </div>
                     <div class="row">
@@ -453,7 +482,7 @@
                   <article class="sub-question instagram js-instagram js-sub-question">
                     <div class="row">
                       <div class="col-lg-12">
-                        <span class="question"><em>Please share the number of friends on your instagram</em></span>
+                        <span class="question"><em>Instagram</em></span>
                       </div>
                     </div>
                     <div class="row">
@@ -491,7 +520,7 @@
                   <article class="sub-question youtube js-youtube js-sub-question">
                     <div class="row">
                       <div class="col-lg-12">
-                        <span class="question"><em>Please share the number of friends on your youtube</em></span>
+                        <span class="question"><em>Youtube</em></span>
                       </div>
                     </div>
                     <div class="row">
@@ -529,7 +558,7 @@
                   <article class="sub-question wechat js-wechat js-sub-question">
                     <div class="row">
                       <div class="col-lg-12">
-                        <span class="question"><em>Please share the number of friends on your wechat</em></span>
+                        <span class="question"><em>Wechat</em></span>
                       </div>
                     </div>
                     <div class="row">
@@ -567,7 +596,7 @@
                   <article class="sub-question weibo js-weibo js-sub-question">
                     <div class="row">
                       <div class="col-lg-12">
-                        <span class="question"><em>Please share the number of friends on your weibo</em></span>
+                        <span class="question"><em>Weibo</em></span>
                       </div>
                     </div>
                     <div class="row">
@@ -703,7 +732,7 @@
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="input-wrapper form-group">
-                          <input name="email" type="email" class="full" autocomplete="off" data-error="Email address is invalid" required>
+                          <input name="email" type="email" placeholder="Email" class="full" autocomplete="off" data-error="Email address is invalid" required>
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
