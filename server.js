@@ -106,8 +106,8 @@ var file = __dirname + '/data.csv';
 checkForFile(file, function(){});
 
 // Start server
-server.listen(9000, function () {
-  console.log('Express server listening on %d, in %s mode', 9000, app.get('env'));
+server.listen(8000, function () {
+  console.log('Express server listening on %d, in %s mode', 8000, app.get('env'));
 });
 
 // Expose app
