@@ -11,6 +11,8 @@
     "express": "^4.13.1",
     "html": "0.0.10",
     "json2xls": "0.0.5",
+    "mailchimp": "^1.1.0",
+    "mailchimp-api": "^2.0.7",
     "mime": "^1.3.4"
   },
   "devDependencies": {

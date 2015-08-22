@@ -32,38 +32,74 @@ var fs = require('fs');
 var csvWriter = require('csv-write-stream');
 // writer.end();
 
+var MailChimpAPI = require('mailchimp').MailChimpAPI;
+var mcApi = new MailChimpAPI(process.env.MAIL_CHIMP_KEY, { version: '2.0' });
+console.log(mcApi.lists_subscribe);
+var Converter = require('csvtojson').Converter;
 
 app.post('/profile', function(req, res) {
-  console.log('hi');
   var body = req.body;
   if (body.city) { body.city = convertCity(body.country, body.city); }
   if (body.country) { body.country = convertCountry(body.country); }
 
   body.timeSubmitted = new Date();
-  
   console.log(body);
 
-  var Converter = require('csvtojson').Converter;
   var file = __dirname + '/data.csv';
+  
   checkForFile(file, function() {
     var fileStream = fs.createReadStream('data.csv');
+    
     var converter = new Converter({constructResult:true});
     //end_parsed will be emitted once parsing finished 
     converter.on('end_parsed', function (jsonObj) {
-
       var writer = csvWriter();
       writer.pipe(fs.createWriteStream('data.csv'));
-      console.log(jsonObj, body);
       jsonObj.push(body);
-      // fs.writeFileSync('data.xlsx', xls, 'binary');
       for (var i = 0; i < jsonObj.length; i ++) {
         writer.write(jsonObj[i]);
       }
       writer.end();
 
-      // res.sendFile(__dirname + '/app/sign-up-now-finish.html');
-      // res.redirect('/sign-up-now-finish.html');
-      res.send({redirect: '/sign-up-now-finish.html'});
+      var params = {
+        id: '0b6e45a581',
+        email: {
+          email: body.email
+        },
+        merge_vars: {
+          FNAME: body['first-name'],
+          LNAME: body.lastname,
+          AGE: body.age,
+          GENDER: body.gender,
+          COUNTRY: body.country,
+          CITY: body.city,
+          PROFESSION: body.profession,
+          HOUSEHOLD: body['household-income'],
+          FACEBOOK: body.facebook,
+          TWITTER: body.twitter,
+          PINTEREST: body.pinterest,
+          INSTAGRAM: body.instagram,
+          YOUTUBE: body.youtube,
+          WECHAT: body.wechat,
+          WEIBO: body.weibo,
+          BRANDS: body.brands,
+          VENUES: body.venues,
+          ACTIVITIES: body.activities,
+        }
+      };
+      mcApi.lists_subscribe(params, function(err, response) {
+        if (err) {
+          params.merge_vars = null;
+          delete params['merge_vars'];
+          mcApi.lists_subscribe(params, function(err, response) {
+            res.send({redirect: '/sign-up-now-finish.html'});
+            return;
+          });
+        }
+
+        res.send({redirect: '/sign-up-now-finish.html'});
+
+      });
     });
     //read from file 
     fileStream.pipe(converter);
@@ -73,13 +109,15 @@ app.post('/profile', function(req, res) {
 
 });
 
+
+
 var path = require('path');
 var mime = require('mime');
 // var firstData =
 
 app.get('/profile', function(req, res) {
   console.log(req.query);
-  if (req.query.authCode === 'BK7je29TZm') {
+  if (req.query.authCode === process.env.AUTH_CODE) {
 
     var file = __dirname + '/data.csv';
     checkForFile(file, function() {
