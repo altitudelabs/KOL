@@ -14,6 +14,7 @@ var server = require('http').createServer(app);
 var compression = require('compression');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
+var favicon = require('serve-favicon');
 
 var path = require('path');
 
@@ -25,7 +26,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
+
 app.use(express.static(path.join(__dirname, '/app')));
+app.use(favicon(__dirname + '/app/favicon.ico'));
 
 var fs = require('fs');
 
