@@ -33,8 +33,7 @@ var csvWriter = require('csv-write-stream');
 // writer.end();
 
 var MailChimpAPI = require('mailchimp').MailChimpAPI;
-var mcApi = new MailChimpAPI(process.env.MAIL_CHIMP_KEY, { version: '2.0' });
-console.log(mcApi.lists_subscribe);
+var mcApi = new MailChimpAPI(process.env.MAIL_CHIMP_KEY || 'some-key', { version: '2.0' });
 var Converter = require('csvtojson').Converter;
 
 app.post('/profile', function(req, res) {
