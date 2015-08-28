@@ -52,7 +52,22 @@ body {
   .responsive-mobile({
     padding: 12px;
   });
-  footer {
+  .social-paltform {
+    margin-top: -80px;
+    .responsive-mobile({
+      padding-bottom: 50px;
+    });
+  }
+  .advertisers .social-paltform,.kol .social-paltform {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .col-lg-6 {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  footer,.social-paltform {
     font-family: "baskerville";
     padding-bottom: 88px;
     .responsive-mobile({
@@ -95,7 +110,12 @@ body {
         &.pintest   { .social-position-x(-185px); }
         &.twitter   { .social-position-x(-250px); }
         &.blogger   {  background-position-x: 32px; .social-position-x(-317px);}
+        &.wechat   { .social-position-x(-380px); }
+        &.weibo   { .social-position-x(-450px); }
       }
+    }
+    .col-lg-6 {
+      white-space: nowrap;
     }
   }
 }
