@@ -6462,6 +6462,9 @@ header .company-meaning {
   content: url(../images/icons/double-arrow-right.png);
   margin-left: 6px;
 }
+.body-container section.key-opinion-leaders .section-content img {
+  width: 37%;
+}
 .body-container section.select-my-role {
   position: relative;
   width: 100%;
