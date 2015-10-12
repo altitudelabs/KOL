@@ -5893,19 +5893,42 @@ body {
     padding: 12px;
   }
 }
-body footer {
+body .social-paltform {
+  margin-top: -80px;
+}
+@media (max-width: 760px) {
+  body .social-paltform {
+    padding-bottom: 50px;
+  }
+}
+body .advertisers .social-paltform,
+body .kol .social-paltform {
+  margin-top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+body .advertisers .social-paltform .col-lg-6,
+body .kol .social-paltform .col-lg-6 {
+  margin-left: 0;
+  width: 100%;
+}
+body footer,
+body .social-paltform {
   font-family: "baskerville";
   padding-bottom: 88px;
 }
 @media (max-width: 760px) {
-  body footer {
+  body footer,
+  body .social-paltform {
     padding-bottom: 0px;
   }
 }
-body footer .section-bar.footer {
+body footer .section-bar.footer,
+body .social-paltform .section-bar.footer {
   border-bottom: 1px solid #d3a849;
 }
-body footer .content {
+body footer .content,
+body .social-paltform .content {
   color: #171717;
   font-size: 17px;
   font-style: italic;
@@ -5914,44 +5937,66 @@ body footer .content {
   padding: 0px 60px;
 }
 @media (max-width: 760px) {
-  body footer .content {
+  body footer .content,
+  body .social-paltform .content {
     margin-top: 29px;
   }
 }
 @media (max-width: 760px) {
-  body footer .content.protection-of-privacy {
+  body footer .content.protection-of-privacy,
+  body .social-paltform .content.protection-of-privacy {
     display: none;
   }
 }
-body footer a .social {
+body footer a .social,
+body .social-paltform a .social {
   margin: 6px;
   display: inline-block;
   width: 35px;
   height: 35px;
 }
 @media (max-width: 760px) {
-  body footer a .social {
+  body footer a .social,
+  body .social-paltform a .social {
     margin: 11px 4px;
   }
 }
-body footer a .social.facebook {
+body footer a .social.facebook,
+body .social-paltform a .social.facebook {
   background: url(../images/split-social-media.png) no-repeat 0px 0px;
 }
-body footer a .social.instagram {
+body footer a .social.instagram,
+body .social-paltform a .social.instagram {
   background: url(../images/split-social-media.png) no-repeat -53px 0px;
 }
-body footer a .social.youtube {
+body footer a .social.youtube,
+body .social-paltform a .social.youtube {
   background: url(../images/split-social-media.png) no-repeat -120px 0px;
 }
-body footer a .social.pintest {
+body footer a .social.pintest,
+body .social-paltform a .social.pintest {
   background: url(../images/split-social-media.png) no-repeat -185px 0px;
 }
-body footer a .social.twitter {
+body footer a .social.twitter,
+body .social-paltform a .social.twitter {
   background: url(../images/split-social-media.png) no-repeat -250px 0px;
 }
-body footer a .social.blogger {
+body footer a .social.blogger,
+body .social-paltform a .social.blogger {
   background-position-x: 32px;
   background: url(../images/split-social-media.png) no-repeat -317px 0px;
+}
+body footer a .social.wechat,
+body .social-paltform a .social.wechat {
+  background: url(../images/split-social-media.png) no-repeat -380px 0px;
+}
+body footer a .social.weibo,
+body .social-paltform a .social.weibo {
+  background: url(../images/split-social-media.png) no-repeat -450px 0px;
+}
+body footer .col-lg-6,
+body .social-paltform .col-lg-6 {
+  white-space: nowrap;
 }
 header {
   position: relative;
