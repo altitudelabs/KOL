@@ -48,12 +48,12 @@ app.post('/profile', function(req, res) {
   console.log(body);
 
   var file = __dirname + '/data.csv';
-  
+
   checkForFile(file, function() {
     var fileStream = fs.createReadStream('data.csv');
-    
+
     var converter = new Converter({constructResult:true});
-    //end_parsed will be emitted once parsing finished 
+    //end_parsed will be emitted once parsing finished
     converter.on('end_parsed', function (jsonObj) {
       var writer = csvWriter();
       writer.pipe(fs.createWriteStream('data.csv'));
@@ -84,6 +84,7 @@ app.post('/profile', function(req, res) {
           YOUTUBE: body.youtube,
           WECHAT: body.wechat,
           WEIBO: body.weibo,
+          BLOG: body.blog,
           BRANDS: body.brands,
           VENUES: body.venues,
           ACTIVITIES: body.activities,
@@ -94,7 +95,7 @@ app.post('/profile', function(req, res) {
           params.merge_vars = null;
           delete params['merge_vars'];
           mcApi.lists_subscribe(params, function(err, response) {
-            res.send({redirect: '/sign-up-now-finish.html'});
+            //res.send({redirect: '/sign-up-now-finish.html'});
             return;
           });
         }
@@ -103,11 +104,11 @@ app.post('/profile', function(req, res) {
 
       });
     });
-    //read from file 
+    //read from file
     fileStream.pipe(converter);
-    
+
   });
-  //new converter instance 
+  //new converter instance
 
 });
 
@@ -131,7 +132,7 @@ app.get('/profile', function(req, res) {
 
       var filestream = fs.createReadStream(file);
       filestream.pipe(res);
-      
+
     });
 
 
@@ -180,7 +181,7 @@ function checkForFile(fileName, callback) {
       return;
     } else {
       console.log('writing file!');
-      fs.writeFile(fileName, '', function (err, data){ 
+      fs.writeFile(fileName, '', function (err, data){
         var writer = csvWriter();
         writer.pipe(fs.createWriteStream('data.csv'));
         writer.write({
@@ -200,6 +201,7 @@ function checkForFile(fileName, callback) {
           'youtube-checkbox': '',
           'wechat-checkbox': '',
           'weibo-checkbox': '',
+          'blog-checkbox': '',
           pinterest: '',
           instagram: '',
           wechat: '',
@@ -207,6 +209,7 @@ function checkForFile(fileName, callback) {
           twitter: '',
           youtube: '',
           weibo: '',
+          blog: '',
           brands: '',
           venues: '',
           activities: '',
@@ -221,4 +224,3 @@ function checkForFile(fileName, callback) {
 
   });
 }
-

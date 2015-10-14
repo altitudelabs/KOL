@@ -7599,6 +7599,30 @@ body .social-paltform .content {
     display: none;
   }
 }
+@media (max-width: 760px) {
+  body footer .text-center,
+  body .social-paltform .text-center {
+    white-space: normal;
+  }
+}
+@media (max-width: 760px) {
+  body footer .text-center,
+  body .social-paltform .text-center {
+    white-space: normal;
+  }
+}
+@media (max-width: 760px) {
+  body footer a,
+  body .social-paltform a {
+    display: inline-block;
+  }
+}
+@media (max-width: 760px) {
+  body footer a,
+  body .social-paltform a {
+    display: inline-block;
+  }
+}
 body footer a .social,
 body .social-paltform a .social {
   margin: 6px;
