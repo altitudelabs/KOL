@@ -100,7 +100,7 @@ app.post('/profile', function(req, res) {
           });
         }
 
-        res.send({redirect: '/sign-up-now-finish.html'});
+        //res.send({redirect: '/sign-up-now-finish.html'});
 
       });
     });
