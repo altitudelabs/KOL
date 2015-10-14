@@ -5948,6 +5948,18 @@ body .social-paltform .content {
     display: none;
   }
 }
+@media (max-width: 760px) {
+  body footer .text-center,
+  body .social-paltform .text-center {
+    white-space: normal;
+  }
+}
+@media (max-width: 760px) {
+  body footer a,
+  body .social-paltform a {
+    display: inline-block;
+  }
+}
 body footer a .social,
 body .social-paltform a .social {
   margin: 6px;
@@ -6548,22 +6560,24 @@ header .company-meaning {
 .body-container section.select-my-role .kol-section {
   position: absolute;
   bottom: 0;
-  left: -2%;
+  left: -1%;
 }
 @media (max-width: 760px) {
   .body-container section.select-my-role .kol-section {
     position: relative;
+    left: 0;
   }
 }
 .body-container section.select-my-role .advertiser-section {
   margin-right: 3px;
   position: absolute;
-  right: -2%;
+  right: -1%;
   top: 0;
 }
 @media (max-width: 760px) {
   .body-container section.select-my-role .advertiser-section {
     position: relative;
+    right: 0;
   }
 }
 .body-container section.select-my-role .advertiser-section hr {
