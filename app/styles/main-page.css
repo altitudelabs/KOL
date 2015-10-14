@@ -6548,7 +6548,7 @@ header .company-meaning {
 .body-container section.select-my-role .kol-section {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: -2%;
 }
 @media (max-width: 760px) {
   .body-container section.select-my-role .kol-section {
@@ -6558,7 +6558,7 @@ header .company-meaning {
 .body-container section.select-my-role .advertiser-section {
   margin-right: 3px;
   position: absolute;
-  right: 0;
+  right: -2%;
   top: 0;
 }
 @media (max-width: 760px) {
