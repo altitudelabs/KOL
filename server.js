@@ -95,12 +95,12 @@ app.post('/profile', function(req, res) {
           params.merge_vars = null;
           delete params['merge_vars'];
           mcApi.lists_subscribe(params, function(err, response) {
-            res.send({redirect: '/sign-up-now-finish.html'});
+            //res.send({redirect: '/sign-up-now-finish.html'});
             return;
           });
         }
 
-        //res.send({redirect: '/sign-up-now-finish.html'});
+        res.send({redirect: '/sign-up-now-finish.html'});
 
       });
     });
