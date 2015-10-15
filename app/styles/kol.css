@@ -5954,6 +5954,14 @@ body .social-paltform .content {
     white-space: normal;
   }
 }
+body footer a,
+body .social-paltform a {
+  cursor: default;
+}
+body footer a[href],
+body .social-paltform a[href] {
+  cursor: pointer;
+}
 @media (max-width: 760px) {
   body footer a,
   body .social-paltform a {
@@ -6160,14 +6168,14 @@ header .company-meaning {
     margin: 30px auto 0 auto;
     padding: 0;
     font-size: 20px;
-    width: 300px;
+    width: 100%;
   }
   body.tutorial.kol button.last {
     margin-top: 0;
   }
   body.tutorial.kol h2 {
     padding-top: 7px;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 60px;
     font-family: "didot";
   }
