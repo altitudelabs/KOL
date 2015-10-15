@@ -5954,6 +5954,14 @@ body .social-paltform .content {
     white-space: normal;
   }
 }
+body footer a,
+body .social-paltform a {
+  cursor: default;
+}
+body footer a[href],
+body .social-paltform a[href] {
+  cursor: pointer;
+}
 @media (max-width: 760px) {
   body footer a,
   body .social-paltform a {
@@ -6528,6 +6536,11 @@ header .company-meaning {
   font-family: "baskerville";
   min-height: 319px;
   margin-bottom: 13%;
+}
+@media (max-width: 760px) {
+  .body-container section.select-my-role {
+    margin-bottom: 19%;
+  }
 }
 .body-container section.select-my-role .img-kol-or-advertiser-kol {
   shape-margin: 20px;

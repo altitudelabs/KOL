@@ -7611,6 +7611,14 @@ body .social-paltform .content {
     white-space: normal;
   }
 }
+body footer a,
+body .social-paltform a {
+  cursor: default;
+}
+body footer a[href],
+body .social-paltform a[href] {
+  cursor: pointer;
+}
 @media (max-width: 760px) {
   body footer a,
   body .social-paltform a {
