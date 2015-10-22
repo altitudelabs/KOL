@@ -6511,7 +6511,7 @@ body footer a .social {
   height: 35px;
 }
 body footer a .social.facebook {
-  background: url("../images/split-social-media.png") no-repeat 7px 0px;
+  background: url("../images/split-social-media.png") no-repeat 0px 0px;
 }
 body footer a .social.instagram {
   background: url("../images/split-social-media.png") no-repeat -53px 0px;

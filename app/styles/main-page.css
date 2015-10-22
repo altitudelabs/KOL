@@ -6551,8 +6551,8 @@ header .company-meaning {
 }
 .body-container section.select-my-role img {
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 65px;
+  padding-right: 65px;
 }
 @media (max-width: 760px) {
   .body-container section.select-my-role .both-pic {
@@ -6651,7 +6651,7 @@ header .company-meaning {
 }
 .body-container section.select-my-role .description .tip em {
   word-spacing: 0.05em;
-  width: 147px;
+  width: 128px;
   display: block;
   padding: 12px 0 4px 1px ;
   line-height: 18px;
