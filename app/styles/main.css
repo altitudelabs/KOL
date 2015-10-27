@@ -5974,7 +5974,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "baskerville";
+  font-family: "baskerville", 'baskerville-regular';
 }
 /* =Font
 -------------------------------------------------- */
@@ -6386,7 +6386,7 @@ body {
   color: #171717;
   font-size: 26px;
   background-color: #fcf9f5;
-  font-family: "Baskerville";
+  font-family: "Baskerville", 'baskerville-regular';
   font-style: normal;
   border: 12px solid #171717;
   border-top: 0px;
