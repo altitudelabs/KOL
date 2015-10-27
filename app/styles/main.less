@@ -100,12 +100,12 @@ a.remove-style {
 /* =CSS Reset
 -------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family : "baskerville";
+  font-family : "baskerville",'baskerville-regular';
 }
 
 /* =Font
 -------------------------------------------------- */
-@libre: 'Libre Baskerville', serif;
+@libre: "baskerville",'baskerville-regular','Libre Baskerville', serif;
 
 @font-face {
   font-family: 'didot';
@@ -532,7 +532,7 @@ body {
   color       : @black;
   font-size: 26px;
   background-color: @white;
-  font-family : "Baskerville";
+  font-family : "Baskerville",'baskerville-regular';
   font-style: normal;
   border: 12px solid @black;
   border-top: 0px;
@@ -604,7 +604,7 @@ body {
         display: inline-block;
         width: 35px;
         height: 35px;
-        
+
         .social-position-x(@base) {
           background: url("../images/split-social-media.png") no-repeat @base 0px ;
         }
