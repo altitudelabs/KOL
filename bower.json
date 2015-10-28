@@ -4,7 +4,7 @@
   "dependencies": {
     "bootstrap": "~3.0.0",
     "modernizr": "~2.6.2",
-    "jquery": "~2.1.4",
+    "jquery": "~1.11.2",
     "awesome-bootstrap-checkbox": "~0.3.4",
     "font-awesome": "~4.3.0",
     "bootstrap-select": "~1.7.2",
