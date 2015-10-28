@@ -6210,12 +6210,12 @@ header .company-meaning {
   height: 25px;
   width: 25px;
   background-image: url("../images/icons/menu.png");
-  background-size: cover;
+  background-size: 25px 25px;
   cursor: pointer;
 }
 @media (max-width: 760px) {
   .body-container header .btn-mobile-top-nav {
-    display: block;
+    display: inline-block;
   }
 }
 .body-container header .btn-mobile-top-nav.active {
@@ -6568,6 +6568,7 @@ header .company-meaning {
 }
 .body-container section.select-my-role img {
   width: 100%;
+  height: auto;
   padding-left: 65px;
   padding-right: 65px;
 }
