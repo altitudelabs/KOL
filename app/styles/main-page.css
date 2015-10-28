@@ -6053,7 +6053,7 @@ header .btn-mobile-top-nav {
   height: 25px;
   width: 25px;
   background-image: url("../images/icons/menu.png");
-  background-size: cover;
+  background-size: 25px 25px;
   cursor: pointer;
 }
 header .btn-mobile-top-nav.active {
@@ -6205,10 +6205,10 @@ header .company-meaning {
 }
 .body-container header .btn-mobile-top-nav {
   display: none;
+  width: 25px;
   top: 0;
   left: 0;
   height: 25px;
-  width: 25px;
   background-image: url("../images/icons/menu.png");
   background-size: 25px 25px;
   cursor: pointer;
