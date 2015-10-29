@@ -6359,6 +6359,9 @@ body.advertisers.tutorial section.main-content.advertisers button {
     text-align: center;
   }
 }
+body.advertisers.tutorial section.main-content.advertisers button[disabled]:hover {
+  background: #171717;
+}
 @media (max-width: 760px) {
   body.advertisers.tutorial section.main-content.advertisers {
     margin-top: 0;
