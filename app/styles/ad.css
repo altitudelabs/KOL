@@ -5968,6 +5968,7 @@ body .social-paltform .content {
 @media (max-width: 760px) {
   body footer .text-center,
   body .social-paltform .text-center {
+    padding: 10px 0;
     white-space: normal;
   }
 }
@@ -5995,7 +5996,7 @@ body .social-paltform a .social {
 @media (max-width: 760px) {
   body footer a .social,
   body .social-paltform a .social {
-    margin: 11px 4px;
+    margin: 0px 4px;
   }
 }
 body footer a .social.facebook,
@@ -6104,7 +6105,7 @@ header .company-meaning {
 }
 @media (max-width: 760px) {
   header .company-meaning {
-    display: none;
+    line-height: 16px;
   }
 }
 .top-nav ul {
@@ -6337,6 +6338,7 @@ body footer .content em {
     padding-left: 35px;
     padding-right: 35px;
     margin-left: 0;
+    text-align: left;
   }
   body.advertisers.tutorial section .content-wrapper ul li {
     font-size: 19px;
@@ -6438,6 +6440,7 @@ body.advertisers.tutorial section.main-content.advertisers button[disabled]:hove
   }
   body.advertisers.tutorial section.how-it-works section.step .content-wrapper .content {
     font-size: 20px;
+    text-align: left;
   }
 }
 /*# sourceMappingURL=/styles/main.css.map */
