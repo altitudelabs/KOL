@@ -56,22 +56,25 @@
       color: @black;
       width: 100%;
       text-align: center;
-      line-height: 22px;
-      font-size: 16px;
-      font-weight: bold;
+      line-height: 25px;
+      font-size: 20px;
+      font-weight: normal;
       font-family: "baskerville",'baskerville-regular';
       .responsive-mobile({
         margin-bottom: 22px;
       });
+      strong {
+        font-weight: bold;
+      }
     }
     .company-meaning {
       color: @black;
       width: 100%;
       text-align: center;
-      line-height: 10px;
+      line-height: 20px;
       font-family: "baskerville",'baskerville-regular';
       font-style: italic;
-      font-size: 15px;
+      font-size: 20px;
       .responsive-mobile({
         line-height: 16px;
       });
@@ -451,7 +454,11 @@
           margin: 0 auto;
         });
       }
+      .link {
+        font-size: 18px;
+      }
       .tip {
+        font-size: 16px;
         color: @black;
         overflow: visible;
         display: block;
@@ -465,7 +472,7 @@
           width: 131px;
           display: block;
           padding: 12px 0 4px 1px ;
-          line-height: 18px;
+          line-height: 20px;
           .responsive-mobile({
             width: 100%;
             text-align: center;

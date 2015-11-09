@@ -6639,7 +6639,7 @@ body.home .container-fluid h1 {
   margin-top: 40px;
 }
 body.home .container-fluid .sub-title {
-  font-size: 16px;
+  font-size: 20px;
 }
 body.home .container-fluid .sub-title.second {
   font-size: 14px;
@@ -7205,7 +7205,7 @@ body.sign-up-now .my-container section.header h1 {
   }
 }
 body.sign-up-now .my-container section.header .sub-title {
-  font-size: 16px;
+  font-size: 20px;
   margin-top: -10px;
 }
 body.sign-up-now .my-container section.header hr.header-bar {
@@ -7586,7 +7586,7 @@ body .social-paltform .section-bar.footer {
 body footer .content,
 body .social-paltform .content {
   color: #171717;
-  font-size: 17px;
+  font-size: 20px;
   font-style: italic;
   line-height: 23px;
   margin-top: 50px;
@@ -7770,9 +7770,9 @@ header .company-description {
   color: #171717;
   width: 100%;
   text-align: center;
-  line-height: 22px;
-  font-size: 16px;
-  font-weight: bold;
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: normal;
   font-family: "baskerville", 'baskerville-regular';
 }
 @media (max-width: 760px) {
@@ -7784,15 +7784,18 @@ header .company-description {
   header .company-description {
     margin-bottom: 22px;
   }
+}
+header .company-description strong {
+  font-weight: bold;
 }
 header .company-meaning {
   color: #171717;
   width: 100%;
   text-align: center;
-  line-height: 10px;
+  line-height: 20px;
   font-family: "baskerville", 'baskerville-regular';
   font-style: italic;
-  font-size: 15px;
+  font-size: 20px;
 }
 @media (max-width: 760px) {
   header .company-meaning {
@@ -8496,5 +8499,8 @@ body.sign-up-now .bootstrap-select.big button {
 }
 body.sign-up-now .bootstrap-select {
   width: 100%!important;
+}
+.bfh-selectbox .bfh-selectbox-toggle {
+  padding: 6px 70px 6px 12px;
 }
 /*# sourceMappingURL=/styles/main.css.map */

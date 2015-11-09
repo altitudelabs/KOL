@@ -6585,7 +6585,7 @@ body.home .container-fluid h1 {
   margin-top: 40px;
 }
 body.home .container-fluid .sub-title {
-  font-size: 16px;
+  font-size: 20px;
 }
 body.home .container-fluid .sub-title.second {
   font-size: 14px;
@@ -7064,7 +7064,7 @@ body.sign-up-now .my-container section.header h1 {
   }
 }
 body.sign-up-now .my-container section.header .sub-title {
-  font-size: 16px;
+  font-size: 20px;
   margin-top: -10px;
 }
 body.sign-up-now .my-container section.header hr.header-bar {

@@ -5947,7 +5947,7 @@ body .social-paltform .section-bar.footer {
 body footer .content,
 body .social-paltform .content {
   color: #171717;
-  font-size: 17px;
+  font-size: 20px;
   font-style: italic;
   line-height: 23px;
   margin-top: 50px;
@@ -6084,9 +6084,9 @@ header .company-description {
   color: #171717;
   width: 100%;
   text-align: center;
-  line-height: 22px;
-  font-size: 16px;
-  font-weight: bold;
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: normal;
   font-family: "baskerville", 'baskerville-regular';
 }
 @media (max-width: 760px) {
@@ -6094,14 +6094,17 @@ header .company-description {
     margin-bottom: 22px;
   }
 }
+header .company-description strong {
+  font-weight: bold;
+}
 header .company-meaning {
   color: #171717;
   width: 100%;
   text-align: center;
-  line-height: 10px;
+  line-height: 20px;
   font-family: "baskerville", 'baskerville-regular';
   font-style: italic;
-  font-size: 15px;
+  font-size: 20px;
 }
 @media (max-width: 760px) {
   header .company-meaning {
@@ -6240,9 +6243,9 @@ header .company-meaning {
   color: #171717;
   width: 100%;
   text-align: center;
-  line-height: 22px;
-  font-size: 16px;
-  font-weight: bold;
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: normal;
   font-family: "baskerville", 'baskerville-regular';
 }
 @media (max-width: 760px) {
@@ -6250,14 +6253,17 @@ header .company-meaning {
     margin-bottom: 22px;
   }
 }
+.body-container header .company-description strong {
+  font-weight: bold;
+}
 .body-container header .company-meaning {
   color: #171717;
   width: 100%;
   text-align: center;
-  line-height: 10px;
+  line-height: 20px;
   font-family: "baskerville", 'baskerville-regular';
   font-style: italic;
-  font-size: 15px;
+  font-size: 20px;
 }
 @media (max-width: 760px) {
   .body-container header .company-meaning {
@@ -6662,7 +6668,11 @@ header .company-meaning {
     margin: 0 auto;
   }
 }
+.body-container section.select-my-role .description .link {
+  font-size: 18px;
+}
 .body-container section.select-my-role .description .tip {
+  font-size: 16px;
   color: #171717;
   overflow: visible;
   display: block;
@@ -6678,7 +6688,7 @@ header .company-meaning {
   width: 131px;
   display: block;
   padding: 12px 0 4px 1px ;
-  line-height: 18px;
+  line-height: 20px;
 }
 @media (max-width: 760px) {
   .body-container section.select-my-role .description .tip em {
