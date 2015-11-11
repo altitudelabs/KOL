@@ -6563,7 +6563,7 @@ header .company-meaning {
 }
 @media (max-width: 760px) {
   .body-container section.select-my-role {
-    margin-bottom: 19%;
+    margin-bottom: 10px;
   }
 }
 .body-container section.select-my-role .img-kol-or-advertiser-kol {
