@@ -54,7 +54,7 @@ $(document).ready(function(){
 			$('.bfh-selectbox-option').addClass('font-black');
 		}
 	});
-
+/*
 	(function(){
 	  var lastKeyCode, times = 0;
 	  $(document).keydown(function(e){
@@ -78,7 +78,7 @@ $(document).ready(function(){
 	    fittingElement && fittingElement.click();
 	    selectbox.find('.bfh-selectbox-toggle').click();
 	  });
-	})();
+	})();*/
 
 	$('.js-step-1-nav').on('click',function() {
 		$('.js-step-2-nav').addClass('disable');

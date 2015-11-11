@@ -7894,6 +7894,9 @@ header .company-meaning {
 .navbar {
   margin-top: -12px;
 }
+.bfh-selectbox-filter.form-control {
+  color: #171717;
+}
 @media (max-width: 760px) {
   body.sign-up-now .my-container a button.continue.back-to-home {
     margin: 35px auto 82px auto;
@@ -8366,20 +8369,16 @@ body.sign-up-now .bfh-selectbox.open > .bfh-selectbox-options {
     display: block;
     width: 100%;
   }
-  body.sign-up-now .bfh-selectbox.open > .bfh-selectbox-options li {
-    height: 60px;
-  }
 }
 @media (max-width: 760px) {
   body.sign-up-now .bfh-selectbox.open > .bfh-selectbox-options {
     display: block;
     width: 100%;
   }
-  body.sign-up-now .bfh-selectbox.open > .bfh-selectbox-options li {
-    height: 60px;
-  }
 }
 body.sign-up-now .bfh-selectbox.open > .bfh-selectbox-options ul li > a {
+  display: block;
+  height: 60px;
   line-height: 64px;
   min-height: 70px;
 }
