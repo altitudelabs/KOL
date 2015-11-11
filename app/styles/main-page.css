@@ -6189,7 +6189,7 @@ header .company-meaning {
 }
 @media (max-width: 1024px) {
   .body-container {
-    padding: 0 15px;
+    padding: 0 25px;
   }
 }
 @media (max-width: 760px) {
@@ -6576,8 +6576,14 @@ header .company-meaning {
 .body-container section.select-my-role img {
   width: 100%;
   height: auto;
-  padding-left: 65px;
-  padding-right: 65px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+@media (max-width: 1024px) {
+  .body-container section.select-my-role img {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 @media (max-width: 760px) {
   .body-container section.select-my-role .both-pic {
@@ -6598,7 +6604,7 @@ header .company-meaning {
 .body-container section.select-my-role .kol-section {
   position: absolute;
   bottom: 0;
-  left: -1%;
+  left: -2%;
 }
 @media (max-width: 760px) {
   .body-container section.select-my-role .kol-section {
@@ -6609,7 +6615,7 @@ header .company-meaning {
 .body-container section.select-my-role .advertiser-section {
   margin-right: 3px;
   position: absolute;
-  right: -1%;
+  right: -2%;
   top: 0;
 }
 @media (max-width: 760px) {
@@ -6629,8 +6635,8 @@ header .company-meaning {
 .body-container section.select-my-role .description {
   position: relative;
   padding-top: 25px;
-  padding-bottom: 112px;
   width: 146px;
+  padding-bottom: 95px;
 }
 @media (max-width: 760px) {
   .body-container section.select-my-role .description {
@@ -6652,8 +6658,13 @@ header .company-meaning {
 }
 .body-container section.select-my-role .description .iam .iam-big {
   color: #171717;
-  font-size: 58px;
+  font-size: 43px;
   line-height: 58px;
+}
+@media (max-width: 1024px) {
+  .body-container section.select-my-role .description .iam .iam-big {
+    font-size: 40px;
+  }
 }
 .body-container section.select-my-role .description hr {
   width: 90px;
@@ -6685,10 +6696,10 @@ header .company-meaning {
 }
 .body-container section.select-my-role .description .tip em {
   word-spacing: 0.05em;
-  width: 131px;
+  width: 129px;
   display: block;
   padding: 12px 0 4px 1px ;
-  line-height: 20px;
+  line-height: 18px;
 }
 @media (max-width: 760px) {
   .body-container section.select-my-role .description .tip em {
@@ -6721,19 +6732,34 @@ header .company-meaning {
   }
 }
 .body-container section.select-my-role .description.advertiser-description .iam {
-  margin-left: -95px;
+  margin-left: -30px;
+}
+@media (max-width: 1024px) {
+  .body-container section.select-my-role .description.advertiser-description .iam {
+    margin-left: -19px;
+    width: 166px;
+  }
+  .body-container section.select-my-role .description.advertiser-description .iam .iam-big {
+    width: 166px;
+  }
 }
 @media (max-width: 760px) {
   .body-container section.select-my-role .description.advertiser-description .iam {
     margin-left: 0;
+    width: 100%;
+  }
+  .body-container section.select-my-role .description.advertiser-description .iam .iam-big {
+    width: 100%;
   }
 }
 .body-container section.select-my-role .description.advertiser-description .tip em {
   float: right;
+  width: 147px;
 }
 @media (max-width: 760px) {
   .body-container section.select-my-role .description.advertiser-description .tip em {
     float: none;
+    width: 100%;
   }
 }
 .body-container section.advertisers .section-content img {

@@ -9,7 +9,7 @@
   padding: 0 95px;
   margin: 0 auto;
   .responsive-mobile-form({
-    padding: 0 15px;
+    padding: 0 25px;
   });
   .responsive-mobile({
     padding: 0 8px;
@@ -369,8 +369,12 @@
     img {
       width: 100%;
       height: auto;
-      padding-left: 65px;
-      padding-right: 65px;
+      padding-left: 50px;
+      padding-right: 50px;
+      .responsive-mobile-form({
+        padding-left: 70px;
+        padding-right: 70px;
+      });
     }
 
     .both-pic {
@@ -392,7 +396,7 @@
     .kol-section {
       position: absolute;
       bottom: 0;
-      left: -1%;
+      left: -2%;
       .responsive-mobile({
         position: relative;
         left: 0;
@@ -402,7 +406,7 @@
     .advertiser-section {
       margin-right: 3px;
       position: absolute;
-      right: -1%;
+      right: -2%;
       top: 0;
       .responsive-mobile({
         position: relative;
@@ -420,8 +424,8 @@
     .description {
       position: relative;
       padding-top: 25px;
-      padding-bottom: 112px;
       width: 146px;
+      padding-bottom: 95px;
       .responsive-mobile({
         padding: 0 0 15px 0;
         width: 100%;
@@ -439,8 +443,12 @@
 
         .iam-big {
           color: @black;
-          font-size: 58px;
+          font-size: 43px;
           line-height: 58px;
+          .responsive-mobile-form({
+            font-size: 40px;
+          });
+
         }
       }
       hr {
@@ -469,10 +477,11 @@
 
         em {
           word-spacing: 0.05em;
-          width: 131px;
+          width: 129px;
           display: block;
           padding: 12px 0 4px 1px ;
-          line-height: 20px;
+          line-height: 18px;
+
           .responsive-mobile({
             width: 100%;
             text-align: center;
@@ -501,16 +510,29 @@
         });
 
         .iam {
-          margin-left: -95px;
+          margin-left: -30px;
+          .responsive-mobile-form({
+            margin-left:-19px;
+            width: 166px;
+            .iam-big {
+              width: 166px;
+            }
+          });
           .responsive-mobile({
             margin-left: 0;
+            width: 100%;
+            .iam-big {
+              width: 100%;
+            }
           });
         }
 
         .tip em {
           float: right;
+          width: 147px;
           .responsive-mobile({
             float: none;
+            width: 100%;
           });
         }
       }
