@@ -55,19 +55,30 @@ $(document).ready(function(){
 		}
 	});
 
-	$(document).keydown(function(e){
-    var selectbox = $('.bfh-selectbox.open');
-    if(selectbox.length == 0) return;
+	(function(){
+	  var lastKeyCode, times = 0;
+	  $(document).keydown(function(e){
+	    var selectbox = $('.bfh-selectbox.open');
+	    if(selectbox.length == 0) return;
 
-    selectbox
-      .find('li a[data-option]')
-      .filter(function() {
-        return $(this).text().toUpperCase().indexOf(String.fromCharCode(e.keyCode)) === 0;
-      })
-      .get(0)
-      .click();
-    selectbox.find('.bfh-selectbox-toggle').click();
-  });
+	    if (lastKeyCode && lastKeyCode === e.keyCode) {
+	      times++;
+	    } else {
+	      lastKeyCode = e.keyCode;
+	      times = 0;
+	    }
+
+	    var fittingElements = selectbox
+	      .find('li a[data-option]')
+	      .filter(function() {
+	        return $(this).text().toUpperCase().indexOf(String.fromCharCode(e.keyCode)) === 0;
+	      });
+
+	    var fittingElement = fittingElements.get(times % fittingElements.length)
+	    fittingElement && fittingElement.click();
+	    selectbox.find('.bfh-selectbox-toggle').click();
+	  });
+	})();
 
 	$('.js-step-1-nav').on('click',function() {
 		$('.js-step-2-nav').addClass('disable');
