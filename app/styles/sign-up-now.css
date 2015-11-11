@@ -7897,6 +7897,9 @@ header .company-meaning {
 .bfh-selectbox-filter.form-control {
   color: #171717;
 }
+.bfh-selectbox .bfh-selectbox-options ul {
+  max-width: none;
+}
 @media (max-width: 760px) {
   body.sign-up-now .my-container a button.continue.back-to-home {
     margin: 35px auto 82px auto;
