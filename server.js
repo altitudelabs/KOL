@@ -42,8 +42,10 @@ var Converter = require('csvtojson').Converter;
 app.post('/profile', function(req, res) {
   var body = req.body;
   //console.log(body.country+' '+body.city);
-  //if (body.city) { body.city = convertCity(body.country, body.city); }
-  //if (body.country) { body.country = convertCountry(body.country); }
+  var city = '',
+      country = '';
+  if (body.city) { city = convertCity(body['country'][0], body['city'][0]); }
+  if (body.country) { country = convertCountry(body['country'][0]); }
 
   body.timeSubmitted = new Date();
   //console.log(body);
@@ -74,8 +76,8 @@ app.post('/profile', function(req, res) {
           LNAME: body['last-name'],
           AGE: body.age,
           GENDER: body.gender,
-          COUNTRY: body.country,
-          CITY: body.city,
+          COUNTRY: country,
+          CITY: city,
           PROFESSION: body.profession,
           HOUSEHOLD: body['household-income'],
           FACEBOOK: body.facebook,
