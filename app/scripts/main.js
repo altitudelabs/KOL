@@ -165,7 +165,7 @@ $(document).ready(function(){
 	window.b = checkedOptions;
 
 	$('.js-step-2-continue').on('click', function() {
-		validateStep2(checkedOptions);
+		var valid = validateStep2(checkedOptions);
 
 		// 1. Do validator
 		var hasErrorMsg = $('.js-step-2 .with-errors ul').length;
@@ -178,12 +178,12 @@ $(document).ready(function(){
 				blankQty++;
 		});
 
-		if(hasErrorMsg == 0 && blankQty == 0) {
+		if(valid && hasErrorMsg == 0 && blankQty == 0) {
 			$('.js-step-3-nav').removeClass('disable');
 			$('.js-step-3-nav').trigger('click');
 		} else {
 		  $('html, body').animate({
-	    	scrollTop: $('.js-step-2 .with-errors ul').closest('article').offset().top
+	    	scrollTop: $('.js-step-2').offset().top// .with-errors ul').closest('article').offset().top
 	      }, 500);
 		}
 	});
@@ -200,6 +200,8 @@ $(document).ready(function(){
 		} else {
 			checkedOptions++;
 			$('.js-' + matchName).slideUp();
+			$('.js-' + matchName +' input').prop("checked", false);
+			$('.js-' + matchName +' input').val('');
 		}
 		if(checkedOptions == 0) {
 			$('.sub-question.title').slideUp();
@@ -218,14 +220,17 @@ $(document).ready(function(){
 /*	=Function
 -------------------------------------------------- */
 function validateStep2() {
+	var valid = true;
 	if(!$('.js-social').is(':checked')) {
 		$('#js-social-checkbox').next('.with-errors').html('<ul class="list-unstyled"><li>Please select at least one platform</li></ul>');
+		valid = false;
 	} else {
 		$('#js-social-checkbox').next('.with-errors').html('');
 	}
 	$('.tag-form-group').each(function() {
 		if($(this).find('.tag').length == 0) {
 			$(this).next('.with-errors').html('<ul class="list-unstyled"><li>Please input at least one tag</li></ul>');
+			valid = false;
 		} else {
 			$(this).next('.with-errors').html('');
 		}
@@ -233,19 +238,16 @@ function validateStep2() {
 	$('#js-social-checkbox input:checkbox:checked').each(function () {
 		var platform = $(this).attr('data-name');
 
-	    $('article.'+ platform).each(function () {
-			var checked = false;
-			$(this).find('input:checked').each(function () {
-				checked = true;
-				return false;
-			});
-			if(!checked) {
-				$(this).find('.with-errors').html('<ul class="list-unstyled"><li>Please select at least one platform</li></ul>');
-			} else {
-				$(this).find('.with-errors').html('');
-			}
-		});
+		if( $('article.'+ platform +' input:checked').length >0 ){
+			$(this).find('.with-errors').html('');
+		}else {
+			$(this).find('.with-errors').html('<ul class="list-unstyled"><li>Please select at least one platform</li></ul>');
+			valid = false;
+			return;
+		}
+
 	});
+	return valid;
 }
 
 function validateSelection() {
