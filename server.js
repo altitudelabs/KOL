@@ -41,8 +41,7 @@ var Converter = require('csvtojson').Converter;
 
 app.post('/profile', function(req, res) {
   var body = req.body;
-  body.city = body.city.replace(',','');
-  body.country = body.country.replace(',','');
+  console.log(body.country+' '+body.city);
   if (body.city) { body.city = convertCity(body.country, body.city); }
   if (body.country) { body.country = convertCountry(body.country); }
 
