@@ -6112,7 +6112,7 @@ header .company-meaning {
   }
 }
 .top-nav ul {
-  width: 401px;
+  width: 471px;
   position: relative;
   text-align: center;
   margin-left: auto;
@@ -6402,7 +6402,9 @@ body.advertisers.tutorial section.main-content.advertisers button[disabled]:hove
     margin-top: 15px;
   }
   body.advertisers.tutorial section.main-content.advertisers .image-pannel {
-    display: none;
+    width: 100%;
+    margin-top: 0px;
+    max-width: none;
   }
 }
 @media (max-width: 760px) {

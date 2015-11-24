@@ -6112,7 +6112,7 @@ header .company-meaning {
   }
 }
 .top-nav ul {
-  width: 401px;
+  width: 471px;
   position: relative;
   text-align: center;
   margin-left: auto;
@@ -6271,7 +6271,7 @@ header .company-meaning {
   }
 }
 .body-container .top-nav ul {
-  width: 401px;
+  width: 471px;
   position: relative;
   text-align: center;
   margin-left: auto;
@@ -6469,7 +6469,7 @@ header .company-meaning {
   .body-container section .section-content .section-content-text ul.list li {
     font-size: 17px;
     margin-bottom: 21px;
-    text-align: center;
+    text-align: left;
   }
 }
 .body-container section .section-content .section-content-text ul.list li .number {
@@ -6563,7 +6563,7 @@ header .company-meaning {
 }
 @media (max-width: 760px) {
   .body-container section.select-my-role {
-    margin-bottom: 10px;
+    margin-bottom: 46px;
   }
 }
 .body-container section.select-my-role .img-kol-or-advertiser-kol {

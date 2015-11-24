@@ -6468,7 +6468,7 @@ body nav.stick .navbar-brand:hover {
 }
 body nav.stick ul.nav {
   float: none;
-  width: 343px;
+  width: 405px;
 }
 body nav.stick ul.nav li {
   margin: 0px 10px;
@@ -7808,7 +7808,7 @@ header .company-meaning {
   }
 }
 .top-nav ul {
-  width: 401px;
+  width: 471px;
   position: relative;
   text-align: center;
   margin-left: auto;
@@ -8504,5 +8504,35 @@ body.sign-up-now .bootstrap-select {
 }
 .bfh-selectbox .bfh-selectbox-toggle {
   padding: 6px 70px 6px 12px;
+}
+.social-ref-input {
+  display: inline-block;
+  width: 100%;
+  margin-left: -20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.social-ref-input label {
+  display: inline-block;
+}
+.social-ref-input label em {
+  box-sizing: border-box;
+  color: #171717;
+  display: inline;
+  font-family: Baskerville, baskerville-regular;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: normal;
+  height: auto;
+  line-height: 31.7143px;
+}
+.social-ref-input input {
+  display: inline-block;
+  background: transparent;
+  width: 300px;
+  min-height: 40px;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 22px;
 }
 /*# sourceMappingURL=/styles/main.css.map */
