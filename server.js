@@ -41,8 +41,8 @@ var Converter = require('csvtojson').Converter;
 
 app.post('/profile', function(req, res) {
   var body = req.body;
-  if (body.city) { body.city = convertCity(body.country, body.city); }
-  if (body.country) { body.country = convertCountry(body.country); }
+  if (body.city) { body.city = convertCity(body.country, body.city) || body.city; }
+  if (body.country) { body.country = convertCountry(body.country) || body.country; }
 
   body.timeSubmitted = new Date();
   console.log(body);
@@ -70,7 +70,7 @@ app.post('/profile', function(req, res) {
         },
         merge_vars: {
           FNAME: body['first-name'],
-          LNAME: body.lastname,
+          LNAME: body['last-name'],
           AGE: body.age,
           GENDER: body.gender,
           COUNTRY: body.country,
@@ -95,7 +95,7 @@ app.post('/profile', function(req, res) {
           RBLOG: body['blog-ref'],
           BRANDS: body.brands,
           VENUES: body.venues,
-          ACTIVITIES: body.activities,
+          ACTIVITIES: body.activities
         }
       };
       mcApi.lists_subscribe(params, function(err, response) {
