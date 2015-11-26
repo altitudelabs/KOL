@@ -84,8 +84,16 @@
 
   /* Start .top-nav */
   .top-nav {
+    &.collapse {
+      display: inline;
+    }
+    .responsive-mobile({
+      &.collapse {
+        display: none;
+      }
+    });
     ul{
-      width: 471px;
+      width: 396px;
       position: relative;
       text-align: center;
       margin-left: auto;
@@ -98,11 +106,41 @@
         list-style-type: none;
         text-align: center;
         padding: 10px 30px;
+        height: 90px;
         .responsive-mobile({
           width: 100%;
           padding: 0;
+          height: auto;
         });
-
+        .sub-list {
+          position: absolute;
+          top: 51px;
+          left: 0;
+          width: 100%;
+          z-index: 10;
+          display: none;
+          background: #fcf9f5;
+          border: 2px solid #000;
+          .sub-option {
+            display: block;
+            height: 40px;
+            width: 100%;
+            a{
+              line-height: 40px;
+            }
+          }
+          .responsive-mobile({
+            position: relative;
+            display: block;
+            top: 0;
+            border-width: 1px;
+            border-left: none;
+            border-right: none;
+            width: 60%;
+            margin: 0 auto;
+            background: transparent;
+          });
+        }
         a {
           color: @black;
           font-family: "Baskerville",'baskerville-regular';
@@ -110,16 +148,29 @@
           line-height: 58px;
           font-size: 16px;
           padding-bottom: 3px;
+          position: relative;
           .responsive-mobile({
             line-height: 53px;
           });
-
+          &[disabled] {
+            &:hover {
+              border-bottom: none;
+              .responsive-mobile({
+                cursor: default;
+              });
+            }
+          }
           &:hover {
             border-bottom: 2px @black solid;
           }
         }
         &.active a {
           border-bottom: 2px @black solid;
+        }
+        &:hover {
+          .sub-list {
+            display: block;
+          }
         }
       }
       .responsive-mobile({

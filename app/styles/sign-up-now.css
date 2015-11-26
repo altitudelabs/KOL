@@ -6468,10 +6468,69 @@ body nav.stick .navbar-brand:hover {
 }
 body nav.stick ul.nav {
   float: none;
-  width: 405px;
+  width: 340px;
 }
 body nav.stick ul.nav li {
   margin: 0px 10px;
+  height: 50px;
+  overflow: visible;
+}
+body nav.stick ul.nav li:hover .sub-list {
+  display: block;
+}
+body nav.stick ul.nav li .sub-list {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: none;
+  background: #fcf9f5;
+  border: 2px solid #000;
+}
+body nav.stick ul.nav li .sub-list .sub-option {
+  display: block;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+}
+body nav.stick ul.nav li .sub-list .sub-option a:hover {
+  border-bottom: 2px solid #000;
+}
+body nav.stick ul.nav li .sub-list .sub-option a {
+  line-height: 40px;
+}
+body nav.stick ul.nav li .sub-list .sub-option a span {
+  color: #000;
+}
+body nav.stick ul.nav li .sub-list .sub-option.active a {
+  border-bottom: 2px #171717 solid;
+}
+@media (max-width: 760px) {
+  body nav.stick ul.nav li .sub-list {
+    position: relative;
+    display: block;
+    top: 0;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    width: 60%;
+    margin: 0 auto;
+    background: transparent;
+  }
+}
+@media (max-width: 760px) {
+  body nav.stick ul.nav li .sub-list {
+    position: relative;
+    display: block;
+    top: 0;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    width: 60%;
+    margin: 0 auto;
+    background: transparent;
+  }
 }
 body nav.stick ul.nav li a {
   color: #fcf9f5 !important;
@@ -6486,12 +6545,19 @@ body nav.stick ul.nav li.active a {
 body nav.stick ul.nav li.active a span {
   border-bottom: 2px solid #fcf9f5;
 }
+body nav.stick ul.nav li.active a[disabled],
+body nav.stick ul.nav li.active a[disabled]:hover,
 body nav.stick ul.nav li a:hover {
   color: #fcf9f5 !important;
   background-color: transparent!important;
 }
+body nav.stick ul.nav li.active a[disabled] span,
+body nav.stick ul.nav li.active a[disabled]:hover span,
 body nav.stick ul.nav li a:hover span {
   border-bottom: 2px solid #fcf9f5;
+}
+body nav.stick ul.nav li a[disabled]:hover span {
+  border-bottom: none;
 }
 body footer {
   margin-bottom: 50px;
@@ -7822,18 +7888,72 @@ header .company-meaning {
   list-style-type: none;
   text-align: center;
   padding: 10px 30px;
+  position: relative;
+  height: 90px;
 }
 @media (max-width: 760px) {
   .top-nav ul li {
     width: 100%;
     padding: 0;
+    height: auto;
   }
 }
 @media (max-width: 760px) {
   .top-nav ul li {
     width: 100%;
     padding: 0;
+    height: auto;
   }
+}
+.top-nav ul li .sub-list {
+  position: absolute;
+  top: 51px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: none;
+  background: #fcf9f5;
+  border: 2px solid #000;
+}
+.top-nav ul li .sub-list .sub-option {
+  display: block;
+  height: 40px;
+  width: 100%;
+}
+.top-nav ul li .sub-list .sub-option a {
+  line-height: 40px;
+}
+.top-nav ul li .sub-list .sub-option.active a {
+  border-bottom: 2px #171717 solid;
+}
+@media (max-width: 760px) {
+  .top-nav ul li .sub-list {
+    position: relative;
+    display: block;
+    top: 0;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    width: 60%;
+    margin: 0 auto;
+    background: transparent;
+  }
+}
+@media (max-width: 760px) {
+  .top-nav ul li .sub-list {
+    position: relative;
+    display: block;
+    top: 0;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    width: 60%;
+    margin: 0 auto;
+    background: transparent;
+  }
+}
+.top-nav ul li ul {
+  position: absolute;
 }
 .top-nav ul li a {
   color: #171717;
@@ -7854,6 +7974,19 @@ header .company-meaning {
 @media (max-width: 760px) {
   .top-nav ul li a {
     line-height: 53px;
+  }
+}
+.top-nav ul li a[disabled]:hover {
+  border-bottom: none;
+}
+@media (max-width: 760px) {
+  .top-nav ul li a[disabled]:hover {
+    cursor: default;
+  }
+}
+@media (max-width: 760px) {
+  .top-nav ul li a[disabled]:hover {
+    cursor: default;
   }
 }
 .top-nav ul li.active a {
@@ -7899,6 +8032,9 @@ header .company-meaning {
 }
 .bfh-selectbox .bfh-selectbox-options ul {
   max-width: none;
+}
+body.sign-up-now.finish {
+  border: 12px solid #171717;
 }
 @media (max-width: 760px) {
   body.sign-up-now .my-container a button.continue.back-to-home {

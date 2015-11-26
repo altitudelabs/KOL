@@ -6126,12 +6126,52 @@ header .company-meaning {
   list-style-type: none;
   text-align: center;
   padding: 10px 30px;
+  position: relative;
+  height: 90px;
 }
 @media (max-width: 760px) {
   .top-nav ul li {
     width: 100%;
     padding: 0;
+    height: auto;
   }
+}
+.top-nav ul li .sub-list {
+  position: absolute;
+  top: 51px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: none;
+  background: #fcf9f5;
+  border: 2px solid #000;
+}
+.top-nav ul li .sub-list .sub-option {
+  display: block;
+  height: 40px;
+  width: 100%;
+}
+.top-nav ul li .sub-list .sub-option a {
+  line-height: 40px;
+}
+.top-nav ul li .sub-list .sub-option.active a {
+  border-bottom: 2px #171717 solid;
+}
+@media (max-width: 760px) {
+  .top-nav ul li .sub-list {
+    position: relative;
+    display: block;
+    top: 0;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    width: 60%;
+    margin: 0 auto;
+    background: transparent;
+  }
+}
+.top-nav ul li ul {
+  position: absolute;
 }
 .top-nav ul li a {
   color: #171717;
@@ -6147,6 +6187,14 @@ header .company-meaning {
 @media (max-width: 760px) {
   .top-nav ul li a {
     line-height: 53px;
+  }
+}
+.top-nav ul li a[disabled]:hover {
+  border-bottom: none;
+}
+@media (max-width: 760px) {
+  .top-nav ul li a[disabled]:hover {
+    cursor: default;
   }
 }
 .top-nav ul li.active a {
@@ -6270,8 +6318,16 @@ header .company-meaning {
     line-height: 16px;
   }
 }
+.body-container .top-nav.collapse {
+  display: inline;
+}
+@media (max-width: 760px) {
+  .body-container .top-nav.collapse {
+    display: none;
+  }
+}
 .body-container .top-nav ul {
-  width: 471px;
+  width: 396px;
   position: relative;
   text-align: center;
   margin-left: auto;
@@ -6285,11 +6341,44 @@ header .company-meaning {
   list-style-type: none;
   text-align: center;
   padding: 10px 30px;
+  height: 90px;
 }
 @media (max-width: 760px) {
   .body-container .top-nav ul li {
     width: 100%;
     padding: 0;
+    height: auto;
+  }
+}
+.body-container .top-nav ul li .sub-list {
+  position: absolute;
+  top: 51px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: none;
+  background: #fcf9f5;
+  border: 2px solid #000;
+}
+.body-container .top-nav ul li .sub-list .sub-option {
+  display: block;
+  height: 40px;
+  width: 100%;
+}
+.body-container .top-nav ul li .sub-list .sub-option a {
+  line-height: 40px;
+}
+@media (max-width: 760px) {
+  .body-container .top-nav ul li .sub-list {
+    position: relative;
+    display: block;
+    top: 0;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    width: 60%;
+    margin: 0 auto;
+    background: transparent;
   }
 }
 .body-container .top-nav ul li a {
@@ -6299,10 +6388,19 @@ header .company-meaning {
   line-height: 58px;
   font-size: 16px;
   padding-bottom: 3px;
+  position: relative;
 }
 @media (max-width: 760px) {
   .body-container .top-nav ul li a {
     line-height: 53px;
+  }
+}
+.body-container .top-nav ul li a[disabled]:hover {
+  border-bottom: none;
+}
+@media (max-width: 760px) {
+  .body-container .top-nav ul li a[disabled]:hover {
+    cursor: default;
   }
 }
 .body-container .top-nav ul li a:hover {
@@ -6310,6 +6408,9 @@ header .company-meaning {
 }
 .body-container .top-nav ul li.active a {
   border-bottom: 2px #171717 solid;
+}
+.body-container .top-nav ul li:hover .sub-list {
+  display: block;
 }
 @media (max-width: 760px) {
   .body-container .top-nav ul {
