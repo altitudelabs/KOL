@@ -25,7 +25,9 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 	});
 
-
+	$('#how-it-works').on('click', function() {
+		$('.sub-list').toggleClass('open');
+	});
 
 	/*	=Gender options
 	-------------------------------------------------- */

@@ -6162,12 +6162,42 @@ header .company-meaning {
     position: relative;
     display: block;
     top: 0;
-    border-width: 1px;
-    border-left: none;
-    border-right: none;
+    border: none;
     width: 60%;
     margin: 0 auto;
     background: transparent;
+    height: auto;
+    overflow: hidden;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+  }
+  .top-nav ul li .sub-list.open {
+    height: auto;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+  }
+  .top-nav ul li .sub-list.open .sub-option {
+    height: 40px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+  }
+  .top-nav ul li .sub-list .sub-option {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
   }
 }
 .top-nav ul li ul {
@@ -6194,7 +6224,7 @@ header .company-meaning {
 }
 @media (max-width: 760px) {
   .top-nav ul li a[disabled]:hover {
-    cursor: default;
+    cursor: pointer;
   }
 }
 .top-nav ul li.active a {
@@ -6373,12 +6403,42 @@ header .company-meaning {
     position: relative;
     display: block;
     top: 0;
-    border-width: 1px;
-    border-left: none;
-    border-right: none;
+    border: none;
     width: 60%;
     margin: 0 auto;
     background: transparent;
+    height: auto;
+    overflow: hidden;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+  }
+  .body-container .top-nav ul li .sub-list.open {
+    height: auto;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+  }
+  .body-container .top-nav ul li .sub-list.open .sub-option {
+    height: 40px;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+  }
+  .body-container .top-nav ul li .sub-list .sub-option {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
   }
 }
 .body-container .top-nav ul li a {
@@ -6400,7 +6460,7 @@ header .company-meaning {
 }
 @media (max-width: 760px) {
   .body-container .top-nav ul li a[disabled]:hover {
-    cursor: default;
+    cursor: pointer;
   }
 }
 .body-container .top-nav ul li a:hover {
