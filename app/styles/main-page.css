@@ -6125,7 +6125,7 @@ header .company-meaning {
   float: left;
   list-style-type: none;
   text-align: center;
-  padding: 10px 30px;
+  padding: 10px 40px;
   position: relative;
   height: 90px;
 }
@@ -6219,11 +6219,11 @@ header .company-meaning {
     line-height: 53px;
   }
 }
-.top-nav ul li a[disabled]:hover {
+.top-nav ul li a.disable:hover {
   border-bottom: none;
 }
 @media (max-width: 760px) {
-  .top-nav ul li a[disabled]:hover {
+  .top-nav ul li a.disable:hover {
     cursor: pointer;
   }
 }
@@ -6357,7 +6357,7 @@ header .company-meaning {
   }
 }
 .body-container .top-nav ul {
-  width: 396px;
+  width: 470px;
   position: relative;
   text-align: center;
   margin-left: auto;
@@ -6370,7 +6370,7 @@ header .company-meaning {
   float: left;
   list-style-type: none;
   text-align: center;
-  padding: 10px 30px;
+  padding: 10px 40px;
   height: 90px;
 }
 @media (max-width: 760px) {
@@ -6455,11 +6455,11 @@ header .company-meaning {
     line-height: 53px;
   }
 }
-.body-container .top-nav ul li a[disabled]:hover {
+.body-container .top-nav ul li a.disable:hover {
   border-bottom: none;
 }
 @media (max-width: 760px) {
-  .body-container .top-nav ul li a[disabled]:hover {
+  .body-container .top-nav ul li a.disable:hover {
     cursor: pointer;
   }
 }

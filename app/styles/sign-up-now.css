@@ -6468,7 +6468,7 @@ body nav.stick .navbar-brand:hover {
 }
 body nav.stick ul.nav {
   float: none;
-  width: 360px;
+  width: 400px;
 }
 body nav.stick ul.nav li {
   margin: 0px 10px;
@@ -6622,6 +6622,10 @@ body footer a .social.blogger {
     margin-right: auto;
     margin-left: auto;
   }
+}
+.navbar-nav > li > a.disable {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .mob-nav-toggle-button {
   position: absolute;
@@ -7887,7 +7891,7 @@ header .company-meaning {
   float: left;
   list-style-type: none;
   text-align: center;
-  padding: 10px 30px;
+  padding: 10px 40px;
   position: relative;
   height: 90px;
 }
@@ -8036,16 +8040,16 @@ header .company-meaning {
     line-height: 53px;
   }
 }
-.top-nav ul li a[disabled]:hover {
+.top-nav ul li a.disable:hover {
   border-bottom: none;
 }
 @media (max-width: 760px) {
-  .top-nav ul li a[disabled]:hover {
+  .top-nav ul li a.disable:hover {
     cursor: pointer;
   }
 }
 @media (max-width: 760px) {
-  .top-nav ul li a[disabled]:hover {
+  .top-nav ul li a.disable:hover {
     cursor: pointer;
   }
 }

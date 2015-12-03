@@ -6414,7 +6414,7 @@ body nav.stick .navbar-brand:hover {
 }
 body nav.stick ul.nav {
   float: none;
-  width: 360px;
+  width: 400px;
 }
 body nav.stick ul.nav li {
   margin: 0px 10px;
@@ -6555,6 +6555,10 @@ body footer a .social.blogger {
     margin-right: auto;
     margin-left: auto;
   }
+}
+.navbar-nav > li > a.disable {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .mob-nav-toggle-button {
   position: absolute;
