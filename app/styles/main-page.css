@@ -6290,6 +6290,8 @@ header .company-meaning {
   width: 25px;
   top: 0;
   left: 0;
+  margin-top: -7px;
+  margin-left: -8px;
   height: 25px;
   background-image: url("../images/icons/menu.png");
   background-size: 25px 25px;

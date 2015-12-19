@@ -6249,9 +6249,7 @@ header .company-meaning {
 @media (max-width: 760px) {
   body.tutorial.kol {
     border-top: 12px #171717 solid;
-    padding-top: 6px;
-    padding-left: 9px;
-    padding-right: 9px;
+    padding: 12px;
   }
   body.tutorial.kol > * {
     text-align: center;
@@ -6386,6 +6384,9 @@ header .company-meaning {
     line-height: 23px;
     margin-top: -5px;
   }
+  body.tutorial.kol section.how-it-works section.step-3 .content {
+    font-size: 20px;
+  }
 }
 body.tutorial.kol hr {
   width: 27.8%;
@@ -6467,7 +6468,7 @@ body.advertisers.tutorial section.main-content.advertisers button[disabled]:hove
     width: 100%;
   }
   body.advertisers.tutorial section.main-content.advertisers h2 {
-    font-size: 35px;
+    font-size: 40px;
     letter-spacing: 0;
     text-align: center;
     width: 100%;
@@ -6493,7 +6494,7 @@ body.advertisers.tutorial section.main-content.advertisers button[disabled]:hove
     display: none;
   }
   body.advertisers.tutorial section.how-it-works h2 {
-    font-size: 66px;
+    font-size: 50px;
     letter-spacing: -0.03em;
     text-align: center;
     width: 100%;

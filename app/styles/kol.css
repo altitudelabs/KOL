@@ -6249,9 +6249,7 @@ header .company-meaning {
 @media (max-width: 760px) {
   body.tutorial.kol {
     border-top: 12px #171717 solid;
-    padding-top: 6px;
-    padding-left: 9px;
-    padding-right: 9px;
+    padding: 12px;
   }
   body.tutorial.kol > * {
     text-align: center;
@@ -6385,6 +6383,9 @@ header .company-meaning {
     padding: 0 40px;
     line-height: 23px;
     margin-top: -5px;
+  }
+  body.tutorial.kol section.how-it-works section.step-3 .content {
+    font-size: 20px;
   }
 }
 body.tutorial.kol hr {
