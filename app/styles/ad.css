@@ -6246,6 +6246,63 @@ header .company-meaning {
     display: inline-block;
   }
 }
+body.team .main-content {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 5px;
+  text-align: center;
+}
+body.team .team-member-pic {
+  display: block;
+  margin: 75px auto 25px auto;
+}
+@media (max-width: 760px) {
+  body.team .team-member-pic {
+    margin: 25px auto 25px auto;
+  }
+}
+body.team .team-member-pic img {
+  width: 174px;
+  height: auto;
+}
+body.team .team-member-name {
+  font-size: 51px;
+  line-height: 70px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  font-family: "didot", "baskerville", 'baskerville-regular';
+}
+body.team .team-member-position {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  font-family: "didot", "baskerville", 'baskerville-regular';
+}
+body.team .team-member-description {
+  margin: 42px auto;
+  width: 100%;
+  max-width: 740px;
+}
+body.team .team-member-description p {
+  width: 100%;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  font-family: "didot", "baskerville", 'baskerville-regular';
+  margin-bottom: 22px;
+}
+body.team .team-member-description p a {
+  line-height: 26px;
+  display: inline-block;
+  height: 30px;
+  width: 27px;
+  vertical-align: middle;
+  background-image: url(/images/linkedin.png);
+  background-repeat: no-repeat;
+}
 @media (max-width: 760px) {
   body.tutorial.kol {
     border-top: 12px #171717 solid;

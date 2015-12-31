@@ -6468,10 +6468,10 @@ body nav.stick .navbar-brand:hover {
 }
 body nav.stick ul.nav {
   float: none;
-  width: 400px;
+  width: 615px;
 }
 body nav.stick ul.nav li {
-  margin: 0px 10px;
+  margin: 0;
   height: 50px;
   overflow: visible;
 }
@@ -6531,6 +6531,10 @@ body nav.stick ul.nav li .sub-list .sub-option.active a {
     margin: 0 auto;
     background: transparent;
   }
+}
+body nav.stick ul.nav li > a {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 body nav.stick ul.nav li a {
   color: #fcf9f5 !important;

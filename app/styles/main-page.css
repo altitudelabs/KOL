@@ -6359,7 +6359,7 @@ header .company-meaning {
   }
 }
 .body-container .top-nav ul {
-  width: 470px;
+  width: 570px;
   position: relative;
   text-align: center;
   margin-left: auto;
@@ -6372,7 +6372,7 @@ header .company-meaning {
   float: left;
   list-style-type: none;
   text-align: center;
-  padding: 10px 40px;
+  padding: 10px 20px;
   height: 90px;
 }
 @media (max-width: 760px) {

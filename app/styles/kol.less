@@ -1,5 +1,64 @@
 @import "./common.less";
 
+body.team {
+  .main-content {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 5px;
+    text-align: center;
+  }
+  .team-member-pic {
+      display: block;
+      margin: 75px auto 25px auto;
+      .responsive-mobile({
+        margin: 25px auto 25px auto;
+      });
+      img{
+        width: 174px;
+        height: auto;
+      }
+  }
+  .team-member-name {
+    font-size: 51px;
+    line-height: 70px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    font-family: "didot","baskerville",'baskerville-regular';
+  }
+  .team-member-position {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    font-family: "didot", "baskerville", 'baskerville-regular';
+  }
+  .team-member-description {
+    margin: 42px auto;
+    width: 100%;
+    max-width: 740px;
+    p {
+      width: 100%;
+      font-size: 15px;
+      line-height: 26px;
+      font-weight: normal;
+      letter-spacing: 0.01em;
+      font-family: "didot", "baskerville", 'baskerville-regular';
+      margin-bottom: 22px;
+      a{
+        line-height: 26px;
+        display: inline-block;
+        height: 30px;
+        width: 27px;
+        vertical-align: middle;
+        background-image: url(/images/linkedin.png);
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+
 body.tutorial.kol {
   .responsive-mobile({
     border-top: 12px @black solid;
