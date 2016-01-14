@@ -7001,6 +7001,12 @@ body.tutorial.kol section.kol .right {
   width: 50%;
 }
 body.tutorial.kol section.kol .left {
+  width: 56%;
+}
+body.tutorial.kol section.kol .right {
+  width: 44%;
+}
+body.tutorial.kol section.kol .left {
   float: left;
 }
 body.tutorial.kol section.kol .right {
@@ -7048,6 +7054,12 @@ body.tutorial.advertisers section.advertisers .left,
 body.tutorial.advertisers section.advertisers .right {
   max-width: 500px;
   width: 50%;
+}
+body.tutorial.advertisers section.advertisers .left {
+  width: 56%;
+}
+body.tutorial.advertisers section.advertisers .right {
+  width: 44%;
 }
 body.tutorial.advertisers section.advertisers .image-pannel {
   height: 400px;

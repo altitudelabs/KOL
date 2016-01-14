@@ -45,11 +45,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: 400;
 }
 
-.responsive-mobile (@rules)       { @media (max-width: 760px) { @rules(); } }
+.responsive-mobile (@rules)       { @media (max-width: 770px) { @rules(); } }
 .responsive-mobile-form (@rules)  { @media (max-width: 1024px){ @rules(); } }
-.responsive-desktop (@rules)      { @media (min-width: 761px) { @rules(); } }
-.mobile-only                      { @media (min-width: 761px) { display: none; } }
-.desktop-only                     { @media (max-width: 760px) { display: none; } }
+.responsive-desktop (@rules)      { @media (min-width: 771px) { @rules(); } }
+.mobile-only                      { @media (min-width: 771px) { display: none; } }
+.desktop-only                     { @media (max-width: 770px) { display: none; } }
 
 
 @white  : #FCF9F5;
