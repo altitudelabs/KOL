@@ -5889,12 +5889,12 @@ h6,
   src: url(../fonts/caslon/Caslon224ITCbyBT-BoldItalic.ttf) format("truetype");
   font-weight: 400;
 }
-@media (min-width: 771px) {
+@media (min-width: 767px) {
   .mobile-only {
     display: none;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .desktop-only {
     display: none;
   }
@@ -5905,7 +5905,7 @@ body {
   background-position: center -60px;
   background-size: cover;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body {
     padding: 12px;
   }
@@ -5913,7 +5913,7 @@ body {
 body .social-paltform {
   margin-top: -80px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body .social-paltform {
     padding-bottom: 50px;
   }
@@ -5934,7 +5934,7 @@ body .social-paltform {
   font-family: "baskerville", 'baskerville-regular';
   padding-bottom: 88px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body footer,
   body .social-paltform {
     padding-bottom: 0px;
@@ -5953,19 +5953,19 @@ body .social-paltform .content {
   margin-top: 50px;
   padding: 0px 60px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body footer .content,
   body .social-paltform .content {
     margin-top: 29px;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body footer .content.protection-of-privacy,
   body .social-paltform .content.protection-of-privacy {
     display: none;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body footer .text-center,
   body .social-paltform .text-center {
     padding: 10px 0;
@@ -5980,7 +5980,7 @@ body footer a[href],
 body .social-paltform a[href] {
   cursor: pointer;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body footer a,
   body .social-paltform a {
     display: inline-block;
@@ -5993,7 +5993,7 @@ body .social-paltform a .social {
   width: 35px;
   height: 35px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body footer a .social,
   body .social-paltform a .social {
     margin: 0px 4px;
@@ -6041,7 +6041,7 @@ header {
   border-bottom: 1px #cccccc solid;
   padding: 45px 0 27px 0;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   header {
     padding: 7px 0 0 0;
     margin-bottom: 9px;
@@ -6060,7 +6060,7 @@ header .btn-mobile-top-nav {
 header .btn-mobile-top-nav.active {
   background-image: url("../images/icons/menu-close.png");
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   header .btn-mobile-top-nav {
     display: block;
   }
@@ -6075,7 +6075,7 @@ header .company-name {
   font-family: "didot";
   letter-spacing: -0.02em;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   header .company-name {
     margin: 20px 0 5px 0;
   }
@@ -6089,7 +6089,7 @@ header .company-description {
   font-weight: normal;
   font-family: "baskerville", 'baskerville-regular';
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   header .company-description {
     margin-bottom: 22px;
   }
@@ -6106,7 +6106,7 @@ header .company-meaning {
   font-style: italic;
   font-size: 20px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   header .company-meaning {
     line-height: 16px;
   }
@@ -6129,7 +6129,7 @@ header .company-meaning {
   position: relative;
   height: 90px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .top-nav ul li {
     width: 100%;
     padding: 0;
@@ -6157,7 +6157,7 @@ header .company-meaning {
 .top-nav ul li .sub-list .sub-option.active a {
   border-bottom: 2px #171717 solid;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .top-nav ul li .sub-list {
     position: relative;
     display: block;
@@ -6214,7 +6214,7 @@ header .company-meaning {
 .top-nav ul li a:hover {
   border-bottom: 2px #171717 solid;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .top-nav ul li a {
     line-height: 53px;
   }
@@ -6222,7 +6222,7 @@ header .company-meaning {
 .top-nav ul li a.disable:hover {
   border-bottom: none;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .top-nav ul li a.disable:hover {
     cursor: pointer;
   }
@@ -6230,12 +6230,12 @@ header .company-meaning {
 .top-nav ul li.active a {
   border-bottom: 2px #171717 solid;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .top-nav ul {
     width: 100%;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .top-nav {
     width: 100%;
     display: none;
@@ -6270,7 +6270,7 @@ header .company-meaning {
     padding: 0 25px;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container {
     padding: 0 8px;
   }
@@ -6279,7 +6279,7 @@ header .company-meaning {
   border-bottom: 1px #cccccc solid;
   padding: 45px 0 27px 0;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container header {
     padding: 7px 0 0 0;
     margin-bottom: 9px;
@@ -6297,7 +6297,7 @@ header .company-meaning {
   background-size: 25px 25px;
   cursor: pointer;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container header .btn-mobile-top-nav {
     display: inline-block;
   }
@@ -6314,7 +6314,7 @@ header .company-meaning {
   margin: 12px 0;
   font-family: "didot";
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container header .company-name {
     margin: 3px 0 7px 0;
   }
@@ -6328,7 +6328,7 @@ header .company-meaning {
   font-weight: normal;
   font-family: "baskerville", 'baskerville-regular';
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container header .company-description {
     margin-bottom: 22px;
   }
@@ -6345,7 +6345,7 @@ header .company-meaning {
   font-style: italic;
   font-size: 20px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container header .company-meaning {
     line-height: 16px;
   }
@@ -6353,7 +6353,7 @@ header .company-meaning {
 .body-container .top-nav.collapse {
   display: inline;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container .top-nav.collapse {
     display: none;
   }
@@ -6375,7 +6375,7 @@ header .company-meaning {
   padding: 10px 35px;
   height: 90px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container .top-nav ul li {
     width: 100%;
     padding: 0;
@@ -6400,7 +6400,7 @@ header .company-meaning {
 .body-container .top-nav ul li .sub-list .sub-option a {
   line-height: 40px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container .top-nav ul li .sub-list {
     position: relative;
     display: block;
@@ -6452,7 +6452,7 @@ header .company-meaning {
   padding-bottom: 3px;
   position: relative;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container .top-nav ul li a {
     line-height: 53px;
   }
@@ -6460,7 +6460,7 @@ header .company-meaning {
 .body-container .top-nav ul li a.disable:hover {
   border-bottom: none;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container .top-nav ul li a.disable:hover {
     cursor: pointer;
   }
@@ -6474,12 +6474,12 @@ header .company-meaning {
 .body-container .top-nav ul li:hover .sub-list {
   display: block;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container .top-nav ul {
     width: 100%;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container .top-nav {
     width: 100%;
     display: none;
@@ -6495,7 +6495,7 @@ header .company-meaning {
   margin-bottom: 130px;
   min-height: 600px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section {
     margin-bottom: 39px;
   }
@@ -6520,7 +6520,7 @@ header .company-meaning {
   margin-top: 22px;
   float: left;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section .section-title .title-line {
     position: absolute;
     bottom: 0;
@@ -6529,7 +6529,7 @@ header .company-meaning {
     margin-left: -25px;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section .section-title {
     border-left: none;
     width: 100%;
@@ -6540,7 +6540,7 @@ header .company-meaning {
     margin-bottom: 0;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section img {
     width: 100%;
     height: auto;
@@ -6550,7 +6550,7 @@ header .company-meaning {
   position: relative;
   margin-top: 37px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section .section-content {
     margin-top: 22px;
   }
@@ -6579,7 +6579,7 @@ header .company-meaning {
   left: 0;
   top: 0;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section .section-content .section-content-text {
     width: 100%;
     position: relative;
@@ -6595,7 +6595,7 @@ header .company-meaning {
   font-weight: 500;
   line-height: 1.1;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section .section-content .section-content-text .list-title {
     text-align: center;
     width: 100%;
@@ -6615,7 +6615,7 @@ header .company-meaning {
   font-family: "baskerville", 'baskerville-regular';
   margin: 0;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section .section-content .section-content-text ul.list {
     padding: 14px 0 0 0;
   }
@@ -6628,7 +6628,7 @@ header .company-meaning {
   display: table;
   margin-bottom: 7px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section .section-content .section-content-text ul.list li {
     font-size: 17px;
     margin-bottom: 21px;
@@ -6643,7 +6643,7 @@ header .company-meaning {
   width: 8%;
   min-width: 46px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section .section-content .section-content-text ul.list li .number {
     color: inherit;
     font-size: inherit;
@@ -6662,7 +6662,7 @@ header .company-meaning {
   font-style: italic;
   margin-left: 3px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section .section-content .section-content-text ul.list li .number:after {
     content: ". ";
     font-size: inherit;
@@ -6680,7 +6680,7 @@ header .company-meaning {
   vertical-align: middle;
   padding-top: 9px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section .section-content .section-content-text ul.list li .item {
     text-align: left;
     display: inline;
@@ -6701,7 +6701,7 @@ header .company-meaning {
   width: 220px;
   background: #171717;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section .section-content .section-content-text button {
     font-size: 19px;
     position: relative;
@@ -6724,7 +6724,7 @@ header .company-meaning {
   min-height: 319px;
   margin-bottom: 13%;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role {
     margin-bottom: 46px;
   }
@@ -6748,7 +6748,7 @@ header .company-meaning {
     padding-right: 70px;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .both-pic {
     display: none;
     padding: 0;
@@ -6757,7 +6757,7 @@ header .company-meaning {
 .body-container section.select-my-role .single-pic {
   display: none;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .single-pic {
     position: relative;
     display: block;
@@ -6769,7 +6769,7 @@ header .company-meaning {
   bottom: 0;
   left: -2%;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .kol-section {
     position: relative;
     left: 0;
@@ -6781,7 +6781,7 @@ header .company-meaning {
   right: -2%;
   top: 0;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .advertiser-section {
     position: relative;
     right: 0;
@@ -6790,7 +6790,7 @@ header .company-meaning {
 .body-container section.select-my-role .advertiser-section hr {
   float: right;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .advertiser-section hr {
     float: none;
   }
@@ -6801,7 +6801,7 @@ header .company-meaning {
   width: 146px;
   padding-bottom: 95px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .description {
     padding: 0 0 15px 0;
     width: 100%;
@@ -6814,7 +6814,7 @@ header .company-meaning {
   padding-bottom: 11px;
   display: block;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .description .iam {
     text-align: center;
   }
@@ -6837,7 +6837,7 @@ header .company-meaning {
   margin: 0;
   display: block;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .description hr {
     margin: 0 auto;
   }
@@ -6851,7 +6851,7 @@ header .company-meaning {
   overflow: visible;
   display: inline-block;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .description .tip {
     margin-left: auto;
     margin-right: auto;
@@ -6864,7 +6864,7 @@ header .company-meaning {
   padding: 12px 0 4px 1px ;
   line-height: 18px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .description .tip em {
     width: 100%;
     text-align: center;
@@ -6875,7 +6875,7 @@ header .company-meaning {
 .body-container section.select-my-role .description .link {
   display: inline-block;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .description .link {
     text-align: center;
   }
@@ -6889,7 +6889,7 @@ header .company-meaning {
 .body-container section.select-my-role .description.advertiser-description {
   text-align: right;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .description.advertiser-description {
     text-align: center;
   }
@@ -6906,7 +6906,7 @@ header .company-meaning {
     width: 166px;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .description.advertiser-description .iam {
     margin-left: 0;
     width: 100%;
@@ -6919,7 +6919,7 @@ header .company-meaning {
   float: right;
   width: 147px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.select-my-role .description.advertiser-description .tip em {
     float: none;
     width: 100%;
@@ -6945,7 +6945,7 @@ header .company-meaning {
   width: 71%;
   padding: 4% 16% 0 5%;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .body-container section.advertisers .section-content .section-content-text {
     margin: inherit;
     width: inherit;

@@ -5889,12 +5889,12 @@ h6,
   src: url(../fonts/caslon/Caslon224ITCbyBT-BoldItalic.ttf) format("truetype");
   font-weight: 400;
 }
-@media (min-width: 771px) {
+@media (min-width: 767px) {
   .mobile-only {
     display: none;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .desktop-only {
     display: none;
   }
@@ -5905,7 +5905,7 @@ body {
   background-position: center -60px;
   background-size: cover;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body {
     padding: 12px;
   }
@@ -5913,7 +5913,7 @@ body {
 body .social-paltform {
   margin-top: -80px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body .social-paltform {
     padding-bottom: 50px;
   }
@@ -5934,7 +5934,7 @@ body .social-paltform {
   font-family: "baskerville", 'baskerville-regular';
   padding-bottom: 88px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body footer,
   body .social-paltform {
     padding-bottom: 0px;
@@ -5953,19 +5953,19 @@ body .social-paltform .content {
   margin-top: 50px;
   padding: 0px 60px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body footer .content,
   body .social-paltform .content {
     margin-top: 29px;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body footer .content.protection-of-privacy,
   body .social-paltform .content.protection-of-privacy {
     display: none;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body footer .text-center,
   body .social-paltform .text-center {
     padding: 10px 0;
@@ -5980,7 +5980,7 @@ body footer a[href],
 body .social-paltform a[href] {
   cursor: pointer;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body footer a,
   body .social-paltform a {
     display: inline-block;
@@ -5993,7 +5993,7 @@ body .social-paltform a .social {
   width: 35px;
   height: 35px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body footer a .social,
   body .social-paltform a .social {
     margin: 0px 4px;
@@ -6041,7 +6041,7 @@ header {
   border-bottom: 1px #cccccc solid;
   padding: 45px 0 27px 0;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   header {
     padding: 7px 0 0 0;
     margin-bottom: 9px;
@@ -6060,7 +6060,7 @@ header .btn-mobile-top-nav {
 header .btn-mobile-top-nav.active {
   background-image: url("../images/icons/menu-close.png");
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   header .btn-mobile-top-nav {
     display: block;
   }
@@ -6075,7 +6075,7 @@ header .company-name {
   font-family: "didot";
   letter-spacing: -0.02em;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   header .company-name {
     margin: 20px 0 5px 0;
   }
@@ -6089,7 +6089,7 @@ header .company-description {
   font-weight: normal;
   font-family: "baskerville", 'baskerville-regular';
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   header .company-description {
     margin-bottom: 22px;
   }
@@ -6106,7 +6106,7 @@ header .company-meaning {
   font-style: italic;
   font-size: 20px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   header .company-meaning {
     line-height: 16px;
   }
@@ -6129,7 +6129,7 @@ header .company-meaning {
   position: relative;
   height: 90px;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .top-nav ul li {
     width: 100%;
     padding: 0;
@@ -6157,7 +6157,7 @@ header .company-meaning {
 .top-nav ul li .sub-list .sub-option.active a {
   border-bottom: 2px #171717 solid;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .top-nav ul li .sub-list {
     position: relative;
     display: block;
@@ -6214,7 +6214,7 @@ header .company-meaning {
 .top-nav ul li a:hover {
   border-bottom: 2px #171717 solid;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .top-nav ul li a {
     line-height: 53px;
   }
@@ -6222,7 +6222,7 @@ header .company-meaning {
 .top-nav ul li a.disable:hover {
   border-bottom: none;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .top-nav ul li a.disable:hover {
     cursor: pointer;
   }
@@ -6230,12 +6230,12 @@ header .company-meaning {
 .top-nav ul li.active a {
   border-bottom: 2px #171717 solid;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .top-nav ul {
     width: 100%;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   .top-nav {
     width: 100%;
     display: none;
@@ -6256,7 +6256,7 @@ body.team .team-member-pic {
   display: block;
   margin: 75px auto 25px auto;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body.team .team-member-pic {
     margin: 25px auto 25px auto;
   }
@@ -6306,7 +6306,7 @@ body.team .team-member-description p a {
 body.tutorial.kol .kol .social-paltform .col-lg-6 {
   padding: 0;
 }
-@media (max-width: 770px) {
+@media (max-width: 766px) {
   body.tutorial.kol {
     border-top: 12px #171717 solid;
     padding: 12px;
