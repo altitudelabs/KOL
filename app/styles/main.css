@@ -6496,9 +6496,6 @@ body nav.stick ul.nav li a:hover span {
 body nav.stick ul.nav li a[disabled]:hover span {
   border-bottom: none;
 }
-body footer {
-  margin-bottom: 50px;
-}
 body footer .section-bar.footer {
   border-bottom: 1px solid #d3a849;
 }
