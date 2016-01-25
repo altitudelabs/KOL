@@ -245,13 +245,13 @@
                       <div class="col-lg-12">
                         <span class="number font-brown"><strong>5 </strong></span>
                         <span class="img img-question-stick"></span>
-                        <span class="question"><em>Please tag your professions. (Please hit Enter after each name)</em></span>
+                        <span class="question"><em>What is your profession?</em></span>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="input-wrapper form-group">
-                          <input name="profession" type="text" data-role="tagsinput" class="full js-validate hashtag"  autocomplete="off" data-error="Please input your professions" required>
+                          <input name="profession" type="text" class="full js-validate hashtag"  autocomplete="off" data-error="Please input your professions" required>
                           <div class="help-block with-errors"></div>
                         </div>
                       </div>
@@ -831,14 +831,18 @@
                       <div class="col-lg-12">
                         <span class="number font-brown"><strong>5 </strong></span>
                         <span class="img img-question-stick"></span>
-                        <span class="question"><em>What skills or abilities do you have which are potentially useful for brands and advertisers?</em></span>
+                        <span class="question"><em>What skills or abilities do you have which are potentially useful for brands and advertisers? (Please hit Enter after each name)</em></span>
                       </div>
                     </div>
                     <div class="row">
                       <div class="col-lg-12">
                         <div class="input-wrapper form-group">
-                         <textarea></textarea>
+                         <input type="text" name="skills" data-role="tagsinput" class="hashtag"  autocomplete="off" data-error="Please input skills or abilities." required>
+                         <div class="help-block with-errors"></div>
+                         <!-- <button type="button" class="apply absolute">Apply</button> -->
+                        </div>
                       </div>
+                    </div>
                   </article>
 
                   <button type="button" class="center-block continue js-step-2-continue">

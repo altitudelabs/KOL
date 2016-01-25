@@ -98,7 +98,8 @@ app.post('/profile', function(req, res) {
           RBLOG: body['blog-ref'],
           BRANDS: body.brands,
           VENUES: body.venues,
-          ACTIVITIES: body.activities
+          ACTIVITIES: body.activities,
+          SKILLS: body.skills
         }
       };
       mcApi.lists_subscribe(params, function(err, response) {
@@ -234,6 +235,7 @@ function checkForFile(fileName, callback) {
           activities: '',
           email: '',
           timeSubmitted: '',
+          skill: ''
         });
         writer.end();
 
