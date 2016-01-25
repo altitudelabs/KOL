@@ -78,6 +78,7 @@ app.post('/profile', function(req, res) {
           GENDER: body.gender,
           COUNTRY: country,
           CITY: city,
+          NEIGHBOR: body.neighborhood,
           PROFESSION: body.profession,
           HOUSEHOLD: body['household-income'],
           FACEBOOK: body.facebook,
@@ -235,6 +236,7 @@ function checkForFile(fileName, callback) {
           activities: '',
           email: '',
           timeSubmitted: '',
+          activities: '',
           skill: ''
         });
         writer.end();
