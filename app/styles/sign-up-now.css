@@ -6570,10 +6570,14 @@ body footer .section-bar.footer {
   border-bottom: 1px solid #d3a849;
 }
 body footer .content {
-  font-size: 14px;
+  color: #171717;
+  font-size: 20px;
   line-height: 23px;
   margin-top: 50px;
-  padding: 0px 60px;
+  padding: 0px 14%;
+}
+body footer .content em {
+  font-weight: normal;
 }
 body footer a .social {
   display: inline-block;
@@ -7668,6 +7672,26 @@ body .social-paltform {
 body footer .section-bar.footer,
 body .social-paltform .section-bar.footer {
   border-bottom: 1px solid #d3a849;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 766px) {
+  body footer .section-bar.footer,
+  body .social-paltform .section-bar.footer {
+    width: 100%;
+  }
+}
+@media (max-width: 766px) {
+  body footer .section-bar.footer,
+  body .social-paltform .section-bar.footer {
+    width: 100%;
+  }
+}
+body footer .row,
+body .social-paltform .row {
+  margin-left: 0;
+  margin-right: 0;
 }
 body footer .content,
 body .social-paltform .content {
@@ -7676,7 +7700,14 @@ body .social-paltform .content {
   font-style: italic;
   line-height: 23px;
   margin-top: 50px;
-  padding: 0px 60px;
+  padding: 0px 14%;
+}
+body footer .content em,
+body .social-paltform .content em {
+  color: #171717;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 23px;
 }
 @media (max-width: 766px) {
   body footer .content,

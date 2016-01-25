@@ -99,6 +99,16 @@ body {
     });
     .section-bar.footer {
       border-bottom: 1px solid @orange;
+      width: 85%;
+      .responsive-mobile({
+          width:100%;
+      });
+      margin-left: auto;
+      margin-right:auto;
+    }
+    .row {
+      margin-left: 0;
+      margin-right: 0;
     }
     .content {
       color: @black;
@@ -106,7 +116,13 @@ body {
       font-style: italic;
       line-height: 23px;
       margin-top: 50px;
-      padding: 0px 60px;
+      padding: 0px 14%;
+      em {
+        color: @black;
+        font-size: 20px;
+        font-style: italic;
+        line-height: 23px;
+      }
       .responsive-mobile({
         margin-top: 29px;
       });
