@@ -236,7 +236,6 @@ function checkForFile(fileName, callback) {
           activities: '',
           email: '',
           timeSubmitted: '',
-          activities: '',
           skill: ''
         });
         writer.end();
